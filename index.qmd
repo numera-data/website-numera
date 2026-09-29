@@ -35,17 +35,59 @@ analisis sampai manuskrip siap submit.
 :::
 :::
 
-::: {.hero-visual aria-hidden="true"}
-[Estimasi prevalensi terbobot per kelompok · ilustrasi]{.kpi-label}
+::: {.hero-visual}
+[Contoh luaran · peta tematik]{.kpi-label}
 
+<!--
+SLIDESHOW PETA
+- Ganti gambar di folder assets/peta/ (boleh .png/.jpg/.svg; rasio ideal 4:3).
+- Tambah/kurangi peta dengan menyalin atau menghapus satu blok <figure> di bawah.
+- Tulis keterangan singkat di <figcaption> dan teks alternatif di alt="".
+-->
 ```{=html}
-<div class="ci-plot">
-  <div class="ci-row"><span class="ci-lab">Kelompok A</span><span class="ci-track"><i style="left:12%;width:16%"></i><b style="left:20%"></b></span></div>
-  <div class="ci-row"><span class="ci-lab">Kelompok B</span><span class="ci-track"><i style="left:30%;width:20%"></i><b style="left:40%"></b></span></div>
-  <div class="ci-row"><span class="ci-lab">Kelompok C</span><span class="ci-track"><i style="left:48%;width:14%"></i><b style="left:55%"></b></span></div>
-  <div class="ci-row"><span class="ci-lab">Kelompok D</span><span class="ci-track"><i style="left:58%;width:24%"></i><b style="left:70%"></b></span></div>
+<div class="map-slider" data-interval="5000" aria-roledescription="carousel" aria-label="Contoh peta tematik">
+  <figure class="map-slide is-active">
+    <img src="assets/peta/peta-1.svg" alt="Draf peta choropleth insiden per wilayah">
+    <figcaption>Insiden per wilayah · <em>draf</em></figcaption>
+  </figure>
+  <figure class="map-slide">
+    <img src="assets/peta/peta-2.svg" alt="Draf peta sebaran titik kasus">
+    <figcaption>Sebaran titik kasus · <em>draf</em></figcaption>
+  </figure>
+  <figure class="map-slide">
+    <img src="assets/peta/peta-3.svg" alt="Draf peta buffer 500 meter sekitar sekolah">
+    <figcaption>Buffer 500 m sekitar sekolah · <em>draf</em></figcaption>
+  </figure>
+  <div class="map-dots" role="tablist"></div>
 </div>
-<p class="ci-note">Titik = estimasi · garis = IK 95%</p>
+<script>
+(function () {
+  document.querySelectorAll(".map-slider").forEach(function (el) {
+    var slides = el.querySelectorAll(".map-slide");
+    var dotsBox = el.querySelector(".map-dots");
+    var i = 0, timer = null, ms = +el.dataset.interval || 5000;
+    var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    var dots = Array.prototype.map.call(slides, function (s, k) {
+      var b = document.createElement("button");
+      b.type = "button"; b.setAttribute("aria-label", "Tampilkan peta " + (k + 1));
+      b.addEventListener("click", function () { show(k); restart(); });
+      dotsBox.appendChild(b); return b;
+    });
+    function show(k) {
+      slides[i].classList.remove("is-active"); dots[i].classList.remove("is-active");
+      i = (k + slides.length) % slides.length;
+      slides[i].classList.add("is-active"); dots[i].classList.add("is-active");
+    }
+    function start() { if (!reduce && slides.length > 1) timer = setInterval(function () { show(i + 1); }, ms); }
+    function stop() { clearInterval(timer); timer = null; }
+    function restart() { stop(); start(); }
+    dots[0] && dots[0].classList.add("is-active");
+    el.addEventListener("mouseenter", stop); el.addEventListener("mouseleave", start);
+    el.addEventListener("focusin", stop); el.addEventListener("focusout", start);
+    start();
+  });
+})();
+</script>
 ```
 :::
 
@@ -86,9 +128,9 @@ estimasi prevalensi sampai regresi logistik multivariabel.
 ::: {.service}
 [<i class="bi bi-geo-alt"></i>]{.icon}
 
-### Epidemiologi spasial & pemetaan
-Peta tematik, kernel density, dan analisis buffer dengan QGIS untuk memetakan kasus dan
-faktor risiko penyakit.
+### Epidemiologi spasial & lingkungan
+Peta tematik, kernel density, dan analisis buffer dengan QGIS, serta analisis hubungan paparan
+lingkungan (mis. polusi udara dan iklim) dengan penyakit menggunakan DLNM.
 :::
 ::: {.service}
 [<i class="bi bi-speedometer2"></i>]{.icon}
