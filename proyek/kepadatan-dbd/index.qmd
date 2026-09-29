@@ -1,0 +1,67 @@
+---
+title: "Peta Kepadatan Kasus DBD Kota Depok Tahun 2025"
+description: "Analisis spasial distribusi dan kepadatan kasus Demam Berdarah Dengue (DBD) berdasarkan titik kasus di Kota Depok tahun 2025."
+date: 2026-03-01
+image: peta-kepadatan-dbd-depok-2025.jpg
+categories: ["Demam Berdarah Dengue", "Analisis Spasial", "Kepadatan Kasus"]
+author:
+  - Falah Fauzi
+---
+
+::: {.project-meta}
+::: {}
+[Tahun]{.label}
+
+[2025]{.value}
+:::
+::: {}
+[Peran]{.label}
+
+[Analisis spasial epidemiologi]{.value}
+:::
+::: {}
+[Data]{.label}
+
+[Titik kasus DBD Kota Depok]{.value}
+:::
+::: {}
+[Luaran]{.label}
+
+[Peta kepadatan kasus DBD]{.value}
+:::
+:::
+
+## Latar belakang
+
+Demam Berdarah Dengue (DBD) merupakan salah satu penyakit berbasis vektor yang memiliki pola penyebaran dipengaruhi oleh faktor lingkungan, kepadatan penduduk, mobilitas masyarakat, dan kondisi wilayah. Analisis spasial diperlukan untuk mengidentifikasi pola distribusi kasus serta area dengan konsentrasi kasus yang lebih tinggi sehingga dapat mendukung penentuan prioritas intervensi pengendalian DBD.
+
+## Tujuan analisis
+
+Analisis ini bertujuan untuk menggambarkan distribusi spasial kasus DBD di Kota Depok tahun 2025 serta mengidentifikasi variasi kepadatan kasus antarwilayah melalui pendekatan pemetaan epidemiologi.
+
+## Data & metode
+
+- Data kasus DBD tahun 2025 dalam bentuk titik koordinat lokasi kasus.
+- Wilayah administrasi Kota Depok digunakan sebagai unit spasial analisis.
+- Analisis dilakukan melalui pemetaan distribusi titik kasus dan visualisasi kelas kepadatan kasus.
+- Kategori kepadatan kasus diklasifikasikan menjadi tiga kelas, yaitu **rendah**, **sedang**, dan **tinggi**.
+
+## Hasil analisis spasial
+
+Peta menunjukkan distribusi kasus DBD yang tersebar di berbagai kecamatan di Kota Depok. Konsentrasi titik kasus terlihat lebih banyak pada beberapa wilayah bagian tengah Kota Depok, terutama di sekitar Kecamatan **Sukmajaya**, **Pancoran Mas**, dan wilayah sekitarnya.
+
+Area dengan kelas kepadatan tinggi menunjukkan lokasi dengan konsentrasi kasus yang relatif lebih besar dibandingkan wilayah lain. Sebaliknya, wilayah dengan kelas kepadatan rendah menunjukkan distribusi kasus yang lebih jarang atau tersebar.
+
+## Interpretasi epidemiologi
+
+Pola spasial kasus DBD di Kota Depok tahun 2025 menunjukkan adanya variasi geografis antarwilayah. Area dengan kepadatan kasus tinggi dapat menjadi prioritas untuk penguatan surveilans, pengendalian vektor, pemberantasan sarang nyamuk (PSN), serta intervensi berbasis wilayah.
+
+Interpretasi peta perlu mempertimbangkan bahwa kepadatan kasus tidak hanya dipengaruhi oleh jumlah kasus, tetapi juga oleh distribusi penduduk, luas wilayah, kondisi lingkungan, dan faktor sosial yang berperan terhadap risiko penularan DBD.
+
+## Luaran
+
+- Peta kepadatan kasus DBD Kota Depok tahun 2025.
+- Visualisasi distribusi spasial titik kasus DBD.
+- Identifikasi wilayah dengan konsentrasi kasus lebih tinggi sebagai informasi pendukung pengendalian DBD berbasis wilayah.
+
+Lihat juga dokumentasi analisis spasial lainnya untuk pendekatan pemetaan epidemiologi.

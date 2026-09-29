@@ -28,10 +28,13 @@ about:
   links:
     - icon: envelope
       text: Email
-      href: mailto:falah@numera.org
+      href: mailto:muhammadilhambasgoro@gmail.com
     - icon: github
       text: GitHub
-      href: https://github.com/numera-data
+      href: https://github.com/ibasgo
+    - icon: file-earmark-person
+      text: CV
+      href: https://s.id/CV-MIB-UPDATED
 ---
 
 Ilham adalah epidemiolog lulusan Magister Epidemiologi Universitas Andalas dengan predikat
