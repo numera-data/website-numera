@@ -2,7 +2,7 @@
 title: "Peta Kepadatan Kasus DBD Kota Depok Tahun 2025"
 description: "Analisis spasial distribusi dan kepadatan kasus Demam Berdarah Dengue (DBD) berdasarkan titik kasus di Kota Depok tahun 2025."
 date: 2026-03-01
-image: peta-3.jpg
+image: peta-3.svg
 categories: ["Demam Berdarah Dengue", "Analisis Spasial", "Kepadatan Kasus"]
 author:
   - Falah Fauzi
