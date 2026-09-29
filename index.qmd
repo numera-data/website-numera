@@ -49,12 +49,12 @@ SLIDESHOW PETA
     <figcaption>Peta Tingkat Konsumsi Obat Penyakit Filariasis <figcaption>
   </figure>
   <figure class="map-slide">
-    <img src="assets/peta/peta-2.svg" alt="Draf peta sebaran titik kasus">
-    <figcaption>Sebaran titik kasus · <em>draf</em></figcaption>
+    <img src="assets/peta/peta-2.svg" alt="Spatial Distribution Map of Iron (Fe) Concetration">
+    <figcaption> Spatial Distribution Map of Iron (Fe) Concetration</figcaption>
   </figure>
   <figure class="map-slide">
-    <img src="assets/peta/peta-3.svg" alt="Draf peta buffer 500 meter sekitar sekolah">
-    <figcaption>Buffer 500 m sekitar sekolah · <em>draf</em></figcaption>
+    <img src="assets/peta/peta-3.svg" alt="Peta Kepadatan Kasus DBD di Depok">
+    <figcaption>Peta Kepadatan Kasus DBD di Depok</figcaption>
   </figure>
   <div class="map-dots" role="tablist"></div>
 </div>

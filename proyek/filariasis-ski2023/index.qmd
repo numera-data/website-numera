@@ -2,7 +2,7 @@
 title: "Konsumsi Obat Pencegahan Filariasis saat POPM: Analisis Data SKI 2023"
 description: "Faktor yang berhubungan dengan konsumsi obat pencegahan pada Pemberian Obat Pencegahan Massal (POPM) filariasis limfatik di Indonesia."
 date: 2026-03-01
-image: thumbnail.svg
+image: peta-1.svg
 categories: ["Filariasis", "Analisis Survei Kompleks", "SKI 2023"]
 author:
   - Muhammad Ilham Basgoro
