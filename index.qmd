@@ -46,7 +46,7 @@ SLIDESHOW PETA
 <div class="map-slider" data-interval="5000" aria-roledescription="carousel" aria-label="Contoh peta tematik">
   <figure class="map-slide is-active">
     <img src="assets/peta/peta-1.svg" alt="Peta Tingkat Konsumsi Obat Penyakit Filariasis">
-    <figcaption>Insiden per wilayah · <em>draf</em></figcaption>
+    <figcaption>Peta Tingkat Konsumsi Obat Penyakit Filariasis <figcaption>
   </figure>
   <figure class="map-slide">
     <img src="assets/peta/peta-2.svg" alt="Draf peta sebaran titik kasus">
