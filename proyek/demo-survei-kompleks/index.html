@@ -1,0 +1,1151 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="id" xml:lang="id"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Tim Numera Data">
+<meta name="dcterms.date" content="2026-01-01">
+<meta name="description" content="Contoh alur analisis yang kami pakai untuk data survei kesehatan seperti SKI — diperagakan dengan data terbuka NHANES dan paket R survey.">
+
+<title>Demo: Estimasi Prevalensi dengan Desain Survei Kompleks di R – Numera Data</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../assets/favicon.png" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-73b0ff3878a4e6fc3716dc69a6aaefa3.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-a60fab2f8a066d0ce7bf48d8b28043cc.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-73b0ff3878a4e6fc3716dc69a6aaefa3.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-3ce9735a01569d2e428204e3ec943505.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-88115dc584e0ade50b9bbc8bb0e412f7.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-3ce9735a01569d2e428204e3ec943505.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "Tidak ada hasil",
+    "search-matching-documents-text": "dokumen cocok",
+    "search-copy-link-title": "Salin tautan untuk mencari",
+    "search-hide-matches-text": "Sembunyikan kecocokan lainnya",
+    "search-more-match-text": "kecocokan lainnya di dokumen ini",
+    "search-more-matches-text": "kecocokan lainnya di dokumen ini",
+    "search-clear-button-title": "Hapus",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Batal",
+    "search-submit-button-title": "Kirim",
+    "search-label": "Mencari"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+
+
+<meta property="og:title" content="Demo: Estimasi Prevalensi dengan Desain Survei Kompleks di R – Numera Data">
+<meta property="og:description" content="Contoh alur analisis yang kami pakai untuk data survei kesehatan seperti SKI — diperagakan dengan data terbuka NHANES dan paket R survey.">
+<meta property="og:image" content="https://numera-data.github.io/website-numera/proyek/demo-survei-kompleks/thumbnail.svg">
+<meta property="og:site_name" content="Numera Data">
+</head>
+
+<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../assets/logo.png" alt="" class="navbar-logo light-content">
+    <img src="../../assets/logo-dark.png" alt="" class="navbar-logo dark-content">
+    </a>
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Numera Data</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Mencari"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Alihkan navigasi" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html"> 
+<span class="menu-text">Beranda</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../tim.html"> 
+<span class="menu-text">Tim</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../proyek.html"> 
+<span class="menu-text">Proyek</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/numera-data"> <i class="bi bi-github" role="img" aria-label="GitHub Numera Data">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="mailto:falah@numera.org"> <i class="bi bi-envelope" role="img" aria-label="Email Numera Data">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Alihkan mode gelap"><i class="bi"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Di halaman ini</h2>
+   
+  <ul>
+  <li><a href="#mengapa-desain-survei-penting" id="toc-mengapa-desain-survei-penting" class="nav-link active" data-scroll-target="#mengapa-desain-survei-penting">Mengapa desain survei penting?</a></li>
+  <li><a href="#data-dan-desain-survei" id="toc-data-dan-desain-survei" class="nav-link" data-scroll-target="#data-dan-desain-survei">Data dan desain survei</a></li>
+  <li><a href="#langkah-1-bandingkan-estimasi-tanpa-dan-dengan-bobot" id="toc-langkah-1-bandingkan-estimasi-tanpa-dan-dengan-bobot" class="nav-link" data-scroll-target="#langkah-1-bandingkan-estimasi-tanpa-dan-dengan-bobot">Langkah 1 — Bandingkan estimasi tanpa dan dengan bobot</a></li>
+  <li><a href="#langkah-2-prevalensi-per-kelompok-dengan-interval-kepercayaan" id="toc-langkah-2-prevalensi-per-kelompok-dengan-interval-kepercayaan" class="nav-link" data-scroll-target="#langkah-2-prevalensi-per-kelompok-dengan-interval-kepercayaan">Langkah 2 — Prevalensi per kelompok dengan interval kepercayaan</a></li>
+  <li><a href="#langkah-3-regresi-logistik-dengan-desain-survei" id="toc-langkah-3-regresi-logistik-dengan-desain-survei" class="nav-link" data-scroll-target="#langkah-3-regresi-logistik-dengan-desain-survei">Langkah 3 — Regresi logistik dengan desain survei</a></li>
+  <li><a href="#keterbatasan" id="toc-keterbatasan" class="nav-link" data-scroll-target="#keterbatasan">Keterbatasan</a></li>
+  <li><a href="#bagaimana-kami-menerapkannya" id="toc-bagaimana-kami-menerapkannya" class="nav-link" data-scroll-target="#bagaimana-kami-menerapkannya">Bagaimana kami menerapkannya</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Demo: Estimasi Prevalensi dengan Desain Survei Kompleks di R</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">R</div>
+    <div class="quarto-category">Analisis Survei Kompleks</div>
+    <div class="quarto-category">Demo Metode</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    Contoh alur analisis yang kami pakai untuk data survei kesehatan seperti SKI — diperagakan dengan data terbuka NHANES dan paket R survey.
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Penulis</div>
+    <div class="quarto-title-meta-contents">
+             <p>Tim Numera Data </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Diterbitkan</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="project-meta">
+<div>
+<p><span class="label">Jenis</span></p>
+<p><span class="value">Demo metode</span></p>
+</div>
+<div>
+<p><span class="label">Data</span></p>
+<p><span class="value">NHANES 2009–2010 (terbuka)</span></p>
+</div>
+<div>
+<p><span class="label">Tools</span></p>
+<p><span class="value">R · survey · ggplot2</span></p>
+</div>
+<div>
+<p><span class="label">Relevan untuk</span></p>
+<p><span class="value">SKI, SDKI, Riskesdas</span></p>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Catatan</span>Tentang halaman ini
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Ini adalah <strong>demonstrasi metode</strong>, bukan proyek klien. Datanya berasal dari survei kesehatan nasional Amerika Serikat (NHANES 2009–2010) yang tersedia terbuka di paket R <code>survey</code>, sehingga seluruh kode bisa Anda jalankan ulang. Alur yang sama kami gunakan untuk survei kesehatan Indonesia yang juga memakai desain sampel kompleks.</p>
+</div>
+</div>
+<section id="mengapa-desain-survei-penting" class="level2">
+<h2 class="anchored" data-anchor-id="mengapa-desain-survei-penting">Mengapa desain survei penting?</h2>
+<p>Survei kesehatan berskala besar tidak memilih responden secara acak sederhana. Sampel diambil bertahap (<strong>klaster</strong>), dibagi per wilayah (<strong>strata</strong>), dan tiap responden mewakili jumlah penduduk yang berbeda (<strong>bobot</strong>). Jika ketiganya diabaikan, estimasi prevalensi bisa bias dan interval kepercayaannya terlalu sempit.</p>
+</section>
+<section id="data-dan-desain-survei" class="level2">
+<h2 class="anchored" data-anchor-id="data-dan-desain-survei">Data dan desain survei</h2>
+<div class="cell">
+<details class="code-fold">
+<summary>Tampilkan kode</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(survey)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(scales)</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span>opts_chunk<span class="sc">$</span><span class="fu">set</span>(<span class="at">dev =</span> <span class="st">"png"</span>, <span class="at">dev.args =</span> <span class="fu">list</span>(<span class="at">bg =</span> <span class="st">"transparent"</span>), <span class="at">dpi =</span> <span class="dv">150</span>)</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>INK <span class="ot">&lt;-</span> <span class="st">"#64748B"</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="fu">theme_set</span>(</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">13</span>) <span class="sc">+</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>    <span class="fu">theme</span>(</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>      <span class="at">text =</span> <span class="fu">element_text</span>(<span class="at">colour =</span> INK), <span class="at">axis.text =</span> <span class="fu">element_text</span>(<span class="at">colour =</span> INK),</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>      <span class="at">panel.grid.major =</span> <span class="fu">element_line</span>(<span class="at">colour =</span> <span class="fu">alpha</span>(INK, .<span class="dv">18</span>), <span class="at">linewidth =</span> .<span class="dv">4</span>),</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>      <span class="at">panel.grid.minor =</span> <span class="fu">element_blank</span>(),</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>      <span class="at">plot.background =</span> <span class="fu">element_rect</span>(<span class="at">fill =</span> <span class="st">"transparent"</span>, <span class="at">colour =</span> <span class="cn">NA</span>),</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>      <span class="at">panel.background =</span> <span class="fu">element_rect</span>(<span class="at">fill =</span> <span class="st">"transparent"</span>, <span class="at">colour =</span> <span class="cn">NA</span>),</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>      <span class="at">legend.position =</span> <span class="st">"top"</span>, <span class="at">legend.justification =</span> <span class="st">"left"</span>,</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>      <span class="at">legend.background =</span> <span class="fu">element_rect</span>(<span class="at">fill =</span> <span class="st">"transparent"</span>, <span class="at">colour =</span> <span class="cn">NA</span>)</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>pct <span class="ot">&lt;-</span> <span class="cf">function</span>(x, <span class="at">d =</span> <span class="dv">1</span>) <span class="fu">percent</span>(x, <span class="at">accuracy =</span> <span class="dv">10</span><span class="sc">^-</span>d, <span class="at">decimal.mark =</span> <span class="st">","</span>)</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>num <span class="ot">&lt;-</span> <span class="cf">function</span>(x, <span class="at">d =</span> <span class="dv">2</span>) <span class="fu">number</span>(x, <span class="at">accuracy =</span> <span class="dv">10</span><span class="sc">^-</span>d, <span class="at">decimal.mark =</span> <span class="st">","</span>, <span class="at">big.mark =</span> <span class="st">"."</span>)</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(nhanes)  <span class="co"># NHANES 2009–2010: kolesterol total &gt; 240 mg/dL (HI_CHOL)</span></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>dat <span class="ot">&lt;-</span> nhanes <span class="sc">|&gt;</span></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>    <span class="at">usia =</span> <span class="fu">factor</span>(agecat, <span class="at">labels =</span> <span class="fu">c</span>(<span class="st">"0–19"</span>, <span class="st">"20–39"</span>, <span class="st">"40–59"</span>, <span class="st">"60+"</span>)),</span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>    <span class="at">jenis_kelamin =</span> <span class="fu">factor</span>(RIAGENDR, <span class="at">labels =</span> <span class="fu">c</span>(<span class="st">"Laki-laki"</span>, <span class="st">"Perempuan"</span>)),</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>    <span class="at">ras =</span> <span class="fu">factor</span>(race, <span class="at">labels =</span> <span class="fu">c</span>(<span class="st">"Hispanik"</span>, <span class="st">"Kulit putih non-Hispanik"</span>,</span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>                                  <span class="st">"Kulit hitam non-Hispanik"</span>, <span class="st">"Lainnya"</span>))</span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a><span class="co"># Deklarasi desain: klaster (PSU), strata, dan bobot pemeriksaan</span></span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>desain <span class="ot">&lt;-</span> <span class="fu">svydesign</span>(<span class="at">id =</span> <span class="sc">~</span>SDMVPSU, <span class="at">strata =</span> <span class="sc">~</span>SDMVSTRA, <span class="at">weights =</span> <span class="sc">~</span>WTMEC2YR,</span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>                    <span class="at">nest =</span> <span class="cn">TRUE</span>, <span class="at">data =</span> dat)</span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>desain</span></code></pre></div><button title="Salin ke Papan Klip" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>Stratified 1 - level Cluster Sampling design (with replacement)
+With (31) clusters.
+svydesign(id = ~SDMVPSU, strata = ~SDMVSTRA, weights = ~WTMEC2YR, 
+    nest = TRUE, data = dat)</code></pre>
+</div>
+</div>
+<p>Data berisi <strong>8.591 responden</strong>; 7.846 di antaranya memiliki hasil pemeriksaan kolesterol.</p>
+</section>
+<section id="langkah-1-bandingkan-estimasi-tanpa-dan-dengan-bobot" class="level2">
+<h2 class="anchored" data-anchor-id="langkah-1-bandingkan-estimasi-tanpa-dan-dengan-bobot">Langkah 1 — Bandingkan estimasi tanpa dan dengan bobot</h2>
+<div class="cell">
+<details class="code-fold">
+<summary>Tampilkan kode</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>naif <span class="ot">&lt;-</span> <span class="fu">mean</span>(dat<span class="sc">$</span>HI_CHOL, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>naif_se <span class="ot">&lt;-</span> <span class="fu">sqrt</span>(naif <span class="sc">*</span> (<span class="dv">1</span> <span class="sc">-</span> naif) <span class="sc">/</span> <span class="fu">sum</span>(<span class="sc">!</span><span class="fu">is.na</span>(dat<span class="sc">$</span>HI_CHOL)))</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>terbobot <span class="ot">&lt;-</span> <span class="fu">svymean</span>(<span class="sc">~</span>HI_CHOL, desain, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>ik <span class="ot">&lt;-</span> <span class="fu">confint</span>(terbobot)</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="fu">tibble</span>(</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">Metode =</span> <span class="fu">c</span>(<span class="st">"Tanpa bobot (acak sederhana)"</span>, <span class="st">"Desain survei kompleks"</span>),</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>  <span class="at">Prevalensi =</span> <span class="fu">c</span>(<span class="fu">pct</span>(naif), <span class="fu">pct</span>(<span class="fu">coef</span>(terbobot))),</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>  <span class="st">`</span><span class="at">IK 95%</span><span class="st">`</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="fu">paste</span>(<span class="fu">pct</span>(naif <span class="sc">-</span> <span class="fl">1.96</span> <span class="sc">*</span> naif_se), <span class="st">"–"</span>, <span class="fu">pct</span>(naif <span class="sc">+</span> <span class="fl">1.96</span> <span class="sc">*</span> naif_se)),</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>               <span class="fu">paste</span>(<span class="fu">pct</span>(ik[<span class="dv">1</span>]), <span class="st">"–"</span>, <span class="fu">pct</span>(ik[<span class="dv">2</span>]))),</span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>  <span class="st">`</span><span class="at">Galat baku (poin %)</span><span class="st">`</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="fu">num</span>(naif_se <span class="sc">*</span> <span class="dv">100</span>), <span class="fu">num</span>(<span class="fu">SE</span>(terbobot) <span class="sc">*</span> <span class="dv">100</span>))</span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>) <span class="sc">|&gt;</span></span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>  knitr<span class="sc">::</span><span class="fu">kable</span>(<span class="at">align =</span> <span class="st">"lrrr"</span>)</span></code></pre></div><button title="Salin ke Papan Klip" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div id="tbl-bobot" class="cell quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-bobot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabel&nbsp;1: Prevalensi kolesterol tinggi: estimasi naif vs estimasi yang memperhitungkan desain survei.
+</figcaption>
+<div aria-describedby="tbl-bobot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell-output-display">
+<table class="cell caption-top table table-sm table-striped small">
+<colgroup>
+<col style="width: 39%">
+<col style="width: 14%">
+<col style="width: 18%">
+<col style="width: 27%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Metode</th>
+<th style="text-align: right;">Prevalensi</th>
+<th style="text-align: right;">IK 95%</th>
+<th style="text-align: right;">Galat baku (poin %)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Tanpa bobot (acak sederhana)</td>
+<td style="text-align: right;">10,0%</td>
+<td style="text-align: right;">9,4% – 10,7%</td>
+<td style="text-align: right;">0,34</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Desain survei kompleks</td>
+<td style="text-align: right;">11,2%</td>
+<td style="text-align: right;">10,1% – 12,3%</td>
+<td style="text-align: right;">0,54</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</figure>
+</div>
+</div>
+<p>Mengabaikan desain survei menghasilkan prevalensi <strong>10,0%</strong>, sedangkan estimasi yang benar adalah <strong>11,2%</strong>. Galat baku yang benar juga <strong>1,6 kali lebih besar</strong> daripada galat baku naif — tanpa desain survei, kita akan terlalu yakin terhadap angka yang keliru.</p>
+</section>
+<section id="langkah-2-prevalensi-per-kelompok-dengan-interval-kepercayaan" class="level2">
+<h2 class="anchored" data-anchor-id="langkah-2-prevalensi-per-kelompok-dengan-interval-kepercayaan">Langkah 2 — Prevalensi per kelompok dengan interval kepercayaan</h2>
+<div class="cell">
+<details class="code-fold">
+<summary>Tampilkan kode</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>per_kel <span class="ot">&lt;-</span> <span class="fu">svyby</span>(<span class="sc">~</span>HI_CHOL, <span class="sc">~</span>usia <span class="sc">+</span> jenis_kelamin, desain, svymean, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>per_kel <span class="ot">&lt;-</span> per_kel <span class="sc">|&gt;</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">as_tibble</span>() <span class="sc">|&gt;</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">bawah =</span> <span class="fu">pmax</span>(HI_CHOL <span class="sc">-</span> <span class="fl">1.96</span> <span class="sc">*</span> se, <span class="dv">0</span>), <span class="at">atas =</span> HI_CHOL <span class="sc">+</span> <span class="fl">1.96</span> <span class="sc">*</span> se)</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>WARNA <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"Laki-laki"</span> <span class="ot">=</span> <span class="st">"#2A78D6"</span>, <span class="st">"Perempuan"</span> <span class="ot">=</span> <span class="st">"#EB6834"</span>)</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>geser <span class="ot">&lt;-</span> <span class="fu">position_dodge</span>(<span class="at">width =</span> .<span class="dv">45</span>)</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(per_kel, <span class="fu">aes</span>(usia, HI_CHOL, <span class="at">colour =</span> jenis_kelamin)) <span class="sc">+</span></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_errorbar</span>(<span class="fu">aes</span>(<span class="at">ymin =</span> bawah, <span class="at">ymax =</span> atas), <span class="at">width =</span> <span class="dv">0</span>, <span class="at">linewidth =</span> .<span class="dv">9</span>, <span class="at">position =</span> geser) <span class="sc">+</span></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">size =</span> <span class="fl">3.2</span>, <span class="at">position =</span> geser) <span class="sc">+</span></span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_colour_manual</span>(<span class="at">values =</span> WARNA, <span class="at">name =</span> <span class="cn">NULL</span>) <span class="sc">+</span></span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">labels =</span> \(x) <span class="fu">pct</span>(x, <span class="dv">0</span>), <span class="at">limits =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="cn">NA</span>),</span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>                     <span class="at">expand =</span> <span class="fu">expansion</span>(<span class="at">mult =</span> <span class="fu">c</span>(<span class="dv">0</span>, .<span class="dv">08</span>))) <span class="sc">+</span></span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Kelompok usia (tahun)"</span>, <span class="at">y =</span> <span class="st">"Prevalensi terbobot"</span>)</span></code></pre></div><button title="Salin ke Papan Klip" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output-display">
+<div id="fig-prevalensi" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-prevalensi-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="index_files/figure-html/fig-prevalensi-1.png" class="img-fluid figure-img" width="1125">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-prevalensi-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Gambar&nbsp;1: Prevalensi kolesterol tinggi terbobot menurut kelompok usia dan jenis kelamin. Garis menunjukkan IK 95%.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>Prevalensi naik tajam setelah usia 20 tahun. Pada kelompok <strong>60 tahun ke atas</strong>, pola kedua jenis kelamin berpisah: 20,2% pada perempuan dibanding 9,9% pada laki-laki, dan interval kepercayaannya tidak bertumpang tindih.</p>
+</section>
+<section id="langkah-3-regresi-logistik-dengan-desain-survei" class="level2">
+<h2 class="anchored" data-anchor-id="langkah-3-regresi-logistik-dengan-desain-survei">Langkah 3 — Regresi logistik dengan desain survei</h2>
+<div class="cell">
+<details class="code-fold">
+<summary>Tampilkan kode</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>model <span class="ot">&lt;-</span> <span class="fu">svyglm</span>(HI_CHOL <span class="sc">~</span> usia <span class="sc">+</span> jenis_kelamin <span class="sc">+</span> ras, <span class="at">design =</span> desain,</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>                <span class="at">family =</span> <span class="fu">quasibinomial</span>())</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>hasil <span class="ot">&lt;-</span> <span class="fu">cbind</span>(<span class="at">OR =</span> <span class="fu">exp</span>(<span class="fu">coef</span>(model)), <span class="fu">exp</span>(<span class="fu">confint</span>(model)),</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>               <span class="at">p =</span> <span class="fu">summary</span>(model)<span class="sc">$</span>coefficients[, <span class="dv">4</span>])[<span class="sc">-</span><span class="dv">1</span>, ]</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="fu">tibble</span>(</span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>  <span class="at">Variabel =</span> <span class="fu">sub</span>(<span class="st">"^(usia|jenis_kelamin|ras)"</span>, <span class="st">""</span>, <span class="fu">rownames</span>(hasil)),</span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>  <span class="at">Kelompok =</span> <span class="fu">c</span>(<span class="fu">rep</span>(<span class="st">"Usia (ref: 0–19)"</span>, <span class="dv">3</span>), <span class="st">"Jenis kelamin (ref: laki-laki)"</span>,</span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>               <span class="fu">rep</span>(<span class="st">"Ras/etnis (ref: Hispanik)"</span>, <span class="dv">3</span>)),</span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>  <span class="at">OR =</span> <span class="fu">num</span>(hasil[, <span class="st">"OR"</span>]),</span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>  <span class="st">`</span><span class="at">IK 95%</span><span class="st">`</span> <span class="ot">=</span> <span class="fu">paste</span>(<span class="fu">num</span>(hasil[, <span class="dv">2</span>]), <span class="st">"–"</span>, <span class="fu">num</span>(hasil[, <span class="dv">3</span>])),</span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>  <span class="at">p =</span> <span class="fu">ifelse</span>(hasil[, <span class="st">"p"</span>] <span class="sc">&lt;</span> .<span class="dv">001</span>, <span class="st">"&lt;0,001"</span>, <span class="fu">num</span>(hasil[, <span class="st">"p"</span>], <span class="dv">3</span>))</span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>) <span class="sc">|&gt;</span></span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>  knitr<span class="sc">::</span><span class="fu">kable</span>(<span class="at">align =</span> <span class="st">"llrrr"</span>)</span></code></pre></div><button title="Salin ke Papan Klip" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div id="tbl-or" class="cell quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-or-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabel&nbsp;2: Odds ratio kolesterol tinggi dari regresi logistik terbobot (svyglm).
+</figcaption>
+<div aria-describedby="tbl-or-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell-output-display">
+<table class="cell caption-top table table-sm table-striped small">
+<colgroup>
+<col style="width: 30%">
+<col style="width: 37%">
+<col style="width: 7%">
+<col style="width: 16%">
+<col style="width: 8%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Variabel</th>
+<th style="text-align: left;">Kelompok</th>
+<th style="text-align: right;">OR</th>
+<th style="text-align: right;">IK 95%</th>
+<th style="text-align: right;">p</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">20–39</td>
+<td style="text-align: left;">Usia (ref: 0–19)</td>
+<td style="text-align: right;">9,77</td>
+<td style="text-align: right;">4,66 – 20,48</td>
+<td style="text-align: right;">&lt;0,001</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">40–59</td>
+<td style="text-align: left;">Usia (ref: 0–19)</td>
+<td style="text-align: right;">24,84</td>
+<td style="text-align: right;">11,10 – 55,56</td>
+<td style="text-align: right;">&lt;0,001</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">60+</td>
+<td style="text-align: left;">Usia (ref: 0–19)</td>
+<td style="text-align: right;">20,70</td>
+<td style="text-align: right;">9,36 – 45,74</td>
+<td style="text-align: right;">&lt;0,001</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Perempuan</td>
+<td style="text-align: left;">Jenis kelamin (ref: laki-laki)</td>
+<td style="text-align: right;">1,24</td>
+<td style="text-align: right;">1,02 – 1,50</td>
+<td style="text-align: right;">0,033</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Kulit putih non-Hispanik</td>
+<td style="text-align: left;">Ras/etnis (ref: Hispanik)</td>
+<td style="text-align: right;">0,92</td>
+<td style="text-align: right;">0,77 – 1,10</td>
+<td style="text-align: right;">0,316</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Kulit hitam non-Hispanik</td>
+<td style="text-align: left;">Ras/etnis (ref: Hispanik)</td>
+<td style="text-align: right;">0,65</td>
+<td style="text-align: right;">0,46 – 0,91</td>
+<td style="text-align: right;">0,019</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Lainnya</td>
+<td style="text-align: left;">Ras/etnis (ref: Hispanik)</td>
+<td style="text-align: right;">0,86</td>
+<td style="text-align: right;">0,40 – 1,85</td>
+<td style="text-align: right;">0,674</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</figure>
+</div>
+</div>
+<p>Setelah dikontrol usia dan ras/etnis, perempuan memiliki odds kolesterol tinggi <strong>1,24 kali</strong> dibanding laki-laki (IK 95%: 1,02–1,50).</p>
+</section>
+<section id="keterbatasan" class="level2">
+<h2 class="anchored" data-anchor-id="keterbatasan">Keterbatasan</h2>
+<ul>
+<li>Demo ini <strong>deskriptif dan tidak menggambarkan kondisi Indonesia</strong> — tujuannya memperagakan metode.</li>
+<li>Model sengaja dibuat sederhana; analisis nyata memerlukan kerangka konseptual, pemilihan variabel, dan pemeriksaan asumsi yang lebih lengkap.</li>
+<li>Kelompok usia 0–19 tahun jarang mengalami kolesterol tinggi, sehingga odds ratio kelompok usia lain terhadapnya memiliki interval yang lebar.</li>
+</ul>
+</section>
+<section id="bagaimana-kami-menerapkannya" class="level2">
+<h2 class="anchored" data-anchor-id="bagaimana-kami-menerapkannya">Bagaimana kami menerapkannya</h2>
+<p>Untuk data seperti <strong>SKI 2023</strong>, alurnya sama: deklarasi desain survei sesuai dokumentasi survei, estimasi prevalensi dengan IK 95%, lalu analisis multivariabel dengan <code>svyglm</code>. Hasilnya bisa disajikan sebagai tabel siap publikasi (misalnya dengan <code>gtsummary</code>) atau laporan Quarto seperti halaman ini.</p>
+
+
+</section>
+
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Kembali ke atas</a></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Disalin!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Disalin!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/numera-data\.github\.io\/website-numera");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© 2026 Numera Data · Health Data Research &amp; Analysis Consultant</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+<p>Dibuat dengan <a href="https://quarto.org">Quarto</a> &amp; R</p>
+</div>
+  </div>
+</footer>
+
+
+
+
+<script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>
