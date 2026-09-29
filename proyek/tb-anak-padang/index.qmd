@@ -1,0 +1,56 @@
+---
+title: "Pemodelan Spasial TB Anak di Kota Padang, 2018–2023"
+description: "Pemodelan spasial distribusi TB anak berdasarkan determinan host, dilengkapi studi determinan dan upaya pencegahan di tingkat puskesmas."
+date: 2025-03-01
+image: thumbnail.svg
+categories: ["Tuberkulosis", "Analisis Spasial", "Kesehatan Anak"]
+author:
+  - Falah Fauzi
+---
+
+::: {.project-meta}
+::: {}
+[Tahun]{.label}
+
+[2025]{.value}
+:::
+::: {}
+[Peran]{.label}
+
+[Asisten penelitian]{.value}
+:::
+::: {}
+[Data]{.label}
+
+[Kasus TB anak 2018–2023]{.value}
+:::
+::: {}
+[Luaran]{.label}
+
+[Penelitian & pengabdian]{.value}
+:::
+:::
+
+## Latar belakang
+
+Tuberkulosis pada anak sering tidak terdeteksi dan menjadi penanda penularan yang masih
+berlangsung di masyarakat. Memetakan distribusinya membantu menentukan wilayah prioritas
+penemuan kasus dan pencegahan.
+
+## Peran tim
+
+Falah Fauzi berkontribusi sebagai asisten dosen di FKM Universitas Andalas pada rangkaian
+penelitian dan pengabdian masyarakat tentang TB.
+
+## Data & metode
+
+- Data kasus TB anak Kota Padang **tahun 2018–2023**.
+- **Pemodelan spasial** distribusi dan hubungan TB anak dengan determinan host.
+- Studi determinan kejadian TB anak di wilayah kerja Puskesmas Andalas (2025).
+
+## Luaran
+
+- *Pemodelan Spasial Distribusi dan Hubungan TB Anak Berdasarkan Determinan Host di Kota Padang Tahun 2018–2023*
+- *Determinan Kejadian TB Anak dan Upaya Pencegahan TB Anak di Wilayah Kerja Puskesmas Andalas Tahun 2025*
+- *Analisis Determinan Kualitas Hidup Pasien Tuberkulosis di Kabupaten Dharmasraya Tahun 2025*
+- Pengabdian masyarakat: pembentukan dan pemberdayaan kader **PEKA TB** di SMPN 31 Padang untuk pencegahan TB pada remaja.

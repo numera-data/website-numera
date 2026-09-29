@@ -1,0 +1,35 @@
+---
+title: "Aldy Yusra, S.K.M., M.Epid."
+subtitle: "Data Analyst"
+description: "Epidemiolog dengan latar belakang kesehatan masyarakat. Profil lengkap segera diperbarui."
+image: aldy.jpg
+order: 2
+toc: false
+about:
+  template: trestles
+  image-shape: rounded
+  image-width: 14em
+  links:
+    - icon: envelope
+      text: Email
+      href: mailto:falah@numera.org
+    - icon: github
+      text: GitHub
+      href: https://github.com/numera-data
+---
+
+Aldy adalah anggota tim Numera Data dengan latar belakang Sarjana Kesehatan Masyarakat dan
+Magister Epidemiologi.
+
+::: {.notice-soft}
+Profil lengkap — keahlian, pengalaman, pendidikan, publikasi, dan proyek — sedang disiapkan dan
+akan segera diperbarui.
+:::
+
+<!--
+TODO (setelah CV Aldy siap):
+- categories: [...]   ← 4–6 skill utama (di front matter)
+- description         ← bio singkat 1–2 kalimat
+- bagian Keahlian, Pengalaman, Pendidikan, Publikasi
+- salin blok `listing:` dari tim/falah.qmd dan ganti author menjadi "*Aldy Yusra*"
+-->

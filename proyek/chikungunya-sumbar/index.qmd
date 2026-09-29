@@ -1,0 +1,53 @@
+---
+title: "Analisis Spasial KLB Chikungunya di Sumatera Barat, 2024"
+description: "Analisis epidemiologi dan spasial berbasis SIG terhadap penyebaran KLB chikungunya di Kabupaten Solok, Sumatera Barat."
+date: 2025-02-01
+image: thumbnail.svg
+categories: ["Chikungunya", "Analisis Spasial", "Investigasi KLB"]
+author:
+  - Muhammad Ilham Basgoro
+---
+
+::: {.project-meta}
+::: {}
+[Tahun]{.label}
+
+[2024 – 2025]{.value}
+:::
+::: {}
+[Peran]{.label}
+
+[Analis data & penulis]{.value}
+:::
+::: {}
+[Data]{.label}
+
+[Kasus KLB 2024]{.value}
+:::
+::: {}
+[Luaran]{.label}
+
+[1 artikel terbit]{.value}
+:::
+:::
+
+## Latar belakang
+
+Kejadian luar biasa (KLB) chikungunya dapat menyebar cepat antarwilayah. Analisis spasial
+membantu melihat pola penyebaran dan menentukan wilayah yang perlu diprioritaskan untuk
+pengendalian vektor.
+
+## Peran tim
+
+Muhammad Ilham Basgoro berperan sebagai **enumerator, pengolah data, analis data, dan penulis
+manuskrip** di bawah supervisi dosen Departemen Kesehatan Masyarakat FKM Universitas Andalas.
+
+## Data & metode
+
+- Data kasus KLB chikungunya di Provinsi Sumatera Barat **tahun 2024**.
+- Analisis epidemiologi deskriptif dan **analisis spasial berbasis SIG**.
+
+## Luaran
+
+- Pradipta, Y., Novnariza, E., Basgoro, M.I., Masrizal, M. *The Spread of the Chikungunya Outbreak in Solok District, West Sumatra Province — 2024.* Contagion 7(1) (2025). [doi:10.30829/contagion.v7i1.24246](https://doi.org/10.30829/contagion.v7i1.24246)
+- Satu manuskrip lanjutan tentang epidemiologi chikungunya sedang direview di *Berita Kedokteran Masyarakat* UGM (SINTA 3).

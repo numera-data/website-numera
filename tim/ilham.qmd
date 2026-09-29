@@ -1,0 +1,98 @@
+---
+title: "Muhammad Ilham Basgoro, S.K.M., M.Epid."
+subtitle: "Data Analyst"
+description: "Analisis survei kesehatan kompleks dengan R, pemetaan SIG dengan QGIS, dan dashboard surveilans interaktif."
+image: ilham.jpg
+order: 3
+categories: ["R", "Analisis Survei Kompleks", "QGIS", "Shiny & Quarto", "Stata", "SPSS"]
+toc: false
+listing:
+  id: proyek-anggota
+  contents: ../proyek/*/index.qmd
+  type: table
+  fields: [date, title, categories]
+  field-display-names:
+    date: Tahun
+    title: Proyek
+    categories: Kategori
+  date-format: "YYYY"
+  sort: "date desc"
+  sort-ui: false
+  filter-ui: false
+  include:
+    author: "*Muhammad Ilham Basgoro*"
+about:
+  template: trestles
+  image-shape: rounded
+  image-width: 14em
+  links:
+    - icon: envelope
+      text: Email
+      href: mailto:falah@numera.org
+    - icon: github
+      text: GitHub
+      href: https://github.com/numera-data
+---
+
+Ilham adalah epidemiolog lulusan Magister Epidemiologi Universitas Andalas dengan predikat
+**Lulusan Terbaik 2026**. Tesis dan skripsinya menganalisis data Survei Kesehatan Indonesia (SKI)
+2023 tentang filariasis limfatik. Ia berpengalaman sebagai pengolah data, analis, dan penulis
+manuskrip di berbagai penelitian — mulai dari analisis spasial KLB chikungunya hingga pemetaan
+iklan rokok di sekitar sekolah — serta aktif sebagai pelatih dan narasumber R dan QGIS untuk
+data kesehatan.
+
+## Keahlian
+
+[R: tidyverse, survey, gtsummary, ggplot2]{.skill} [Shiny]{.skill} [Quarto]{.skill}
+[QGIS]{.skill} [Stata]{.skill} [SPSS]{.skill} [Epi Info]{.skill} [KoboToolbox]{.skill}
+[Datawrapper]{.skill}
+
+**Metode:** desain potong lintang, analisis data sekunder survei kompleks, regresi logistik
+multivariabel, analisis epidemiologi spasial.
+
+## Pengalaman
+
+- **Asisten Akademik** · Departemen Kesehatan Masyarakat, FKM Universitas Andalas · _Maret 2026 – sekarang_ \
+  Menelaah dan menyunting proposal hibah penelitian, serta mendampingi pengolahan dan analisis data
+  skripsi mahasiswa.
+- **Asisten Peneliti** · Departemen Kesehatan Masyarakat, FKM Universitas Andalas · _2024 – 2026_ \
+  Enumerator, pengolah data, analis data, dan penulis manuskrip di 10 penelitian,
+  termasuk spesialis pemetaan SIG untuk survei Kawasan Tanpa Rokok dan iklan rokok (2026), serta
+  proyek hibah STRIPE bersama Pusat Kedokteran Tropis UGM (2025).
+- **Studi Lapangan Surveilans Epidemiologi** · Dinas Kesehatan Kota Padang · _September – Oktober 2025_ \
+  Investigasi KLB campak dan pertusis, analisis data DBD dan SKDR, peta kasus dan cakupan imunisasi
+  dengan QGIS, serta dashboard surveilans DBD dengan RStudio.
+- **Magang Surveilans Kekarantinaan Kesehatan** · Kantor Kekarantinaan Kesehatan Kelas I Dumai · _Juli – Agustus 2024_
+
+## Pendidikan
+
+- **Magister Epidemiologi (M.Epid.)** · Universitas Andalas · _2024 – 2026_ \
+  IPK 3,98 · Lulusan Terbaik Program Magister Epidemiologi 2026 · Program Fast-track
+- **Sarjana Kesehatan Masyarakat (S.K.M.)** · Universitas Andalas · _2021 – 2025_ \
+  IPK 3,80
+
+## Publikasi
+
+::: {.pub-list}
+1. Basgoro, M.I., Masrizal, M., Novirsa, R. Gambaran Konsumsi Obat Pencegahan Filariasis Limfatik di Indonesia: Analisis Data SKI 2023. *JITKT* 6(1):63–73 (2026). [doi:10.53579/jitkt.v6i1.324](https://doi.org/10.53579/jitkt.v6i1.324)
+2. Pradipta, Y., Novnariza, E., Basgoro, M.I., Masrizal, M. The Spread of the Chikungunya Outbreak in Solok District, West Sumatra Province — 2024. *Contagion* 7(1) (2025). [doi:10.30829/contagion.v7i1.24246](https://doi.org/10.30829/contagion.v7i1.24246)
+3. Rahman, A., Basgoro, M.I., et al. Faktor-Faktor yang Berhubungan dengan Kesiapsiagaan Terhadap Bencana Letusan Gunung Marapi di Provinsi Sumatera Barat. *JK3L* 6(2):187–192 (2025). [doi:10.25077/jk3l.6.2.187-192.2025](https://doi.org/10.25077/jk3l.6.2.187-192.2025)
+4. Triana, V., Basgoro, M.I., Hidayanti, A.E., et al. Empowering Youth: Strengthening Awareness of Sexual Education as A Shield to Prevent HIV and Sexually Transmitted Infections in Juvenile Correctional Institutions. *Warta Pengabdian Andalas* 32(1):120–130 (2025). [doi:10.25077/jwa.32.1.120-130.2025](https://doi.org/10.25077/jwa.32.1.120-130.2025)
+5. Augia, T., Basgoro, M.I., Satriya, M.A., et al. Pelatihan Mitigasi Bencana kepada Kelompok Siaga Bencana (KSB) di Kelurahan Batang Arau, Kecamatan Padang Selatan, Kota Padang. *Warta Pengabdian Andalas* 31(3):452–459 (2024). [doi:10.25077/jwa.31.3.452-459.2024](https://doi.org/10.25077/jwa.31.3.452-459.2024)
+6. Augia, T., Basgoro, M.I., Satriya, M.A. Training on Eco-Enzyme Production From Fruit Waste for the Community of Mata Air Village, in Padang Selatan Subdistrict, Padang City. *Warta Pengabdian Andalas* 31(2):285–294 (2024). [doi:10.25077/jwa.31.2.285-294.2024](https://doi.org/10.25077/jwa.31.2.285-294.2024)
+:::
+
+[Tiga manuskrip lain sedang dalam proses review/submit.]{.muted}
+
+## Sertifikasi, pelatihan & narasumber
+
+- **Certified Data Analyst — Data Management** · _2025 (berlaku hingga 2028)_
+- Pelatih *QGIS for Health Data Mapping* · Dinas Kesehatan Provinsi Sumatera Barat & Dinas Kesehatan Kota Padang · _2026_
+- Narasumber webinar *Boost Your Data Skills through RStudio and QGIS Spatial Mapping* · _2025_
+- Narasumber webinar *QGIS 101 — Epidemiology on the Map* · _2025_
+- Narasumber webinar *Introduction to Quantitative Data Analysis* · _2025_
+
+## Proyek yang melibatkan Ilham
+
+:::{#proyek-anggota}
+:::

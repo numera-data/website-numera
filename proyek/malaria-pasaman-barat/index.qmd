@@ -1,0 +1,55 @@
+---
+title: "Ekologi dan Iklim Malaria di Kabupaten Pasaman Barat, 2020–2024"
+description: "Studi ekologi berbasis SIG tentang peningkatan kasus malaria di wilayah pasca-eliminasi, termasuk analisis faktor iklim lima tahun."
+date: 2025-06-01
+image: thumbnail.svg
+categories: ["Malaria", "SIG", "Studi Ekologi"]
+author:
+  - Falah Fauzi
+---
+
+::: {.project-meta}
+::: {}
+[Tahun]{.label}
+
+[2024 – 2025]{.value}
+:::
+::: {}
+[Peran]{.label}
+
+[Asisten penelitian]{.value}
+:::
+::: {}
+[Data]{.label}
+
+[Kasus malaria 2020–2024]{.value}
+:::
+::: {}
+[Luaran]{.label}
+
+[3 studi terkait]{.value}
+:::
+:::
+
+## Latar belakang
+
+Wilayah yang telah mencapai eliminasi malaria tetap berisiko mengalami peningkatan kasus,
+misalnya akibat perubahan iklim dan mobilitas penduduk. Kabupaten Pasaman Barat menjadi lokasi
+kajian untuk memahami pola tersebut.
+
+## Peran tim
+
+Falah Fauzi terlibat sebagai asisten dosen dan asisten penelitian di FKM Universitas Andalas,
+dengan kontribusi pada pengolahan dan analisis data.
+
+## Data & metode
+
+- Data kasus malaria Kabupaten Pasaman Barat **tahun 2020–2024**.
+- Studi ekologi berbasis **Sistem Informasi Geografis (SIG)**.
+- Analisis determinan ekologis dan faktor **iklim** selama lima tahun.
+
+## Luaran
+
+- *Studi Ekologi Peningkatan Kasus Malaria di Kabupaten Pasaman Barat Tahun 2020–2024 Berbasis Sistem Informasi Geografis (SIG)*
+- *Ecological Determinants of Malaria in a Post-Elimination Setting: A Five-Year Climatic Analysis in West Pasaman Regency, Indonesia*
+- *Valuation of Malaria Migration Surveillance System in a Post-Elimination Setting: A Study in West Pasaman District, Indonesia*

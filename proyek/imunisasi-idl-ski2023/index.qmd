@@ -1,0 +1,56 @@
+---
+title: "Determinan Imunisasi Dasar Lengkap: Analisis Data SKI 2023"
+description: "Studi komparatif determinan cakupan imunisasi dasar lengkap di Provinsi Aceh dan Bali, dilengkapi analisis determinan di Sumatera Barat."
+date: 2025-12-01
+image: thumbnail.svg
+categories: ["Imunisasi", "Analisis Survei", "SKI 2023"]
+author:
+  - Falah Fauzi
+---
+
+::: {.project-meta}
+::: {}
+[Tahun]{.label}
+
+[2024 – 2025]{.value}
+:::
+::: {}
+[Peran]{.label}
+
+[Peneliti utama]{.value}
+:::
+::: {}
+[Data]{.label}
+
+[SKI 2023]{.value}
+:::
+::: {}
+[Luaran]{.label}
+
+[Tesis · artikel SINTA 4]{.value}
+:::
+:::
+
+## Latar belakang
+
+Cakupan imunisasi dasar lengkap (IDL) masih berbeda cukup jauh antarprovinsi di Indonesia.
+Membandingkan provinsi dengan karakteristik berbeda membantu mengidentifikasi determinan yang
+bisa menjadi sasaran program.
+
+## Peran tim
+
+Falah Fauzi melakukan penelitian ini sebagai tesis Magister Epidemiologi di Fakultas Kesehatan
+Masyarakat Universitas Andalas, sekaligus menulis artikel ilmiah dari analisis data yang sama
+untuk Provinsi Sumatera Barat.
+
+## Data & metode
+
+- Data sekunder **Survei Kesehatan Indonesia (SKI) 2023**.
+- Studi komparatif determinan cakupan IDL di **Provinsi Aceh** dan **Provinsi Bali**.
+- Analisis determinan capaian IDL di **Provinsi Sumatera Barat**.
+
+## Luaran
+
+- Tesis: *Studi Komparatif Determinan Cakupan Imunisasi Dasar Lengkap di Provinsi Aceh dan Provinsi Bali (Analisis Data SKI Tahun 2023)* — Magister Epidemiologi, Universitas Andalas (2025).
+- Artikel: *Determinants of Complete Basic Immunization Achievement in West Sumatra Province (Analysis of SKI 2023)* — jurnal terakreditasi SINTA 4.
+- Penelitian terkait di tingkat layanan: *Analisis Pelaksanaan Imunisasi Dasar Lengkap di Puskesmas Anak Air Kota Padang Tahun 2024* (skripsi, 2024).

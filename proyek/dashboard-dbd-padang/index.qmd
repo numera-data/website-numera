@@ -1,0 +1,54 @@
+---
+title: "Dashboard Surveilans DBD Dinas Kesehatan Kota Padang"
+description: "Dashboard surveilans demam berdarah dengue dengan R, dibangun selama studi lapangan di Bidang Surveilans Epidemiologi."
+date: 2025-10-01
+image: thumbnail.svg
+categories: ["DBD", "Dashboard", "R", "Surveilans"]
+author:
+  - Muhammad Ilham Basgoro
+---
+
+::: {.project-meta}
+::: {}
+[Tahun]{.label}
+
+[2025]{.value}
+:::
+::: {}
+[Peran]{.label}
+
+[Analis data]{.value}
+:::
+::: {}
+[Mitra]{.label}
+
+[Dinkes Kota Padang]{.value}
+:::
+::: {}
+[Luaran]{.label}
+
+[Dashboard & peta kasus]{.value}
+:::
+:::
+
+## Latar belakang
+
+Data surveilans demam berdarah dengue (DBD) dilaporkan secara rutin, tetapi sering hanya
+tersimpan dalam tabel. Dashboard membantu petugas melihat tren dan sebaran kasus dengan cepat.
+
+## Peran tim
+
+Selama studi lapangan di **Bidang Surveilans Epidemiologi Dinas Kesehatan Kota Padang**
+(September – Oktober 2025), Muhammad Ilham Basgoro menganalisis data rutin DBD dan SKDR serta
+membangun dashboard surveilans DBD dengan **RStudio**.
+
+## Kegiatan terkait
+
+- Investigasi dan respons KLB **campak** dan **pertusis**.
+- Peta kasus campak, difteri, rabies, dan pertusis serta **peta cakupan imunisasi** dengan QGIS.
+- Pelaksanaan *Transmission Assessment Survey* (TAS) filariasis.
+
+## Luaran
+
+- Dashboard surveilans DBD berbasis R.
+- Peta kasus penyakit dan cakupan imunisasi untuk Bidang Surveilans Epidemiologi.

@@ -1,0 +1,89 @@
+---
+title: "Falah Fauzi, S.K.M., M.Epid."
+subtitle: "Data Analyst"
+description: "Epidemiolog dengan fokus surveilans penyakit menular, program imunisasi, dan epidemiologi spasial berbasis SIG."
+image: falah.jpg
+order: 1
+categories: ["SPSS", "R", "Epi Info", "SIG & Analisis Spasial", "Penulisan Ilmiah"]
+toc: false
+listing:
+  id: proyek-anggota
+  contents: ../proyek/*/index.qmd
+  type: table
+  fields: [date, title, categories]
+  field-display-names:
+    date: Tahun
+    title: Proyek
+    categories: Kategori
+  date-format: "YYYY"
+  sort: "date desc"
+  sort-ui: false
+  filter-ui: false
+  include:
+    author: "*Falah Fauzi*"
+about:
+  template: trestles
+  image-shape: rounded
+  image-width: 14em
+  links:
+    - icon: envelope
+      text: Email
+      href: mailto:falah@numera.org
+    - icon: github
+      text: GitHub
+      href: https://github.com/numera-data
+---
+
+Falah adalah peneliti epidemiologi dan praktisi kesehatan masyarakat lulusan Magister
+Epidemiologi Universitas Andalas (konsentrasi Epidemiologi Komunitas). Ia berpengalaman dalam
+surveilans penyakit menular, analisis program imunisasi, epidemiologi spasial, dan penelitian
+berbasis SIG. Sebagai asisten penelitian, Falah terlibat dalam analisis data berbagai studi klinis
+dan epidemiologi lintas bidang — kesehatan reproduksi, pediatri, neurologi, dan penyakit infeksi —
+serta aktif sebagai editor buku kesehatan.
+
+## Keahlian
+
+[SPSS]{.skill} [Microsoft Excel]{.skill} [R]{.skill} [Epi Info]{.skill}
+[Analisis Spasial & SIG]{.skill} [Penulisan Ilmiah]{.skill} [Penyuntingan Buku]{.skill}
+
+## Pengalaman
+
+- **Asisten Dosen** · Fakultas Kesehatan Masyarakat, Universitas Andalas · _2024 – 2025_ \
+  Mendukung penelitian dosen, antara lain studi ekologi malaria di Pasaman Barat berbasis SIG,
+  pemodelan spasial TB anak di Kota Padang, dan determinan kualitas hidup pasien TB di Dharmasraya.
+- **Asisten Penelitian** · berbagai studi klinis dan epidemiologi · analisis data untuk 16 penelitian
+  di bidang kesehatan reproduksi, pediatri, neurologi, penyakit infeksi, dan kesehatan lingkungan.
+- **Surveyor Tracer Study** · Universitas Andalas · _2024_
+- **Studi Lapangan Sistem Kekarantinaan Kesehatan** · KKP Kelas I Padang · _Agustus – September 2024_
+- **Magang Bidang Pencegahan dan Kesiapsiagaan** · BPBD Provinsi Sumatera Barat · _November 2023_
+- **Praktik Belajar Lapangan** · Puskesmas Sialang, Kabupaten Lima Puluh Kota · _September 2023_
+
+## Pendidikan
+
+- **Magister Epidemiologi (M.Epid.)** · Universitas Andalas · _2024 – 2025_ \
+  Konsentrasi Epidemiologi Komunitas · IPK 3,90 · Program Fast-track
+- **Sarjana Kesehatan Masyarakat (S.K.M.)** · Universitas Andalas · _2020 – 2024_ \
+  Peminatan Administrasi Kebijakan Kesehatan · IPK 3,76
+
+## Publikasi pilihan
+
+::: {.pub-list}
+- Determinants of Complete Basic Immunization Achievement in West Sumatra Province (Analysis of SKI 2023). *Jurnal terakreditasi SINTA 4.*
+- Peningkatan Kapasitas Kader Posyandu melalui Edukasi Deteksi Dini Kasus Kelumpuhan Layuh Mendadak (AFP) di Wilayah Kerja Puskesmas Ophir, Kabupaten Pasaman Barat. *Jurnal Bina.* [doi:10.25077/bina.v8i3.795](https://doi.org/10.25077/bina.v8i3.795)
+- Pencegahan Penyakit Menular melalui Edukasi dan Tindakan Preventif Berbasis Permainan Flash Card bagi Siswa SDN 04 Gaung Padang. *Jurnal Bina.* [doi:10.25077/bina.v7i4.719](https://doi.org/10.25077/bina.v7i4.719)
+:::
+
+**Editor 12 buku kesehatan** (Mitra Ilmu Makassar & Penerbit Mafy), antara lain *Iklim dan COVID-19*,
+*Campak, Aspek Iklim, dan Migrasi Penduduk*, *Pencegahan dan Pengendalian Tuberkulosis*, dan
+*Imunisasi Polio: Mengenal Polio dan Penanggulangannya*.
+
+## Organisasi & penghargaan
+
+- Anggota Ikatan Ahli Kesehatan Masyarakat Indonesia (IAKMI) Sumatera Barat · _2025_
+- Gubernur Badan Eksekutif Mahasiswa FKM Universitas Andalas · _2023_
+- Duta Kecerdasan (Ambassador of Intelligence) FKM Universitas Andalas · _2022_
+
+## Proyek yang melibatkan Falah
+
+:::{#proyek-anggota}
+:::

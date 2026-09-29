@@ -1,0 +1,17 @@
+---
+title: "Proyek"
+subtitle: "Penelitian dan proyek analisis data kesehatan yang dikerjakan anggota tim, beserta luaran ilmiahnya."
+page-layout: full
+toc: false
+listing:
+  contents: proyek/*/index.qmd
+  type: grid
+  grid-columns: 3
+  sort: "date desc"
+  categories: true
+  sort-ui: [date, title]
+  filter-ui: true
+  fields: [image, date, title, description, categories]
+  image-height: 190px
+  date-format: "YYYY"
+---

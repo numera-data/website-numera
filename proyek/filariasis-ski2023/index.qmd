@@ -1,0 +1,58 @@
+---
+title: "Konsumsi Obat Pencegahan Filariasis saat POPM: Analisis Data SKI 2023"
+description: "Faktor yang berhubungan dengan konsumsi obat pencegahan pada Pemberian Obat Pencegahan Massal (POPM) filariasis limfatik di Indonesia."
+date: 2026-03-01
+image: thumbnail.svg
+categories: ["Filariasis", "Analisis Survei Kompleks", "SKI 2023"]
+author:
+  - Muhammad Ilham Basgoro
+---
+
+::: {.project-meta}
+::: {}
+[Tahun]{.label}
+
+[2025 – 2026]{.value}
+:::
+::: {}
+[Peran]{.label}
+
+[Peneliti utama]{.value}
+:::
+::: {}
+[Data]{.label}
+
+[SKI 2023]{.value}
+:::
+::: {}
+[Luaran]{.label}
+
+[Tesis · skripsi · artikel]{.value}
+:::
+:::
+
+## Latar belakang
+
+Eliminasi filariasis limfatik bergantung pada cakupan **Pemberian Obat Pencegahan secara Massal
+(POPM)** — obat yang dibagikan baru berdampak bila benar-benar diminum. Memahami faktor yang
+berhubungan dengan konsumsi obat membantu program menjangkau kelompok yang belum patuh.
+
+## Peran tim
+
+Muhammad Ilham Basgoro melakukan penelitian ini sebagai tesis Magister Epidemiologi di FKM
+Universitas Andalas dan meraih predikat **Lulusan Terbaik** program tersebut (2026). Skripsinya
+juga menganalisis filariasis dari data survei yang sama.
+
+## Data & metode
+
+- Data sekunder **Survei Kesehatan Indonesia (SKI) 2023** berskala nasional.
+- Analisis faktor yang berhubungan dengan konsumsi obat pencegahan saat POPM.
+
+## Luaran
+
+- Tesis: *Factors Associated with Preventive Drug Consumption during Mass Drug Administration for Lymphatic Filariasis in Indonesia: Analysis of the 2023 Indonesian Health Survey (SKI 2023)* (2026).
+- Skripsi: *Factors Associated with the Incidence of Lymphatic Filariasis in West Sumatra Province: Analysis of the 2023 Indonesian Health Survey (SKI 2023)* (2025).
+- Artikel: Basgoro, M.I., Masrizal, M., Novirsa, R. *Gambaran Konsumsi Obat Pencegahan Filariasis Limfatik di Indonesia: Analisis Data SKI 2023.* JITKT 6(1):63–73 (2026). [doi:10.53579/jitkt.v6i1.324](https://doi.org/10.53579/jitkt.v6i1.324)
+
+Lihat juga [demo alur analisis survei kompleks dengan R](../demo-survei-kompleks/index.qmd) yang
+menggunakan pendekatan serupa pada data terbuka.

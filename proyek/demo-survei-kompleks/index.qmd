@@ -1,0 +1,197 @@
+---
+title: "Demo: Estimasi Prevalensi dengan Desain Survei Kompleks di R"
+description: "Contoh alur analisis yang kami pakai untuk data survei kesehatan seperti SKI — diperagakan dengan data terbuka NHANES dan paket R survey."
+date: 2026-09-01
+image: thumbnail.svg
+categories: [R, Analisis Survei Kompleks, Demo Metode]
+author:
+  - Tim Numera Data
+engine: knitr
+---
+
+::: {.project-meta}
+::: {}
+[Jenis]{.label}
+
+[Demo metode]{.value}
+:::
+::: {}
+[Data]{.label}
+
+[NHANES 2009–2010 (terbuka)]{.value}
+:::
+::: {}
+[Tools]{.label}
+
+[R · survey · ggplot2]{.value}
+:::
+::: {}
+[Relevan untuk]{.label}
+
+[SKI, SDKI, Riskesdas]{.value}
+:::
+:::
+
+::: {.callout-note}
+## Tentang halaman ini
+Ini adalah **demonstrasi metode**, bukan proyek klien. Datanya berasal dari survei kesehatan
+nasional Amerika Serikat (NHANES 2009–2010) yang tersedia terbuka di paket R `survey`, sehingga
+seluruh kode bisa Anda jalankan ulang. Alur yang sama kami gunakan untuk survei kesehatan
+Indonesia yang juga memakai desain sampel kompleks.
+:::
+
+## Mengapa desain survei penting?
+
+Survei kesehatan berskala besar tidak memilih responden secara acak sederhana. Sampel diambil
+bertahap (**klaster**), dibagi per wilayah (**strata**), dan tiap responden mewakili jumlah
+penduduk yang berbeda (**bobot**). Jika ketiganya diabaikan, estimasi prevalensi bisa bias dan
+interval kepercayaannya terlalu sempit.
+
+## Data dan desain survei
+
+```{r}
+#| label: setup
+#| message: false
+library(survey)
+library(dplyr)
+library(ggplot2)
+library(scales)
+
+knitr::opts_chunk$set(dev = "png", dev.args = list(bg = "transparent"), dpi = 150)
+INK <- "#64748B"
+theme_set(
+  theme_minimal(base_size = 13) +
+    theme(
+      text = element_text(colour = INK), axis.text = element_text(colour = INK),
+      panel.grid.major = element_line(colour = alpha(INK, .18), linewidth = .4),
+      panel.grid.minor = element_blank(),
+      plot.background = element_rect(fill = "transparent", colour = NA),
+      panel.background = element_rect(fill = "transparent", colour = NA),
+      legend.position = "top", legend.justification = "left",
+      legend.background = element_rect(fill = "transparent", colour = NA)
+    )
+)
+pct <- function(x, d = 1) percent(x, accuracy = 10^-d, decimal.mark = ",")
+num <- function(x, d = 2) number(x, accuracy = 10^-d, decimal.mark = ",", big.mark = ".")
+
+data(nhanes)  # NHANES 2009–2010: kolesterol total > 240 mg/dL (HI_CHOL)
+dat <- nhanes |>
+  mutate(
+    usia = factor(agecat, labels = c("0–19", "20–39", "40–59", "60+")),
+    jenis_kelamin = factor(RIAGENDR, labels = c("Laki-laki", "Perempuan")),
+    ras = factor(race, labels = c("Hispanik", "Kulit putih non-Hispanik",
+                                  "Kulit hitam non-Hispanik", "Lainnya"))
+  )
+
+# Deklarasi desain: klaster (PSU), strata, dan bobot pemeriksaan
+desain <- svydesign(id = ~SDMVPSU, strata = ~SDMVSTRA, weights = ~WTMEC2YR,
+                    nest = TRUE, data = dat)
+desain
+```
+
+Data berisi **`r num(nrow(dat), 0)` responden**; `r num(sum(!is.na(dat$HI_CHOL)), 0)` di
+antaranya memiliki hasil pemeriksaan kolesterol.
+
+## Langkah 1 — Bandingkan estimasi tanpa dan dengan bobot
+
+```{r}
+#| label: tbl-bobot
+#| tbl-cap: "Prevalensi kolesterol tinggi: estimasi naif vs estimasi yang memperhitungkan desain survei."
+naif <- mean(dat$HI_CHOL, na.rm = TRUE)
+naif_se <- sqrt(naif * (1 - naif) / sum(!is.na(dat$HI_CHOL)))
+terbobot <- svymean(~HI_CHOL, desain, na.rm = TRUE)
+ik <- confint(terbobot)
+
+tibble(
+  Metode = c("Tanpa bobot (acak sederhana)", "Desain survei kompleks"),
+  Prevalensi = c(pct(naif), pct(coef(terbobot))),
+  `IK 95%` = c(paste(pct(naif - 1.96 * naif_se), "–", pct(naif + 1.96 * naif_se)),
+               paste(pct(ik[1]), "–", pct(ik[2]))),
+  `Galat baku (poin %)` = c(num(naif_se * 100), num(SE(terbobot) * 100))
+) |>
+  knitr::kable(align = "lrrr")
+```
+
+Mengabaikan desain survei menghasilkan prevalensi **`r pct(naif)`**, sedangkan estimasi yang
+benar adalah **`r pct(coef(terbobot))`**. Galat baku yang benar juga
+**`r num(SE(terbobot) / naif_se, 1)` kali lebih besar** daripada galat baku naif — tanpa desain survei, kita akan terlalu
+yakin terhadap angka yang keliru.
+
+## Langkah 2 — Prevalensi per kelompok dengan interval kepercayaan
+
+```{r}
+#| label: fig-prevalensi
+#| fig-cap: "Prevalensi kolesterol tinggi terbobot menurut kelompok usia dan jenis kelamin. Garis menunjukkan IK 95%."
+#| fig-width: 7.5
+#| fig-height: 4
+per_kel <- svyby(~HI_CHOL, ~usia + jenis_kelamin, desain, svymean, na.rm = TRUE)
+per_kel <- per_kel |>
+  as_tibble() |>
+  mutate(bawah = pmax(HI_CHOL - 1.96 * se, 0), atas = HI_CHOL + 1.96 * se)
+
+WARNA <- c("Laki-laki" = "#2A78D6", "Perempuan" = "#EB6834")
+geser <- position_dodge(width = .45)
+
+ggplot(per_kel, aes(usia, HI_CHOL, colour = jenis_kelamin)) +
+  geom_errorbar(aes(ymin = bawah, ymax = atas), width = 0, linewidth = .9, position = geser) +
+  geom_point(size = 3.2, position = geser) +
+  scale_colour_manual(values = WARNA, name = NULL) +
+  scale_y_continuous(labels = \(x) pct(x, 0), limits = c(0, NA),
+                     expand = expansion(mult = c(0, .08))) +
+  labs(x = "Kelompok usia (tahun)", y = "Prevalensi terbobot")
+```
+
+```{r}
+#| echo: false
+lk60 <- per_kel |> filter(usia == "60+", jenis_kelamin == "Laki-laki")
+pr60 <- per_kel |> filter(usia == "60+", jenis_kelamin == "Perempuan")
+```
+
+Prevalensi naik tajam setelah usia 20 tahun. Pada kelompok **60 tahun ke atas**, pola kedua jenis
+kelamin berpisah: `r pct(pr60$HI_CHOL)` pada perempuan dibanding `r pct(lk60$HI_CHOL)` pada
+laki-laki, dan interval kepercayaannya tidak bertumpang tindih.
+
+## Langkah 3 — Regresi logistik dengan desain survei
+
+```{r}
+#| label: tbl-or
+#| tbl-cap: "Odds ratio kolesterol tinggi dari regresi logistik terbobot (svyglm)."
+model <- svyglm(HI_CHOL ~ usia + jenis_kelamin + ras, design = desain,
+                family = quasibinomial())
+
+hasil <- cbind(OR = exp(coef(model)), exp(confint(model)),
+               p = summary(model)$coefficients[, 4])[-1, ]
+
+tibble(
+  Variabel = sub("^(usia|jenis_kelamin|ras)", "", rownames(hasil)),
+  Kelompok = c(rep("Usia (ref: 0–19)", 3), "Jenis kelamin (ref: laki-laki)",
+               rep("Ras/etnis (ref: Hispanik)", 3)),
+  OR = num(hasil[, "OR"]),
+  `IK 95%` = paste(num(hasil[, 2]), "–", num(hasil[, 3])),
+  p = ifelse(hasil[, "p"] < .001, "<0,001", num(hasil[, "p"], 3))
+) |>
+  knitr::kable(align = "llrrr")
+```
+
+```{r}
+#| echo: false
+or_pr <- hasil["jenis_kelaminPerempuan", ]
+```
+
+Setelah dikontrol usia dan ras/etnis, perempuan memiliki odds kolesterol tinggi
+**`r num(or_pr["OR"])` kali** dibanding laki-laki (IK 95%: `r num(or_pr[2])`–`r num(or_pr[3])`).
+
+## Keterbatasan
+
+- Demo ini **deskriptif dan tidak menggambarkan kondisi Indonesia** — tujuannya memperagakan metode.
+- Model sengaja dibuat sederhana; analisis nyata memerlukan kerangka konseptual, pemilihan variabel,
+  dan pemeriksaan asumsi yang lebih lengkap.
+- Kelompok usia 0–19 tahun jarang mengalami kolesterol tinggi, sehingga odds ratio kelompok usia
+  lain terhadapnya memiliki interval yang lebar.
+
+## Bagaimana kami menerapkannya
+
+Untuk data seperti **SKI 2023**, alurnya sama: deklarasi desain survei sesuai dokumentasi
+survei, estimasi prevalensi dengan IK 95%, lalu analisis multivariabel dengan `svyglm`. Hasilnya
+bisa disajikan sebagai tabel siap publikasi (misalnya dengan `gtsummary`) atau laporan Quarto
+seperti halaman ini.

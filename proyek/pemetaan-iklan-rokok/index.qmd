@@ -1,0 +1,56 @@
+---
+title: "Pemetaan Iklan Rokok di Sekitar Sekolah di Tiga Kabupaten"
+description: "Sembilan peta tematik QGIS untuk survei Kawasan Tanpa Rokok serta iklan, promosi, dan sponsor rokok di Agam, Lima Puluh Kota, dan Pasaman Barat."
+date: 2026-06-01
+image: thumbnail.svg
+categories: ["Pengendalian Tembakau", "QGIS", "Pemetaan"]
+author:
+  - Muhammad Ilham Basgoro
+---
+
+::: {.project-meta}
+::: {}
+[Tahun]{.label}
+
+[2026]{.value}
+:::
+::: {}
+[Peran]{.label}
+
+[Spesialis pemetaan SIG]{.value}
+:::
+::: {}
+[Wilayah]{.label}
+
+[3 kabupaten]{.value}
+:::
+::: {}
+[Luaran]{.label}
+
+[9 peta tematik]{.value}
+:::
+:::
+
+## Latar belakang
+
+Paparan iklan rokok di sekitar sekolah berkaitan dengan risiko anak dan remaja mulai merokok.
+Survei ini memetakan keberadaan iklan, promosi, dan sponsor rokok serta penerapan Kawasan Tanpa
+Rokok (KTR) di tiga kabupaten di Sumatera Barat.
+
+## Peran tim
+
+Muhammad Ilham Basgoro bertugas sebagai **spesialis pemetaan SIG** dalam survei yang dipimpin
+dosen FKM Universitas Andalas.
+
+## Data & metode
+
+Hasil survei lapangan di Kabupaten **Agam**, **Lima Puluh Kota**, dan **Pasaman Barat** diolah
+dengan **QGIS** menjadi:
+
+- Peta **kepadatan iklan rokok** di sepanjang jalan utama.
+- Peta sebaran iklan menurut jenisnya dalam **buffer 500 meter** di sekitar sekolah (baliho, spanduk, poster, stiker).
+- Peta sebaran iklan terhadap lokasi fasilitas pendidikan.
+
+## Luaran
+
+- **Sembilan peta tematik** untuk mendukung laporan survei.

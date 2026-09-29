@@ -1,0 +1,122 @@
+---
+pagetitle: "Numera Data — Health Data Research & Analysis Consultant"
+description: "Tim epidemiolog yang membantu peneliti, dinas kesehatan, dan organisasi kesehatan mengolah data survei, memetakan penyakit, dan menyusun luaran ilmiah."
+page-layout: full
+toc: false
+listing:
+  - id: proyek-unggulan
+    contents: proyek/*/index.qmd
+    type: grid
+    grid-columns: 3
+    max-items: 3
+    sort: "date desc"
+    fields: [image, title, description, categories]
+    image-height: 180px
+    exclude:
+      categories: "*Demo Metode*"
+---
+
+::: {.hero}
+
+::: {.hero-text}
+[Health Data Research & Analysis Consultant]{.eyebrow}
+
+# Data kesehatan yang dianalisis dengan [benar]{.hl}, disajikan dengan jelas.
+
+::: {.lead}
+Numera Data adalah tim epidemiolog yang membantu peneliti, dinas kesehatan, dan organisasi
+kesehatan mengolah data survei, memetakan penyakit, dan menyusun luaran ilmiah — dari desain
+analisis sampai manuskrip siap submit.
+:::
+
+::: {.hero-cta}
+[Lihat Proyek](proyek.qmd){.btn-brand}
+[Kenali Tim](tim.qmd){.btn-ghost}
+:::
+:::
+
+::: {.hero-visual aria-hidden="true"}
+[Estimasi prevalensi terbobot per kelompok · ilustrasi]{.kpi-label}
+
+```{=html}
+<div class="ci-plot">
+  <div class="ci-row"><span class="ci-lab">Kelompok A</span><span class="ci-track"><i style="left:12%;width:16%"></i><b style="left:20%"></b></span></div>
+  <div class="ci-row"><span class="ci-lab">Kelompok B</span><span class="ci-track"><i style="left:30%;width:20%"></i><b style="left:40%"></b></span></div>
+  <div class="ci-row"><span class="ci-lab">Kelompok C</span><span class="ci-track"><i style="left:48%;width:14%"></i><b style="left:55%"></b></span></div>
+  <div class="ci-row"><span class="ci-lab">Kelompok D</span><span class="ci-track"><i style="left:58%;width:24%"></i><b style="left:70%"></b></span></div>
+</div>
+<p class="ci-note">Titik = estimasi · garis = IK 95%</p>
+```
+:::
+
+:::
+
+<!-- Angka dirangkum dari CV anggota (per September 2026). Perbarui bila ada tambahan. -->
+::: {.stats}
+::: {.stat}
+[9]{.stat-num}
+[artikel jurnal ilmiah terbit]{.stat-label}
+:::
+::: {.stat}
+[12]{.stat-num}
+[buku kesehatan disunting]{.stat-label}
+:::
+::: {.stat}
+[25+]{.stat-num}
+[penelitian yang didukung]{.stat-label}
+:::
+::: {.stat}
+[3]{.stat-num}
+[Magister Epidemiologi]{.stat-label}
+:::
+:::
+
+::: {.section-head}
+## Layanan
+:::
+
+::: {.services}
+::: {.service}
+[<i class="bi bi-clipboard2-data"></i>]{.icon}
+
+### Analisis data survei kesehatan
+Analisis data sekunder SKI, SDKI, dan Riskesdas dengan desain survei kompleks — dari
+estimasi prevalensi sampai regresi logistik multivariabel.
+:::
+::: {.service}
+[<i class="bi bi-geo-alt"></i>]{.icon}
+
+### Epidemiologi spasial & pemetaan
+Peta tematik, kernel density, dan analisis buffer dengan QGIS untuk memetakan kasus dan
+faktor risiko penyakit.
+:::
+::: {.service}
+[<i class="bi bi-speedometer2"></i>]{.icon}
+
+### Dashboard surveilans
+Dashboard interaktif dengan R Shiny dan Quarto untuk memantau data kasus rutin secara berkala.
+:::
+::: {.service}
+[<i class="bi bi-journal-text"></i>]{.icon}
+
+### Pendampingan riset & pelatihan
+Pendampingan pengolahan data dan penulisan manuskrip, serta pelatihan R dan QGIS untuk
+tenaga kesehatan.
+:::
+:::
+
+::: {.section-head}
+## Proyek terbaru
+[Semua proyek →](proyek.qmd)
+:::
+
+::: {#proyek-unggulan}
+:::
+
+::: {.cta}
+## Punya data kesehatan yang perlu dianalisis?
+Ceritakan pertanyaan penelitian atau kebutuhan program Anda. Kami bantu menentukan analisis
+yang tepat sebelum mulai mengolah data.
+
+[Hubungi Kami](mailto:falah@numera.org){.btn-brand}
+:::
