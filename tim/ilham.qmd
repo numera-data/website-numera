@@ -1,10 +1,10 @@
 ---
 title: "Muhammad Ilham Basgoro, S.K.M., M.Epid."
-subtitle: "Data Analyst, Epidemiology and Biostatistic, Research Assistant, and GIS Enthusiast"
-description: "Analisis survei kesehatan kompleks dengan R, pemetaan SIG dengan QGIS, dan dashboard surveilans interaktif."
+subtitle: "Epidemiology Researcher & Health Data Analyst"
+description: "Supporting public health research through complex survey analysis, geospatial mapping, and the development of interactive surveillance dashboards."
 image: ilham.jpg
 order: 3
-categories: ["R", "Analisis Survei Kompleks", "QGIS", "Shiny & Quarto", "Stata", "SPSS"]
+categories: ['R', 'Complex Survey Analysis', 'QGIS', 'Shiny', 'Quarto']
 toc: false
 listing:
   id: proyek-anggota
