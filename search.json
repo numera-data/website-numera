@@ -168,53 +168,144 @@
     "text": "Luaran\n\nPradipta, Y., Novnariza, E., Basgoro, M.I., Masrizal, M. The Spread of the Chikungunya Outbreak in Solok District, West Sumatra Province — 2024. Contagion 7(1) (2025). doi:10.30829/contagion.v7i1.24246\nSatu manuskrip lanjutan tentang epidemiologi chikungunya sedang direview di Berita Kedokteran Masyarakat UGM (SINTA 3)."
   },
   {
-    "objectID": "tim/aldy.html",
-    "href": "tim/aldy.html",
-    "title": "Aldy Yusra, S.K.M., M.Epid.",
+    "objectID": "proyek/kepadatan-dbd/index.html",
+    "href": "proyek/kepadatan-dbd/index.html",
+    "title": "Peta Kepadatan Kasus DBD Kota Depok Tahun 2025",
     "section": "",
-    "text": "Aldy menekuni epidemiologi lingkungan di Program Magister Epidemiologi Universitas Andalas, dengan latar belakang Kesehatan dan Keselamatan Kerja (K3) serta Kesehatan Lingkungan. Ia meneliti hubungan polusi udara dan iklim dengan pneumonia pada balita, menggunakan R/RStudio — termasuk Distributed Lag Non-Linear Model (DLNM) — untuk analisis data epidemiologi dan QGIS untuk pemetaan. Pengalamannya mencakup penelitian lapangan, kolaborasi riset lintas institusi, respons bencana, dan asisten laboratorium.\nMinat riset: epidemiologi lingkungan, polusi udara dan iklim, epidemiologi spasial, epidemiologi bencana, dan riset paparan lingkungan."
+    "text": "Tahun\n2025\n\n\nPeran\nAnalisis spasial epidemiologi\n\n\nData\nTitik kasus DBD Kota Depok\n\n\nLuaran\nPeta kepadatan kasus DBD"
   },
   {
-    "objectID": "tim/aldy.html#keahlian",
-    "href": "tim/aldy.html#keahlian",
-    "title": "Aldy Yusra, S.K.M., M.Epid.",
+    "objectID": "proyek/kepadatan-dbd/index.html#latar-belakang",
+    "href": "proyek/kepadatan-dbd/index.html#latar-belakang",
+    "title": "Peta Kepadatan Kasus DBD Kota Depok Tahun 2025",
+    "section": "Latar belakang",
+    "text": "Latar belakang\nDemam Berdarah Dengue (DBD) merupakan salah satu penyakit berbasis vektor yang memiliki pola penyebaran dipengaruhi oleh faktor lingkungan, kepadatan penduduk, mobilitas masyarakat, dan kondisi wilayah. Analisis spasial diperlukan untuk mengidentifikasi pola distribusi kasus serta area dengan konsentrasi kasus yang lebih tinggi sehingga dapat mendukung penentuan prioritas intervensi pengendalian DBD."
+  },
+  {
+    "objectID": "proyek/kepadatan-dbd/index.html#tujuan-analisis",
+    "href": "proyek/kepadatan-dbd/index.html#tujuan-analisis",
+    "title": "Peta Kepadatan Kasus DBD Kota Depok Tahun 2025",
+    "section": "Tujuan analisis",
+    "text": "Tujuan analisis\nAnalisis ini bertujuan untuk menggambarkan distribusi spasial kasus DBD di Kota Depok tahun 2025 serta mengidentifikasi variasi kepadatan kasus antarwilayah melalui pendekatan pemetaan epidemiologi."
+  },
+  {
+    "objectID": "proyek/kepadatan-dbd/index.html#data-metode",
+    "href": "proyek/kepadatan-dbd/index.html#data-metode",
+    "title": "Peta Kepadatan Kasus DBD Kota Depok Tahun 2025",
+    "section": "Data & metode",
+    "text": "Data & metode\n\nData kasus DBD tahun 2025 dalam bentuk titik koordinat lokasi kasus.\nWilayah administrasi Kota Depok digunakan sebagai unit spasial analisis.\nAnalisis dilakukan melalui pemetaan distribusi titik kasus dan visualisasi kelas kepadatan kasus.\nKategori kepadatan kasus diklasifikasikan menjadi tiga kelas, yaitu rendah, sedang, dan tinggi."
+  },
+  {
+    "objectID": "proyek/kepadatan-dbd/index.html#hasil-analisis-spasial",
+    "href": "proyek/kepadatan-dbd/index.html#hasil-analisis-spasial",
+    "title": "Peta Kepadatan Kasus DBD Kota Depok Tahun 2025",
+    "section": "Hasil analisis spasial",
+    "text": "Hasil analisis spasial\nPeta menunjukkan distribusi kasus DBD yang tersebar di berbagai kecamatan di Kota Depok. Konsentrasi titik kasus terlihat lebih banyak pada beberapa wilayah bagian tengah Kota Depok, terutama di sekitar Kecamatan Sukmajaya, Pancoran Mas, dan wilayah sekitarnya.\nArea dengan kelas kepadatan tinggi menunjukkan lokasi dengan konsentrasi kasus yang relatif lebih besar dibandingkan wilayah lain. Sebaliknya, wilayah dengan kelas kepadatan rendah menunjukkan distribusi kasus yang lebih jarang atau tersebar."
+  },
+  {
+    "objectID": "proyek/kepadatan-dbd/index.html#interpretasi-epidemiologi",
+    "href": "proyek/kepadatan-dbd/index.html#interpretasi-epidemiologi",
+    "title": "Peta Kepadatan Kasus DBD Kota Depok Tahun 2025",
+    "section": "Interpretasi epidemiologi",
+    "text": "Interpretasi epidemiologi\nPola spasial kasus DBD di Kota Depok tahun 2025 menunjukkan adanya variasi geografis antarwilayah. Area dengan kepadatan kasus tinggi dapat menjadi prioritas untuk penguatan surveilans, pengendalian vektor, pemberantasan sarang nyamuk (PSN), serta intervensi berbasis wilayah.\nInterpretasi peta perlu mempertimbangkan bahwa kepadatan kasus tidak hanya dipengaruhi oleh jumlah kasus, tetapi juga oleh distribusi penduduk, luas wilayah, kondisi lingkungan, dan faktor sosial yang berperan terhadap risiko penularan DBD."
+  },
+  {
+    "objectID": "proyek/kepadatan-dbd/index.html#luaran",
+    "href": "proyek/kepadatan-dbd/index.html#luaran",
+    "title": "Peta Kepadatan Kasus DBD Kota Depok Tahun 2025",
+    "section": "Luaran",
+    "text": "Luaran\n\nPeta kepadatan kasus DBD Kota Depok tahun 2025.\nVisualisasi distribusi spasial titik kasus DBD.\nIdentifikasi wilayah dengan konsentrasi kasus lebih tinggi sebagai informasi pendukung pengendalian DBD berbasis wilayah.\n\nLihat juga dokumentasi analisis spasial lainnya untuk pendekatan pemetaan epidemiologi."
+  },
+  {
+    "objectID": "tim/ilham.html",
+    "href": "tim/ilham.html",
+    "title": "Muhammad Ilham Basgoro, S.K.M., M.Epid.",
+    "section": "",
+    "text": "Ilham adalah epidemiolog lulusan Magister Epidemiologi Universitas Andalas dengan predikat Lulusan Terbaik 2026. Tesis dan skripsinya menganalisis data Survei Kesehatan Indonesia (SKI) 2023 tentang filariasis limfatik. Ia berpengalaman sebagai pengolah data, analis, dan penulis manuskrip di berbagai penelitian — mulai dari analisis spasial KLB chikungunya hingga pemetaan iklan rokok di sekitar sekolah — serta aktif sebagai pelatih dan narasumber R dan QGIS untuk data kesehatan."
+  },
+  {
+    "objectID": "tim/ilham.html#keahlian",
+    "href": "tim/ilham.html#keahlian",
+    "title": "Muhammad Ilham Basgoro, S.K.M., M.Epid.",
     "section": "Keahlian",
-    "text": "Keahlian\nR / RStudio DLNM Pemodelan statistik QGIS Epidemiologi Lingkungan Epidemiologi Bencana Manajemen data\nMetode: penelitian data sekunder dan lapangan, desain studi epidemiologi, analisis hubungan paparan–dampak dengan efek tunda (lag), serta pemetaan dan analisis geospasial."
+    "text": "Keahlian\nR: tidyverse, survey, gtsummary, ggplot2 Shiny Quarto QGIS Stata SPSS Epi Info KoboToolbox Datawrapper\nMetode: desain studi cross-sectional, analisis data sekunder survei kompleks, regresi logistik multivariabel, analisis epidemiologi spasial."
   },
   {
-    "objectID": "tim/aldy.html#pengalaman-riset-akademik",
-    "href": "tim/aldy.html#pengalaman-riset-akademik",
-    "title": "Aldy Yusra, S.K.M., M.Epid.",
-    "section": "Pengalaman riset & akademik",
-    "text": "Pengalaman riset & akademik\n\nTesis Magister — Polusi Udara dan Pneumonia Balita di Kota Padang · 2026\nHubungan polutan udara dengan pneumonia balita memakai data 2023–2025 dan pendekatan DLNM di R untuk menilai pola paparan–dampak yang tertunda dan non-linear.\nKolaborator Riset Mahasiswa — Mikroplastik · 2026\nAnggota mahasiswa dalam kolaborasi riset mikroplastik dan paparan kesehatan lingkungan bersama Universitas Indonesia, Universitas Airlangga, dan universitas mitra di Jepang.\nAsisten Peneliti — Faktor Genetik, Obesitas, dan Hipertensi pada Mahasiswa · Kota Padang · Februari – Mei 2026\nAsisten Penelitian dan Pengabdian Masyarakat Dosen · FKM Universitas Andalas · 2026\nPenelitian Polusi Udara, Iklim, dan Pneumonia Balita · Kota Padang (periode studi 2023–2024) · Juni 2025\nPenelitian Integrasi Kearifan Lokal dalam Kurikulum Mitigasi Bencana · Kecamatan Sipora Selatan, Kepulauan Mentawai · 2025"
+    "objectID": "tim/ilham.html#pengalaman",
+    "href": "tim/ilham.html#pengalaman",
+    "title": "Muhammad Ilham Basgoro, S.K.M., M.Epid.",
+    "section": "Pengalaman",
+    "text": "Pengalaman\n\nAsisten Akademik · Departemen Kesehatan Masyarakat, FKM Universitas Andalas · Maret 2026 – sekarang\nMenelaah dan menyunting proposal hibah penelitian, serta mendampingi pengolahan dan analisis data skripsi mahasiswa.\nAsisten Peneliti · Departemen Kesehatan Masyarakat, FKM Universitas Andalas · 2024 – 2026\nEnumerator, pengolah data, analis data, dan penulis manuskrip di 10 penelitian, termasuk spesialis pemetaan SIG untuk survei Kawasan Tanpa Rokok dan iklan rokok (2026), serta proyek hibah STRIPE bersama Pusat Kedokteran Tropis UGM (2025).\nStudi Lapangan Surveilans Epidemiologi · Dinas Kesehatan Kota Padang · September – Oktober 2025\nInvestigasi KLB campak dan pertusis, analisis data DBD dan SKDR, peta kasus dan cakupan imunisasi dengan QGIS, serta dashboard surveilans DBD dengan R Shiny.\nMagang Surveilans Kekarantinaan Kesehatan · Kantor Kekarantinaan Kesehatan Kelas I Dumai · Juli – Agustus 2024"
   },
   {
-    "objectID": "tim/aldy.html#pengalaman-lapangan-kebencanaan",
-    "href": "tim/aldy.html#pengalaman-lapangan-kebencanaan",
-    "title": "Aldy Yusra, S.K.M., M.Epid.",
-    "section": "Pengalaman lapangan & kebencanaan",
-    "text": "Pengalaman lapangan & kebencanaan\n\nRelawan Respons Bencana — Epidemiologi / MDS Manager · Kabupaten Agam · Desember 2025\nMendukung manajemen informasi epidemiologi selama respons bencana (peran terkait WHO MDS).\nPengabdian Masyarakat — Pemberdayaan Nagari Tangguh Bencana · Palembayan, Kabupaten Agam · Juli 2026\nStudi Lapangan Kekarantinaan Kesehatan · Kota Padang · September 2025\nAsisten Laboratorium Praktikum K3KL · FKM Universitas Andalas · 2 tahun akademik\nMagang — Kajian Manajerial Kualitas Udara Ambien · PT Semen Padang · Oktober 2024\nMBKM Membangun Desa — Ketua Kelompok · peminatan K3 & Kesehatan Lingkungan · Agustus – Desember 2023"
-  },
-  {
-    "objectID": "tim/aldy.html#pendidikan",
-    "href": "tim/aldy.html#pendidikan",
-    "title": "Aldy Yusra, S.K.M., M.Epid.",
+    "objectID": "tim/ilham.html#pendidikan",
+    "href": "tim/ilham.html#pendidikan",
+    "title": "Muhammad Ilham Basgoro, S.K.M., M.Epid.",
     "section": "Pendidikan",
-    "text": "Pendidikan\n\nMagister Epidemiologi (M.Epid.) · Universitas Andalas · 2026\nPeminatan Epidemiologi Lingkungan\nSarjana Kesehatan Masyarakat (S.K.M.) · Universitas Andalas\nPeminatan Kesehatan dan Keselamatan Kerja serta Kesehatan Lingkungan"
+    "text": "Pendidikan\n\nMagister Epidemiologi (M.Epid.) · Universitas Andalas · 2024 – 2026\nIPK 3,98 · Lulusan Terbaik Program Magister Epidemiologi 2026 · Program Fast-track\nSarjana Kesehatan Masyarakat (S.K.M.) · Universitas Andalas · 2021 – 2025\nIPK 3,80"
   },
   {
-    "objectID": "tim/aldy.html#organisasi-penghargaan",
-    "href": "tim/aldy.html#organisasi-penghargaan",
-    "title": "Aldy Yusra, S.K.M., M.Epid.",
-    "section": "Organisasi & penghargaan",
-    "text": "Organisasi & penghargaan\n\nWakil Gubernur BEM KM FKM Universitas Andalas · 2023\nMahasiswa Berprestasi, FKM Universitas Andalas · 2024\nDuta Anti Rokok Sumatera Barat · 2024\nPemenang Insentif Artikel Ilmiah Program Kreativitas Mahasiswa (PKM) · 2024\nBest Human Resources and Development — Andalas Global Awards · 2022\n\nSerta 9 penghargaan lain pada kompetisi poster ilmiah, poster publik, dan video edukasi (2023–2024)."
+    "objectID": "tim/ilham.html#publikasi",
+    "href": "tim/ilham.html#publikasi",
+    "title": "Muhammad Ilham Basgoro, S.K.M., M.Epid.",
+    "section": "Publikasi",
+    "text": "Publikasi\n\n\nBasgoro, M.I., Masrizal, M., Novirsa, R. Gambaran Konsumsi Obat Pencegahan Filariasis Limfatik di Indonesia: Analisis Data SKI 2023. JITKT 6(1):63–73 (2026). doi:10.53579/jitkt.v6i1.324\nPradipta, Y., Novnariza, E., Basgoro, M.I., Masrizal, M. The Spread of the Chikungunya Outbreak in Solok District, West Sumatra Province — 2024. Contagion 7(1) (2025). doi:10.30829/contagion.v7i1.24246\nRahman, A., Basgoro, M.I., et al. Faktor-Faktor yang Berhubungan dengan Kesiapsiagaan Terhadap Bencana Letusan Gunung Marapi di Provinsi Sumatera Barat. JK3L 6(2):187–192 (2025). doi:10.25077/jk3l.6.2.187-192.2025\nTriana, V., Basgoro, M.I., Hidayanti, A.E., et al. Empowering Youth: Strengthening Awareness of Sexual Education as A Shield to Prevent HIV and Sexually Transmitted Infections in Juvenile Correctional Institutions. Warta Pengabdian Andalas 32(1):120–130 (2025). doi:10.25077/jwa.32.1.120-130.2025\nAugia, T., Basgoro, M.I., Satriya, M.A., et al. Pelatihan Mitigasi Bencana kepada Kelompok Siaga Bencana (KSB) di Kelurahan Batang Arau, Kecamatan Padang Selatan, Kota Padang. Warta Pengabdian Andalas 31(3):452–459 (2024). doi:10.25077/jwa.31.3.452-459.2024\nAugia, T., Basgoro, M.I., Satriya, M.A. Training on Eco-Enzyme Production From Fruit Waste for the Community of Mata Air Village, in Padang Selatan Subdistrict, Padang City. Warta Pengabdian Andalas 31(2):285–294 (2024). doi:10.25077/jwa.31.2.285-294.2024\n\n\nTiga manuskrip lain sedang dalam proses review/submit."
   },
   {
-    "objectID": "tim/aldy.html#proyek-yang-melibatkan-aldy",
-    "href": "tim/aldy.html#proyek-yang-melibatkan-aldy",
-    "title": "Aldy Yusra, S.K.M., M.Epid.",
-    "section": "Proyek yang melibatkan Aldy",
-    "text": "Proyek yang melibatkan Aldy\n\n\n\n\n\nTahun\n\n\nProyek\n\n\nKategori\n\n\n\n\n\n\n2026\n\n\nPolusi Udara, Iklim, dan Pneumonia Balita di Kota Padang\n\n\nEpidemiologi Lingkungan, Polusi Udara, DLNM, R\n\n\n\n\n2025\n\n\nManajemen Informasi Epidemiologi saat Respons Bencana di Kabupaten Agam\n\n\nEpidemiologi Bencana, Surveilans, Respons Darurat\n\n\n\n\nTidak ada yang cocok"
+    "objectID": "tim/ilham.html#sertifikasi-pelatihan-narasumber",
+    "href": "tim/ilham.html#sertifikasi-pelatihan-narasumber",
+    "title": "Muhammad Ilham Basgoro, S.K.M., M.Epid.",
+    "section": "Sertifikasi, pelatihan & narasumber",
+    "text": "Sertifikasi, pelatihan & narasumber\n\nCertified Data Analyst — Data Management · 2025 (berlaku hingga 2028)\nPelatih QGIS for Health Data Mapping · Dinas Kesehatan Provinsi Sumatera Barat & Dinas Kesehatan Kota Padang · 2026\nNarasumber webinar Boost Your Data Skills through RStudio and QGIS Spatial Mapping · 2025\nNarasumber webinar QGIS 101 — Epidemiology on the Map · 2025\nNarasumber webinar Introduction to Quantitative Data Analysis · 2025"
+  },
+  {
+    "objectID": "tim/ilham.html#proyek-yang-melibatkan-ilham",
+    "href": "tim/ilham.html#proyek-yang-melibatkan-ilham",
+    "title": "Muhammad Ilham Basgoro, S.K.M., M.Epid.",
+    "section": "Proyek yang melibatkan Ilham",
+    "text": "Proyek yang melibatkan Ilham\n\n\n\n\n\nTahun\n\n\nProyek\n\n\nKategori\n\n\n\n\n\n\n2026\n\n\nPemetaan Iklan Rokok di Sekitar Sekolah di Tiga Kabupaten\n\n\nPengendalian Tembakau, QGIS, Pemetaan\n\n\n\n\n2026\n\n\nKonsumsi Obat Pencegahan Filariasis saat POPM: Analisis Data SKI 2023\n\n\nFilariasis, Analisis Survei Kompleks, SKI 2023\n\n\n\n\n2025\n\n\nDashboard Surveilans DBD Kota Padang, 2023–2024\n\n\nDBD, Dashboard, R, Shiny, Surveilans\n\n\n\n\n2025\n\n\nAnalisis Spasial KLB Chikungunya di Sumatera Barat, 2024\n\n\nChikungunya, Analisis Spasial, Investigasi KLB\n\n\n\n\nTidak ada yang cocok"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Evidence Starts With Better Data.",
+    "section": "",
+    "text": "EPIDEMIOLOGY & HEALTH DATA CONSULTING\n\n\n\nNUMERA membantu mengolah, menganalisis, dan memvisualisasikan data kesehatan menjadi insight yang mendukung penelitian dan keputusan berbasis bukti.\n\n\nLihat Proyek Kenali Tim\n\n\n\n\nContoh luaran · peta tematik\n\n\n  \n    \n    Peta Tingkat Konsumsi Obat Penyakit Filariasis \n  \n  \n    \n     Spatial Distribution Map of Iron (Fe) Concetration\n  \n  \n    \n    Peta Kepadatan Kasus DBD di Depok"
+  },
+  {
+    "objectID": "index.html#layanan",
+    "href": "index.html#layanan",
+    "title": "Evidence Starts With Better Data.",
+    "section": "Layanan",
+    "text": "Layanan"
+  },
+  {
+    "objectID": "index.html#proyek-terbaru",
+    "href": "index.html#proyek-terbaru",
+    "title": "Evidence Starts With Better Data.",
+    "section": "Proyek terbaru",
+    "text": "Proyek terbaru\nSemua proyek →"
+  },
+  {
+    "objectID": "index.html#punya-data-kesehatan-yang-perlu-dianalisis",
+    "href": "index.html#punya-data-kesehatan-yang-perlu-dianalisis",
+    "title": "Evidence Starts With Better Data.",
+    "section": "Punya data kesehatan yang perlu dianalisis?",
+    "text": "Punya data kesehatan yang perlu dianalisis?\nCeritakan pertanyaan penelitian atau kebutuhan program Anda. Kami bantu menentukan analisis yang tepat sebelum mulai mengolah data.\nHubungi Kami"
+  },
+  {
+    "objectID": "proyek.html",
+    "href": "proyek.html",
+    "title": "Proyek",
+    "section": "",
+    "text": "Urut berdasar\n      Default\n      \n        Tanggal - Paling lama\n      \n      \n        Tanggal - Paling baru\n      \n      \n        Judul\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nDemo: Estimasi Prevalensi dengan Desain Survei Kompleks di R\n\n\n\nR\n\nAnalisis Survei Kompleks\n\nDemo Metode\n\n\n\nContoh alur analisis yang kami pakai untuk data survei kesehatan seperti SKI — diperagakan dengan data terbuka NHANES dan paket R survey.\n\n\n\n2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nPemetaan Iklan Rokok di Sekitar Sekolah di Tiga Kabupaten\n\n\n\nPengendalian Tembakau\n\nQGIS\n\nPemetaan\n\n\n\nSembilan peta tematik QGIS untuk survei Kawasan Tanpa Rokok serta iklan, promosi, dan sponsor rokok di Agam, Lima Puluh Kota, dan Pasaman Barat.\n\n\n\n2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nPolusi Udara, Iklim, dan Pneumonia Balita di Kota Padang\n\n\n\nEpidemiologi Lingkungan\n\nPolusi Udara\n\nDLNM\n\nR\n\n\n\nHubungan polutan udara dan faktor iklim dengan pneumonia balita, dianalisis dengan Distributed Lag Non-Linear Model (DLNM) di R.\n\n\n\n2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nKonsumsi Obat Pencegahan Filariasis saat POPM: Analisis Data SKI 2023\n\n\n\nFilariasis\n\nAnalisis Survei Kompleks\n\nSKI 2023\n\n\n\nFaktor yang berhubungan dengan konsumsi obat pencegahan pada Pemberian Obat Pencegahan Massal (POPM) filariasis limfatik di Indonesia.\n\n\n\n2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nPeta Kepadatan Kasus DBD Kota Depok Tahun 2025\n\n\n\nDemam Berdarah Dengue\n\nAnalisis Spasial\n\nKepadatan Kasus\n\n\n\nAnalisis spasial distribusi dan kepadatan kasus Demam Berdarah Dengue (DBD) berdasarkan titik kasus di Kota Depok tahun 2025.\n\n\n\n2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nDeterminan Imunisasi Dasar Lengkap: Analisis Data SKI 2023\n\n\n\nImunisasi\n\nAnalisis Survei\n\nSKI 2023\n\n\n\nStudi komparatif determinan cakupan imunisasi dasar lengkap di Provinsi Aceh dan Bali, dilengkapi analisis determinan di Sumatera Barat.\n\n\n\n2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nManajemen Informasi Epidemiologi saat Respons Bencana di Kabupaten Agam\n\n\n\nEpidemiologi Bencana\n\nSurveilans\n\nRespons Darurat\n\n\n\nRelawan epidemiologi dan MDS Manager yang mendukung pengelolaan informasi epidemiologi selama respons bencana di Kabupaten Agam.\n\n\n\n2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nDashboard Surveilans DBD Kota Padang, 2023–2024\n\n\n\nDBD\n\nDashboard\n\nR\n\nShiny\n\nSurveilans\n\n\n\nDashboard interaktif surveilans demam berdarah dengue dengan R Shiny, dibangun selama studi lapangan di Bidang Surveilans Epidemiologi. Bisa dicoba langsung secara daring.\n\n\n\n2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nEkologi dan Iklim Malaria di Kabupaten Pasaman Barat, 2020–2024\n\n\n\nMalaria\n\nSIG\n\nStudi Ekologi\n\n\n\nStudi ekologi berbasis SIG tentang peningkatan kasus malaria di wilayah pasca-eliminasi, termasuk analisis faktor iklim lima tahun.\n\n\n\n2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nPemodelan Spasial TB Anak di Kota Padang, 2018–2023\n\n\n\nTuberkulosis\n\nAnalisis Spasial\n\nKesehatan Anak\n\n\n\nPemodelan spasial distribusi TB anak berdasarkan determinan host, dilengkapi studi determinan dan upaya pencegahan di tingkat puskesmas.\n\n\n\n2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nAnalisis Spasial KLB Chikungunya di Sumatera Barat, 2024\n\n\n\nChikungunya\n\nAnalisis Spasial\n\nInvestigasi KLB\n\n\n\nAnalisis epidemiologi dan spasial berbasis SIG terhadap penyebaran KLB chikungunya di Kabupaten Solok, Sumatera Barat.\n\n\n\n2025\n\n\n\n\n\n\nTidak ada yang cocok\n Kembali ke atas"
+  },
+  {
+    "objectID": "tim.html",
+    "href": "tim.html",
+    "title": "Tim Kami",
+    "section": "",
+    "text": "Falah Fauzi, S.K.M., M.Epid.\n      Turning Data into Public Health Impact, Epidemiologist & Researcher, Studies Analyzed, Educator\n      Epidemiolog dengan fokus surveilans penyakit menular, program imunisasi, dan epidemiologi spasial berbasis SIG.\n      \n        SPSSREpi InfoSIG & Analisis SpasialPenulisan Ilmiah\n      \n    \n  \n\n  \n    \n    \n      Aldy Yusra, S.K.M., M.Epid.\n      Environmental Epidemiologist | Health Data Researcher\n      Environmental epidemiologist specializing in air pollution, climate-related health risks, and child health outcomes through epidemiological modeling and spatial analytics.\n      \n        Environmental EpidemiologyAir Pollution & Climate HealthEpidemiological ModelingSpatial AnalysisR ProgrammingQGIS\n      \n    \n  \n\n  \n    \n    \n      Muhammad Ilham Basgoro, S.K.M., M.Epid.\n      Epidemiology Researcher & Health Data Analyst\n      Supporting public health research through complex survey analysis, geospatial mapping, and the development of interactive surveillance dashboards.\n      \n        RComplex Survey AnalysisQGISShinyQuarto\n      \n    \n  \n\n\nTidak ada yang cocok\n Kembali ke atas"
   },
   {
     "objectID": "tim/falah.html",
@@ -277,98 +368,56 @@
     "href": "tim/falah.html#proyek-yang-melibatkan-falah",
     "title": "Falah Fauzi, S.K.M., M.Epid.",
     "section": "Proyek yang melibatkan Falah",
-    "text": "Proyek yang melibatkan Falah\n\n\n\n\n\nTahun\n\n\nProyek\n\n\nKategori\n\n\n\n\n\n\n2025\n\n\nDeterminan Imunisasi Dasar Lengkap: Analisis Data SKI 2023\n\n\nImunisasi, Analisis Survei, SKI 2023\n\n\n\n\n2025\n\n\nEkologi dan Iklim Malaria di Kabupaten Pasaman Barat, 2020–2024\n\n\nMalaria, SIG, Studi Ekologi\n\n\n\n\n2025\n\n\nPemodelan Spasial TB Anak di Kota Padang, 2018–2023\n\n\nTuberkulosis, Analisis Spasial, Kesehatan Anak\n\n\n\n\nTidak ada yang cocok"
+    "text": "Proyek yang melibatkan Falah\n\n\n\n\n\nTahun\n\n\nProyek\n\n\nKategori\n\n\n\n\n\n\n2026\n\n\nPeta Kepadatan Kasus DBD Kota Depok Tahun 2025\n\n\nDemam Berdarah Dengue, Analisis Spasial, Kepadatan Kasus\n\n\n\n\n2025\n\n\nDeterminan Imunisasi Dasar Lengkap: Analisis Data SKI 2023\n\n\nImunisasi, Analisis Survei, SKI 2023\n\n\n\n\n2025\n\n\nEkologi dan Iklim Malaria di Kabupaten Pasaman Barat, 2020–2024\n\n\nMalaria, SIG, Studi Ekologi\n\n\n\n\n2025\n\n\nPemodelan Spasial TB Anak di Kota Padang, 2018–2023\n\n\nTuberkulosis, Analisis Spasial, Kesehatan Anak\n\n\n\n\nTidak ada yang cocok"
   },
   {
-    "objectID": "tim.html",
-    "href": "tim.html",
-    "title": "Tim Kami",
+    "objectID": "tim/aldy.html",
+    "href": "tim/aldy.html",
+    "title": "Aldy Yusra, S.K.M., M.Epid.",
     "section": "",
-    "text": "Falah Fauzi, S.K.M., M.Epid.\n      Turning Data into Public Health Impact, Epidemiologist & Researcher, Studies Analyzed, Educator\n      Epidemiolog dengan fokus surveilans penyakit menular, program imunisasi, dan epidemiologi spasial berbasis SIG.\n      \n        SPSSREpi InfoSIG & Analisis SpasialPenulisan Ilmiah\n      \n    \n  \n\n  \n    \n    \n      Aldy Yusra, S.K.M., M.Epid.\n      Environmental Epidemiologist | Health Data Researcher\n      Environmental epidemiologist specializing in air pollution, climate-related health risks, and child health outcomes through epidemiological modeling and spatial analytics.\n      \n        Environmental EpidemiologyAir Pollution & Climate HealthEpidemiological ModelingSpatial AnalysisR ProgrammingQGIS\n      \n    \n  \n\n  \n    \n    \n      Muhammad Ilham Basgoro, S.K.M., M.Epid.\n      Epidemiology Researcher & Health Data Analyst\n      Supporting public health research through complex survey analysis, geospatial mapping, and the development of interactive surveillance dashboards.\n      \n        RComplex Survey AnalysisQGISShinyQuarto\n      \n    \n  \n\n\nTidak ada yang cocok\n Kembali ke atas"
+    "text": "Aldy menekuni epidemiologi lingkungan di Program Magister Epidemiologi Universitas Andalas, dengan latar belakang Kesehatan dan Keselamatan Kerja (K3) serta Kesehatan Lingkungan. Ia meneliti hubungan polusi udara dan iklim dengan pneumonia pada balita, menggunakan R/RStudio — termasuk Distributed Lag Non-Linear Model (DLNM) — untuk analisis data epidemiologi dan QGIS untuk pemetaan. Pengalamannya mencakup penelitian lapangan, kolaborasi riset lintas institusi, respons bencana, dan asisten laboratorium.\nMinat riset: epidemiologi lingkungan, polusi udara dan iklim, epidemiologi spasial, epidemiologi bencana, dan riset paparan lingkungan."
   },
   {
-    "objectID": "proyek.html",
-    "href": "proyek.html",
-    "title": "Proyek",
-    "section": "",
-    "text": "Urut berdasar\n      Default\n      \n        Tanggal - Paling lama\n      \n      \n        Tanggal - Paling baru\n      \n      \n        Judul\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nDemo: Estimasi Prevalensi dengan Desain Survei Kompleks di R\n\n\n\nR\n\nAnalisis Survei Kompleks\n\nDemo Metode\n\n\n\nContoh alur analisis yang kami pakai untuk data survei kesehatan seperti SKI — diperagakan dengan data terbuka NHANES dan paket R survey.\n\n\n\n2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nPemetaan Iklan Rokok di Sekitar Sekolah di Tiga Kabupaten\n\n\n\nPengendalian Tembakau\n\nQGIS\n\nPemetaan\n\n\n\nSembilan peta tematik QGIS untuk survei Kawasan Tanpa Rokok serta iklan, promosi, dan sponsor rokok di Agam, Lima Puluh Kota, dan Pasaman Barat.\n\n\n\n2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nPolusi Udara, Iklim, dan Pneumonia Balita di Kota Padang\n\n\n\nEpidemiologi Lingkungan\n\nPolusi Udara\n\nDLNM\n\nR\n\n\n\nHubungan polutan udara dan faktor iklim dengan pneumonia balita, dianalisis dengan Distributed Lag Non-Linear Model (DLNM) di R.\n\n\n\n2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nKonsumsi Obat Pencegahan Filariasis saat POPM: Analisis Data SKI 2023\n\n\n\nFilariasis\n\nAnalisis Survei Kompleks\n\nSKI 2023\n\n\n\nFaktor yang berhubungan dengan konsumsi obat pencegahan pada Pemberian Obat Pencegahan Massal (POPM) filariasis limfatik di Indonesia.\n\n\n\n2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nDeterminan Imunisasi Dasar Lengkap: Analisis Data SKI 2023\n\n\n\nImunisasi\n\nAnalisis Survei\n\nSKI 2023\n\n\n\nStudi komparatif determinan cakupan imunisasi dasar lengkap di Provinsi Aceh dan Bali, dilengkapi analisis determinan di Sumatera Barat.\n\n\n\n2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nManajemen Informasi Epidemiologi saat Respons Bencana di Kabupaten Agam\n\n\n\nEpidemiologi Bencana\n\nSurveilans\n\nRespons Darurat\n\n\n\nRelawan epidemiologi dan MDS Manager yang mendukung pengelolaan informasi epidemiologi selama respons bencana di Kabupaten Agam.\n\n\n\n2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nDashboard Surveilans DBD Kota Padang, 2023–2024\n\n\n\nDBD\n\nDashboard\n\nR\n\nShiny\n\nSurveilans\n\n\n\nDashboard interaktif surveilans demam berdarah dengue dengan R Shiny, dibangun selama studi lapangan di Bidang Surveilans Epidemiologi. Bisa dicoba langsung secara daring.\n\n\n\n2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nEkologi dan Iklim Malaria di Kabupaten Pasaman Barat, 2020–2024\n\n\n\nMalaria\n\nSIG\n\nStudi Ekologi\n\n\n\nStudi ekologi berbasis SIG tentang peningkatan kasus malaria di wilayah pasca-eliminasi, termasuk analisis faktor iklim lima tahun.\n\n\n\n2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nPemodelan Spasial TB Anak di Kota Padang, 2018–2023\n\n\n\nTuberkulosis\n\nAnalisis Spasial\n\nKesehatan Anak\n\n\n\nPemodelan spasial distribusi TB anak berdasarkan determinan host, dilengkapi studi determinan dan upaya pencegahan di tingkat puskesmas.\n\n\n\n2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nAnalisis Spasial KLB Chikungunya di Sumatera Barat, 2024\n\n\n\nChikungunya\n\nAnalisis Spasial\n\nInvestigasi KLB\n\n\n\nAnalisis epidemiologi dan spasial berbasis SIG terhadap penyebaran KLB chikungunya di Kabupaten Solok, Sumatera Barat.\n\n\n\n2025\n\n\n\n\n\n\nTidak ada yang cocok\n Kembali ke atas"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Evidence Starts With Better Data.",
-    "section": "",
-    "text": "EPIDEMIOLOGY & HEALTH DATA CONSULTING\n\n\n\nNUMERA membantu mengolah, menganalisis, dan memvisualisasikan data kesehatan menjadi insight yang mendukung penelitian dan keputusan berbasis bukti.\n\n\nLihat Proyek Kenali Tim\n\n\n\n\nContoh luaran · peta tematik\n\n\n  \n    \n    Peta Tingkat Konsumsi Obat Penyakit Filariasis \n  \n  \n    \n     Spatial Distribution Map of Iron (Fe) Concetration\n  \n  \n    \n    Peta Kepadatan Kasus DBD di Depok"
-  },
-  {
-    "objectID": "index.html#layanan",
-    "href": "index.html#layanan",
-    "title": "Evidence Starts With Better Data.",
-    "section": "Layanan",
-    "text": "Layanan"
-  },
-  {
-    "objectID": "index.html#proyek-terbaru",
-    "href": "index.html#proyek-terbaru",
-    "title": "Evidence Starts With Better Data.",
-    "section": "Proyek terbaru",
-    "text": "Proyek terbaru\nSemua proyek →"
-  },
-  {
-    "objectID": "index.html#punya-data-kesehatan-yang-perlu-dianalisis",
-    "href": "index.html#punya-data-kesehatan-yang-perlu-dianalisis",
-    "title": "Evidence Starts With Better Data.",
-    "section": "Punya data kesehatan yang perlu dianalisis?",
-    "text": "Punya data kesehatan yang perlu dianalisis?\nCeritakan pertanyaan penelitian atau kebutuhan program Anda. Kami bantu menentukan analisis yang tepat sebelum mulai mengolah data.\nHubungi Kami"
-  },
-  {
-    "objectID": "tim/ilham.html",
-    "href": "tim/ilham.html",
-    "title": "Muhammad Ilham Basgoro, S.K.M., M.Epid.",
-    "section": "",
-    "text": "Ilham adalah epidemiolog lulusan Magister Epidemiologi Universitas Andalas dengan predikat Lulusan Terbaik 2026. Tesis dan skripsinya menganalisis data Survei Kesehatan Indonesia (SKI) 2023 tentang filariasis limfatik. Ia berpengalaman sebagai pengolah data, analis, dan penulis manuskrip di berbagai penelitian — mulai dari analisis spasial KLB chikungunya hingga pemetaan iklan rokok di sekitar sekolah — serta aktif sebagai pelatih dan narasumber R dan QGIS untuk data kesehatan."
-  },
-  {
-    "objectID": "tim/ilham.html#keahlian",
-    "href": "tim/ilham.html#keahlian",
-    "title": "Muhammad Ilham Basgoro, S.K.M., M.Epid.",
+    "objectID": "tim/aldy.html#keahlian",
+    "href": "tim/aldy.html#keahlian",
+    "title": "Aldy Yusra, S.K.M., M.Epid.",
     "section": "Keahlian",
-    "text": "Keahlian\nR: tidyverse, survey, gtsummary, ggplot2 Shiny Quarto QGIS Stata SPSS Epi Info KoboToolbox Datawrapper\nMetode: desain studi cross-sectional, analisis data sekunder survei kompleks, regresi logistik multivariabel, analisis epidemiologi spasial."
+    "text": "Keahlian\nR / RStudio DLNM Pemodelan statistik QGIS Epidemiologi Lingkungan Epidemiologi Bencana Manajemen data\nMetode: penelitian data sekunder dan lapangan, desain studi epidemiologi, analisis hubungan paparan–dampak dengan efek tunda (lag), serta pemetaan dan analisis geospasial."
   },
   {
-    "objectID": "tim/ilham.html#pengalaman",
-    "href": "tim/ilham.html#pengalaman",
-    "title": "Muhammad Ilham Basgoro, S.K.M., M.Epid.",
-    "section": "Pengalaman",
-    "text": "Pengalaman\n\nAsisten Akademik · Departemen Kesehatan Masyarakat, FKM Universitas Andalas · Maret 2026 – sekarang\nMenelaah dan menyunting proposal hibah penelitian, serta mendampingi pengolahan dan analisis data skripsi mahasiswa.\nAsisten Peneliti · Departemen Kesehatan Masyarakat, FKM Universitas Andalas · 2024 – 2026\nEnumerator, pengolah data, analis data, dan penulis manuskrip di 10 penelitian, termasuk spesialis pemetaan SIG untuk survei Kawasan Tanpa Rokok dan iklan rokok (2026), serta proyek hibah STRIPE bersama Pusat Kedokteran Tropis UGM (2025).\nStudi Lapangan Surveilans Epidemiologi · Dinas Kesehatan Kota Padang · September – Oktober 2025\nInvestigasi KLB campak dan pertusis, analisis data DBD dan SKDR, peta kasus dan cakupan imunisasi dengan QGIS, serta dashboard surveilans DBD dengan R Shiny.\nMagang Surveilans Kekarantinaan Kesehatan · Kantor Kekarantinaan Kesehatan Kelas I Dumai · Juli – Agustus 2024"
+    "objectID": "tim/aldy.html#pengalaman-riset-akademik",
+    "href": "tim/aldy.html#pengalaman-riset-akademik",
+    "title": "Aldy Yusra, S.K.M., M.Epid.",
+    "section": "Pengalaman riset & akademik",
+    "text": "Pengalaman riset & akademik\n\nTesis Magister — Polusi Udara dan Pneumonia Balita di Kota Padang · 2026\nHubungan polutan udara dengan pneumonia balita memakai data 2023–2025 dan pendekatan DLNM di R untuk menilai pola paparan–dampak yang tertunda dan non-linear.\nKolaborator Riset Mahasiswa — Mikroplastik · 2026\nAnggota mahasiswa dalam kolaborasi riset mikroplastik dan paparan kesehatan lingkungan bersama Universitas Indonesia, Universitas Airlangga, dan universitas mitra di Jepang.\nAsisten Peneliti — Faktor Genetik, Obesitas, dan Hipertensi pada Mahasiswa · Kota Padang · Februari – Mei 2026\nAsisten Penelitian dan Pengabdian Masyarakat Dosen · FKM Universitas Andalas · 2026\nPenelitian Polusi Udara, Iklim, dan Pneumonia Balita · Kota Padang (periode studi 2023–2024) · Juni 2025\nPenelitian Integrasi Kearifan Lokal dalam Kurikulum Mitigasi Bencana · Kecamatan Sipora Selatan, Kepulauan Mentawai · 2025"
   },
   {
-    "objectID": "tim/ilham.html#pendidikan",
-    "href": "tim/ilham.html#pendidikan",
-    "title": "Muhammad Ilham Basgoro, S.K.M., M.Epid.",
+    "objectID": "tim/aldy.html#pengalaman-lapangan-kebencanaan",
+    "href": "tim/aldy.html#pengalaman-lapangan-kebencanaan",
+    "title": "Aldy Yusra, S.K.M., M.Epid.",
+    "section": "Pengalaman lapangan & kebencanaan",
+    "text": "Pengalaman lapangan & kebencanaan\n\nRelawan Respons Bencana — Epidemiologi / MDS Manager · Kabupaten Agam · Desember 2025\nMendukung manajemen informasi epidemiologi selama respons bencana (peran terkait WHO MDS).\nPengabdian Masyarakat — Pemberdayaan Nagari Tangguh Bencana · Palembayan, Kabupaten Agam · Juli 2026\nStudi Lapangan Kekarantinaan Kesehatan · Kota Padang · September 2025\nAsisten Laboratorium Praktikum K3KL · FKM Universitas Andalas · 2 tahun akademik\nMagang — Kajian Manajerial Kualitas Udara Ambien · PT Semen Padang · Oktober 2024\nMBKM Membangun Desa — Ketua Kelompok · peminatan K3 & Kesehatan Lingkungan · Agustus – Desember 2023"
+  },
+  {
+    "objectID": "tim/aldy.html#pendidikan",
+    "href": "tim/aldy.html#pendidikan",
+    "title": "Aldy Yusra, S.K.M., M.Epid.",
     "section": "Pendidikan",
-    "text": "Pendidikan\n\nMagister Epidemiologi (M.Epid.) · Universitas Andalas · 2024 – 2026\nIPK 3,98 · Lulusan Terbaik Program Magister Epidemiologi 2026 · Program Fast-track\nSarjana Kesehatan Masyarakat (S.K.M.) · Universitas Andalas · 2021 – 2025\nIPK 3,80"
+    "text": "Pendidikan\n\nMagister Epidemiologi (M.Epid.) · Universitas Andalas · 2026\nPeminatan Epidemiologi Lingkungan\nSarjana Kesehatan Masyarakat (S.K.M.) · Universitas Andalas\nPeminatan Kesehatan dan Keselamatan Kerja serta Kesehatan Lingkungan"
   },
   {
-    "objectID": "tim/ilham.html#publikasi",
-    "href": "tim/ilham.html#publikasi",
-    "title": "Muhammad Ilham Basgoro, S.K.M., M.Epid.",
-    "section": "Publikasi",
-    "text": "Publikasi\n\n\nBasgoro, M.I., Masrizal, M., Novirsa, R. Gambaran Konsumsi Obat Pencegahan Filariasis Limfatik di Indonesia: Analisis Data SKI 2023. JITKT 6(1):63–73 (2026). doi:10.53579/jitkt.v6i1.324\nPradipta, Y., Novnariza, E., Basgoro, M.I., Masrizal, M. The Spread of the Chikungunya Outbreak in Solok District, West Sumatra Province — 2024. Contagion 7(1) (2025). doi:10.30829/contagion.v7i1.24246\nRahman, A., Basgoro, M.I., et al. Faktor-Faktor yang Berhubungan dengan Kesiapsiagaan Terhadap Bencana Letusan Gunung Marapi di Provinsi Sumatera Barat. JK3L 6(2):187–192 (2025). doi:10.25077/jk3l.6.2.187-192.2025\nTriana, V., Basgoro, M.I., Hidayanti, A.E., et al. Empowering Youth: Strengthening Awareness of Sexual Education as A Shield to Prevent HIV and Sexually Transmitted Infections in Juvenile Correctional Institutions. Warta Pengabdian Andalas 32(1):120–130 (2025). doi:10.25077/jwa.32.1.120-130.2025\nAugia, T., Basgoro, M.I., Satriya, M.A., et al. Pelatihan Mitigasi Bencana kepada Kelompok Siaga Bencana (KSB) di Kelurahan Batang Arau, Kecamatan Padang Selatan, Kota Padang. Warta Pengabdian Andalas 31(3):452–459 (2024). doi:10.25077/jwa.31.3.452-459.2024\nAugia, T., Basgoro, M.I., Satriya, M.A. Training on Eco-Enzyme Production From Fruit Waste for the Community of Mata Air Village, in Padang Selatan Subdistrict, Padang City. Warta Pengabdian Andalas 31(2):285–294 (2024). doi:10.25077/jwa.31.2.285-294.2024\n\n\nTiga manuskrip lain sedang dalam proses review/submit."
+    "objectID": "tim/aldy.html#organisasi-penghargaan",
+    "href": "tim/aldy.html#organisasi-penghargaan",
+    "title": "Aldy Yusra, S.K.M., M.Epid.",
+    "section": "Organisasi & penghargaan",
+    "text": "Organisasi & penghargaan\n\nWakil Gubernur BEM KM FKM Universitas Andalas · 2023\nMahasiswa Berprestasi, FKM Universitas Andalas · 2024\nDuta Anti Rokok Sumatera Barat · 2024\nPemenang Insentif Artikel Ilmiah Program Kreativitas Mahasiswa (PKM) · 2024\nBest Human Resources and Development — Andalas Global Awards · 2022\n\nSerta 9 penghargaan lain pada kompetisi poster ilmiah, poster publik, dan video edukasi (2023–2024)."
   },
   {
-    "objectID": "tim/ilham.html#sertifikasi-pelatihan-narasumber",
-    "href": "tim/ilham.html#sertifikasi-pelatihan-narasumber",
-    "title": "Muhammad Ilham Basgoro, S.K.M., M.Epid.",
-    "section": "Sertifikasi, pelatihan & narasumber",
-    "text": "Sertifikasi, pelatihan & narasumber\n\nCertified Data Analyst — Data Management · 2025 (berlaku hingga 2028)\nPelatih QGIS for Health Data Mapping · Dinas Kesehatan Provinsi Sumatera Barat & Dinas Kesehatan Kota Padang · 2026\nNarasumber webinar Boost Your Data Skills through RStudio and QGIS Spatial Mapping · 2025\nNarasumber webinar QGIS 101 — Epidemiology on the Map · 2025\nNarasumber webinar Introduction to Quantitative Data Analysis · 2025"
-  },
-  {
-    "objectID": "tim/ilham.html#proyek-yang-melibatkan-ilham",
-    "href": "tim/ilham.html#proyek-yang-melibatkan-ilham",
-    "title": "Muhammad Ilham Basgoro, S.K.M., M.Epid.",
-    "section": "Proyek yang melibatkan Ilham",
-    "text": "Proyek yang melibatkan Ilham\n\n\n\n\n\nTahun\n\n\nProyek\n\n\nKategori\n\n\n\n\n\n\n2026\n\n\nPemetaan Iklan Rokok di Sekitar Sekolah di Tiga Kabupaten\n\n\nPengendalian Tembakau, QGIS, Pemetaan\n\n\n\n\n2026\n\n\nKonsumsi Obat Pencegahan Filariasis saat POPM: Analisis Data SKI 2023\n\n\nFilariasis, Analisis Survei Kompleks, SKI 2023\n\n\n\n\n2025\n\n\nDashboard Surveilans DBD Kota Padang, 2023–2024\n\n\nDBD, Dashboard, R, Shiny, Surveilans\n\n\n\n\n2025\n\n\nAnalisis Spasial KLB Chikungunya di Sumatera Barat, 2024\n\n\nChikungunya, Analisis Spasial, Investigasi KLB\n\n\n\n\nTidak ada yang cocok"
+    "objectID": "tim/aldy.html#proyek-yang-melibatkan-aldy",
+    "href": "tim/aldy.html#proyek-yang-melibatkan-aldy",
+    "title": "Aldy Yusra, S.K.M., M.Epid.",
+    "section": "Proyek yang melibatkan Aldy",
+    "text": "Proyek yang melibatkan Aldy\n\n\n\n\n\nTahun\n\n\nProyek\n\n\nKategori\n\n\n\n\n\n\n2026\n\n\nPolusi Udara, Iklim, dan Pneumonia Balita di Kota Padang\n\n\nEpidemiologi Lingkungan, Polusi Udara, DLNM, R\n\n\n\n\n2025\n\n\nManajemen Informasi Epidemiologi saat Respons Bencana di Kabupaten Agam\n\n\nEpidemiologi Bencana, Surveilans, Respons Darurat\n\n\n\n\nTidak ada yang cocok"
   },
   {
     "objectID": "proyek/pemetaan-iklan-rokok/index.html",
