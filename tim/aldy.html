@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="Epidemiolog dengan latar belakang kesehatan masyarakat. Profil lengkap segera diperbarui.">
+<meta name="description" content="Epidemiologi lingkungan: polusi udara, iklim, dan kesehatan anak, dengan analisis DLNM di R dan pemetaan QGIS.">
 
 <title>Aldy Yusra, S.K.M., M.Epid. – Numera Data</title>
 <style>
@@ -38,6 +38,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
 <link href="../assets/favicon.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-listing/list.min.js"></script>
+<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -48,9 +50,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-73b0ff3878a4e6fc3716dc69a6aaefa3.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-3ce9735a01569d2e428204e3ec943505.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-88115dc584e0ade50b9bbc8bb0e412f7.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-3ce9735a01569d2e428204e3ec943505.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-9f374dc55637e6ddab6db311ac4a44a9.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-ca1b0c91d3c09deb6357affb950f2e13.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-9f374dc55637e6ddab6db311ac4a44a9.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -78,14 +80,72 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Mencari"
   }
 }</script>
+<script>
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-proyek-anggota .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-date','listing-title','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
+      
+      searchColumns: ["listing-date","listing-title","listing-author"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-proyek-anggota'] = new List('listing-proyek-anggota', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
 <style>html{ scroll-behavior: smooth; }</style>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <meta property="og:title" content="Aldy Yusra, S.K.M., M.Epid. – Numera Data">
-<meta property="og:description" content="Epidemiolog dengan latar belakang kesehatan masyarakat. Profil lengkap segera diperbarui.">
+<meta property="og:description" content="Epidemiologi lingkungan: polusi udara, iklim, dan kesehatan anak, dengan analisis DLNM di R dan pemetaan QGIS.">
 <meta property="og:image" content="https://numera-data.github.io/website-numera/tim/aldy.jpg">
 <meta property="og:site_name" content="Numera Data">
 </head>
@@ -319,10 +379,17 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-title">
 <h1 class="title">Aldy Yusra, S.K.M., M.Epid.</h1>
 <p class="subtitle lead">Data Analyst</p>
-</div>
+  <div class="quarto-categories">
+    <div class="quarto-category">R</div>
+    <div class="quarto-category">DLNM</div>
+    <div class="quarto-category">QGIS</div>
+    <div class="quarto-category">Epidemiologi Lingkungan</div>
+    <div class="quarto-category">Epidemiologi Bencana</div>
+  </div>
+  </div>
 <div>
   <div class="description">
-    Epidemiolog dengan latar belakang kesehatan masyarakat. Profil lengkap segera diperbarui.
+    Epidemiologi lingkungan: polusi udara, iklim, dan kesehatan anak, dengan analisis DLNM di R dan pemetaan QGIS.
   </div>
 </div>
 <div class="quarto-title-meta">
@@ -341,19 +408,105 @@ ul.task-list li input[type="checkbox"] {
   </div>
   <div class="about-contents"><main class="content" id="quarto-document-content">
 
-<p>Aldy adalah anggota tim Numera Data dengan latar belakang Sarjana Kesehatan Masyarakat dan Magister Epidemiologi.</p>
-<div class="notice-soft">
-<p>Profil lengkap — keahlian, pengalaman, pendidikan, publikasi, dan proyek — sedang disiapkan dan akan segera diperbarui.</p>
+<p>Aldy menekuni <strong>epidemiologi lingkungan</strong> di Program Magister Epidemiologi Universitas Andalas, dengan latar belakang Kesehatan dan Keselamatan Kerja (K3) serta Kesehatan Lingkungan. Ia meneliti hubungan polusi udara dan iklim dengan pneumonia pada balita, menggunakan R/RStudio — termasuk <em>Distributed Lag Non-Linear Model</em> (DLNM) — untuk analisis data epidemiologi dan QGIS untuk pemetaan. Pengalamannya mencakup penelitian lapangan, kolaborasi riset lintas institusi, respons bencana, dan asisten laboratorium.</p>
+<p><strong>Minat riset:</strong> epidemiologi lingkungan, polusi udara dan iklim, epidemiologi spasial, epidemiologi bencana, dan riset paparan lingkungan.</p>
+<section id="keahlian" class="level2">
+<h2 data-anchor-id="keahlian">Keahlian</h2>
+<p><span class="skill">R / RStudio</span> <span class="skill">DLNM</span> <span class="skill">Pemodelan statistik</span> <span class="skill">QGIS</span> <span class="skill">Epidemiologi Lingkungan</span> <span class="skill">Epidemiologi Bencana</span> <span class="skill">Manajemen data</span></p>
+<p><strong>Metode:</strong> penelitian data sekunder dan lapangan, desain studi epidemiologi, analisis hubungan paparan–dampak dengan efek tunda (<em>lag</em>), serta pemetaan dan analisis geospasial.</p>
+</section>
+<section id="pengalaman-riset-akademik" class="level2">
+<h2 data-anchor-id="pengalaman-riset-akademik">Pengalaman riset &amp; akademik</h2>
+<ul>
+<li><strong>Tesis Magister — Polusi Udara dan Pneumonia Balita di Kota Padang</strong> · <em>2026</em><br>
+Hubungan polutan udara dengan pneumonia balita memakai data 2023–2025 dan pendekatan DLNM di R untuk menilai pola paparan–dampak yang tertunda dan non-linear.</li>
+<li><strong>Kolaborator Riset Mahasiswa — Mikroplastik</strong> · <em>2026</em><br>
+Anggota mahasiswa dalam kolaborasi riset mikroplastik dan paparan kesehatan lingkungan bersama Universitas Indonesia, Universitas Airlangga, dan universitas mitra di Jepang.</li>
+<li><strong>Asisten Peneliti — Faktor Genetik, Obesitas, dan Hipertensi pada Mahasiswa</strong> · Kota Padang · <em>Februari – Mei 2026</em></li>
+<li><strong>Asisten Penelitian dan Pengabdian Masyarakat Dosen</strong> · FKM Universitas Andalas · <em>2026</em></li>
+<li><strong>Penelitian Polusi Udara, Iklim, dan Pneumonia Balita</strong> · Kota Padang (periode studi 2023–2024) · <em>Juni 2025</em></li>
+<li><strong>Penelitian Integrasi Kearifan Lokal dalam Kurikulum Mitigasi Bencana</strong> · Kecamatan Sipora Selatan, Kepulauan Mentawai · <em>2025</em></li>
+</ul>
+</section>
+<section id="pengalaman-lapangan-kebencanaan" class="level2">
+<h2 data-anchor-id="pengalaman-lapangan-kebencanaan">Pengalaman lapangan &amp; kebencanaan</h2>
+<ul>
+<li><strong>Relawan Respons Bencana — Epidemiologi / MDS Manager</strong> · Kabupaten Agam · <em>Desember 2025</em><br>
+Mendukung manajemen informasi epidemiologi selama respons bencana (peran terkait WHO MDS).</li>
+<li><strong>Pengabdian Masyarakat — Pemberdayaan Nagari Tangguh Bencana</strong> · Palembayan, Kabupaten Agam · <em>Juli 2026</em></li>
+<li><strong>Studi Lapangan Kekarantinaan Kesehatan</strong> · Kota Padang · <em>September 2025</em></li>
+<li><strong>Asisten Laboratorium Praktikum K3KL</strong> · FKM Universitas Andalas · <em>2 tahun akademik</em></li>
+<li><strong>Magang — Kajian Manajerial Kualitas Udara Ambien</strong> · PT Semen Padang · <em>Oktober 2024</em></li>
+<li><strong>MBKM Membangun Desa — Ketua Kelompok</strong> · peminatan K3 &amp; Kesehatan Lingkungan · <em>Agustus – Desember 2023</em></li>
+</ul>
+</section>
+<section id="pendidikan" class="level2">
+<h2 data-anchor-id="pendidikan">Pendidikan</h2>
+<ul>
+<li><strong>Magister Epidemiologi (M.Epid.)</strong> · Universitas Andalas · <em>2026</em><br>
+Peminatan Epidemiologi Lingkungan</li>
+<li><strong>Sarjana Kesehatan Masyarakat (S.K.M.)</strong> · Universitas Andalas<br>
+Peminatan Kesehatan dan Keselamatan Kerja serta Kesehatan Lingkungan</li>
+</ul>
+</section>
+<section id="organisasi-penghargaan" class="level2">
+<h2 data-anchor-id="organisasi-penghargaan">Organisasi &amp; penghargaan</h2>
+<ul>
+<li>Wakil Gubernur BEM KM FKM Universitas Andalas · <em>2023</em></li>
+<li>Mahasiswa Berprestasi, FKM Universitas Andalas · <em>2024</em></li>
+<li>Duta Anti Rokok Sumatera Barat · <em>2024</em></li>
+<li>Pemenang Insentif Artikel Ilmiah Program Kreativitas Mahasiswa (PKM) · <em>2024</em></li>
+<li>Best Human Resources and Development — Andalas Global Awards · <em>2022</em></li>
+</ul>
+<p><span class="muted">Serta 9 penghargaan lain pada kompetisi poster ilmiah, poster publik, dan video edukasi (2023–2024).</span></p>
+</section>
+<section id="proyek-yang-melibatkan-aldy" class="level2">
+<h2 data-anchor-id="proyek-yang-melibatkan-aldy">Proyek yang melibatkan Aldy</h2>
+<div id="listing-proyek-anggota" class="quarto-listing quarto-listing-container-table">
+<table class="quarto-listing-table table">
+<thead>
+<tr>
+<th>
+Tahun
+</th>
+<th>
+Proyek
+</th>
+<th>
+Kategori
+</th>
+</tr>
+</thead>
+<tbody class="list">
+<tr data-index="0" data-categories="RXBpZGVtaW9sb2dpJTIwTGluZ2t1bmdhbiUyQ1BvbHVzaSUyMFVkYXJhJTJDRExOTSUyQ1I=" data-listing-date-sort="1777568400000" data-listing-file-modified-sort="1790665090000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="149" data-listing-title-sort="Polusi Udara, Iklim, dan Pneumonia Balita di Kota Padang" data-listing-filename-sort="index.qmd">
+<td>
+<span class="listing-date">2026</span>
+</td>
+<td>
+<a href="../proyek/polusi-udara-pneumonia-balita/index.html" class="title listing-title">Polusi Udara, Iklim, dan Pneumonia Balita di Kota Padang</a>
+</td>
+<td>
+<span class="listing-categories">Epidemiologi Lingkungan, Polusi Udara, DLNM, R</span>
+</td>
+</tr>
+<tr data-index="1" data-categories="RXBpZGVtaW9sb2dpJTIwQmVuY2FuYSUyQ1N1cnZlaWxhbnMlMkNSZXNwb25zJTIwRGFydXJhdA==" data-listing-date-sort="1764522000000" data-listing-file-modified-sort="1790665090000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="115" data-listing-title-sort="Manajemen Informasi Epidemiologi saat Respons Bencana di Kabupaten Agam" data-listing-filename-sort="index.qmd">
+<td>
+<span class="listing-date">2025</span>
+</td>
+<td>
+<a href="../proyek/respons-bencana-agam/index.html" class="title listing-title">Manajemen Informasi Epidemiologi saat Respons Bencana di Kabupaten Agam</a>
+</td>
+<td>
+<span class="listing-categories">Epidemiologi Bencana, Surveilans, Respons Darurat</span>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="listing-no-matching d-none">Tidak ada yang cocok</div>
 </div>
-<!--
-TODO (setelah CV Aldy siap):
-- categories: [...]   ← 4–6 skill utama (di front matter)
-- description         ← bio singkat 1–2 kalimat
-- bagian Keahlian, Pengalaman, Pendidikan, Publikasi
-- salin blok `listing:` dari tim/falah.qmd dan ganti author menjadi "*Aldy Yusra*"
--->
 
 
+</section>
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Kembali ke atas</a></main></div>
 </div>
  <!-- /main -->

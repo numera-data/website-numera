@@ -8,9 +8,9 @@
 
 <meta name="author" content="Muhammad Ilham Basgoro">
 <meta name="dcterms.date" content="2025-01-01">
-<meta name="description" content="Dashboard surveilans demam berdarah dengue dengan R, dibangun selama studi lapangan di Bidang Surveilans Epidemiologi.">
+<meta name="description" content="Dashboard interaktif surveilans demam berdarah dengue dengan R Shiny, dibangun selama studi lapangan di Bidang Surveilans Epidemiologi. Bisa dicoba langsung secara daring.">
 
-<title>Dashboard Surveilans DBD Dinas Kesehatan Kota Padang – Numera Data</title>
+<title>Dashboard Surveilans DBD Kota Padang, 2023–2024 – Numera Data</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -51,9 +51,12 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-73b0ff3878a4e6fc3716dc69a6aaefa3.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-3ce9735a01569d2e428204e3ec943505.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark-88115dc584e0ade50b9bbc8bb0e412f7.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../../site_libs/bootstrap/bootstrap-3ce9735a01569d2e428204e3ec943505.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-9f374dc55637e6ddab6db311ac4a44a9.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-ca1b0c91d3c09deb6357affb950f2e13.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-9f374dc55637e6ddab6db311ac4a44a9.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -87,9 +90,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
 
 
-<meta property="og:title" content="Dashboard Surveilans DBD Dinas Kesehatan Kota Padang – Numera Data">
-<meta property="og:description" content="Dashboard surveilans demam berdarah dengue dengan R, dibangun selama studi lapangan di Bidang Surveilans Epidemiologi.">
-<meta property="og:image" content="https://numera-data.github.io/website-numera/proyek/dashboard-dbd-padang/thumbnail.svg">
+<meta property="og:title" content="Dashboard Surveilans DBD Kota Padang, 2023–2024 – Numera Data">
+<meta property="og:description" content="Dashboard interaktif surveilans demam berdarah dengue dengan R Shiny, dibangun selama studi lapangan di Bidang Surveilans Epidemiologi. Bisa dicoba langsung secara daring.">
+<meta property="og:image" content="https://numera-data.github.io/website-numera/proyek/dashboard-dbd-padang/thumbnail.jpg">
 <meta property="og:site_name" content="Numera Data">
 </head>
 
@@ -318,6 +321,7 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#latar-belakang" id="toc-latar-belakang" class="nav-link active" data-scroll-target="#latar-belakang">Latar belakang</a></li>
+  <li><a href="#isi-dashboard" id="toc-isi-dashboard" class="nav-link" data-scroll-target="#isi-dashboard">Isi dashboard</a></li>
   <li><a href="#peran-tim" id="toc-peran-tim" class="nav-link" data-scroll-target="#peran-tim">Peran tim</a></li>
   <li><a href="#kegiatan-terkait" id="toc-kegiatan-terkait" class="nav-link" data-scroll-target="#kegiatan-terkait">Kegiatan terkait</a></li>
   <li><a href="#luaran" id="toc-luaran" class="nav-link" data-scroll-target="#luaran">Luaran</a></li>
@@ -330,18 +334,19 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Dashboard Surveilans DBD Dinas Kesehatan Kota Padang</h1>
+<h1 class="title">Dashboard Surveilans DBD Kota Padang, 2023–2024</h1>
   <div class="quarto-categories">
     <div class="quarto-category">DBD</div>
     <div class="quarto-category">Dashboard</div>
     <div class="quarto-category">R</div>
+    <div class="quarto-category">Shiny</div>
     <div class="quarto-category">Surveilans</div>
   </div>
   </div>
 
 <div>
   <div class="description">
-    Dashboard surveilans demam berdarah dengue dengan R, dibangun selama studi lapangan di Bidang Surveilans Epidemiologi.
+    Dashboard interaktif surveilans demam berdarah dengue dengan R Shiny, dibangun selama studi lapangan di Bidang Surveilans Epidemiologi. Bisa dicoba langsung secara daring.
   </div>
 </div>
 
@@ -384,17 +389,52 @@ ul.task-list li input[type="checkbox"] {
 <p><span class="value">Dinkes Kota Padang</span></p>
 </div>
 <div>
-<p><span class="label">Luaran</span></p>
-<p><span class="value">Dashboard &amp; peta kasus</span></p>
+<p><span class="label">Data</span></p>
+<p><span class="value">Kasus &amp; vektor DBD 2023–2024</span></p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Coba dashboard-nya
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Dashboard ini sudah dipublikasikan dan bisa dibuka langsung:</p>
+<p><a href="https://ibasgo.shinyapps.io/Dashboard-DBD-2024/" class="btn-brand">Buka Dashboard DBD ↗</a></p>
+<p><span class="muted">Dihosting di shinyapps.io. Jika aplikasi sedang “tertidur”, tunggu beberapa detik hingga termuat.</span></p>
 </div>
 </div>
 <section id="latar-belakang" class="level2">
 <h2 class="anchored" data-anchor-id="latar-belakang">Latar belakang</h2>
 <p>Data surveilans demam berdarah dengue (DBD) dilaporkan secara rutin, tetapi sering hanya tersimpan dalam tabel. Dashboard membantu petugas melihat tren dan sebaran kasus dengan cepat.</p>
 </section>
+<section id="isi-dashboard" class="level2">
+<h2 class="anchored" data-anchor-id="isi-dashboard">Isi dashboard</h2>
+<p>Pengguna memilih <strong>tahun</strong> (2023, 2024) dan <strong>wilayah</strong>, lalu melihat dua menu:</p>
+<ul>
+<li><strong>Visualisasi</strong> — tren kasus DBD per bulan, distribusi kasus menurut jenis kelamin, dan peta sebaran kasus.</li>
+<li><strong>Indikator</strong> — total kasus dan insiden rate; <strong>intervensi vektor</strong> (penyelidikan epidemiologi, fogging, larvasida, rumah yang diperiksa); serta <strong>indikator vektor</strong> (jumlah positif jentik dan angka bebas jentik) beserta status risikonya.</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="dash-tren.jpg" class="lightbox" data-gallery="dashboard" title="Menu Visualisasi — tren kasus DBD bulanan di Kota Padang, 2023."><img src="dash-tren.jpg" class="dash-shot img-fluid figure-img" alt="Menu Visualisasi — tren kasus DBD bulanan di Kota Padang, 2023."></a></p>
+<figcaption>Menu Visualisasi — tren kasus DBD bulanan di Kota Padang, 2023.</figcaption>
+</figure>
+</div>
+<!--
+Tangkapan layar lain sudah tersedia di folder ini. Aktifkan setelah perbaikan di dashboard:
+![Menu Visualisasi — kasus menurut jenis kelamin.](dash-jk.jpg){.dash-shot group="dashboard"}
+![Menu Indikator — intervensi vektor.](dash-intervensi.jpg){.dash-shot group="dashboard"}
+![Menu Indikator — indikator vektor.](dash-vektor.jpg){.dash-shot group="dashboard"}
+-->
+</section>
 <section id="peran-tim" class="level2">
 <h2 class="anchored" data-anchor-id="peran-tim">Peran tim</h2>
-<p>Selama studi lapangan di <strong>Bidang Surveilans Epidemiologi Dinas Kesehatan Kota Padang</strong> (September – Oktober 2025), Muhammad Ilham Basgoro menganalisis data rutin DBD dan SKDR serta membangun dashboard surveilans DBD dengan <strong>RStudio</strong>.</p>
+<p>Selama studi lapangan di <strong>Bidang Surveilans Epidemiologi Dinas Kesehatan Kota Padang</strong> (September – Oktober 2025), Muhammad Ilham Basgoro menganalisis data rutin DBD dan SKDR serta membangun dashboard surveilans DBD dengan <strong>R Shiny</strong>.</p>
 </section>
 <section id="kegiatan-terkait" class="level2">
 <h2 class="anchored" data-anchor-id="kegiatan-terkait">Kegiatan terkait</h2>
@@ -407,7 +447,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="luaran" class="level2">
 <h2 class="anchored" data-anchor-id="luaran">Luaran</h2>
 <ul>
-<li>Dashboard surveilans DBD berbasis R.</li>
+<li><a href="https://ibasgo.shinyapps.io/Dashboard-DBD-2024/">Dashboard surveilans DBD</a> berbasis R Shiny (daring), data 2023–2024.</li>
 <li>Peta kasus penyakit dan cakupan imunisasi untuk Bidang Surveilans Epidemiologi.</li>
 </ul>
 
@@ -847,6 +887,38 @@ ul.task-list li input[type="checkbox"] {
 </div>
   </div>
 </footer>
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 

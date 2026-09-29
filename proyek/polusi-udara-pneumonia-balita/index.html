@@ -6,11 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Muhammad Ilham Basgoro">
+<meta name="author" content="Aldy Yusra">
 <meta name="dcterms.date" content="2026-01-01">
-<meta name="description" content="Sembilan peta tematik QGIS untuk survei Kawasan Tanpa Rokok serta iklan, promosi, dan sponsor rokok di Agam, Lima Puluh Kota, dan Pasaman Barat.">
+<meta name="description" content="Hubungan polutan udara dan faktor iklim dengan pneumonia balita, dianalisis dengan Distributed Lag Non-Linear Model (DLNM) di R.">
 
-<title>Pemetaan Iklan Rokok di Sekitar Sekolah di Tiga Kabupaten – Numera Data</title>
+<title>Polusi Udara, Iklim, dan Pneumonia Balita di Kota Padang – Numera Data</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -87,9 +87,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
 
 
-<meta property="og:title" content="Pemetaan Iklan Rokok di Sekitar Sekolah di Tiga Kabupaten – Numera Data">
-<meta property="og:description" content="Sembilan peta tematik QGIS untuk survei Kawasan Tanpa Rokok serta iklan, promosi, dan sponsor rokok di Agam, Lima Puluh Kota, dan Pasaman Barat.">
-<meta property="og:image" content="https://numera-data.github.io/website-numera/proyek/pemetaan-iklan-rokok/thumbnail.svg">
+<meta property="og:title" content="Polusi Udara, Iklim, dan Pneumonia Balita di Kota Padang – Numera Data">
+<meta property="og:description" content="Hubungan polutan udara dan faktor iklim dengan pneumonia balita, dianalisis dengan Distributed Lag Non-Linear Model (DLNM) di R.">
+<meta property="og:image" content="https://numera-data.github.io/website-numera/proyek/polusi-udara-pneumonia-balita/thumbnail.svg">
 <meta property="og:site_name" content="Numera Data">
 </head>
 
@@ -330,17 +330,18 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Pemetaan Iklan Rokok di Sekitar Sekolah di Tiga Kabupaten</h1>
+<h1 class="title">Polusi Udara, Iklim, dan Pneumonia Balita di Kota Padang</h1>
   <div class="quarto-categories">
-    <div class="quarto-category">Pengendalian Tembakau</div>
-    <div class="quarto-category">QGIS</div>
-    <div class="quarto-category">Pemetaan</div>
+    <div class="quarto-category">Epidemiologi Lingkungan</div>
+    <div class="quarto-category">Polusi Udara</div>
+    <div class="quarto-category">DLNM</div>
+    <div class="quarto-category">R</div>
   </div>
   </div>
 
 <div>
   <div class="description">
-    Sembilan peta tematik QGIS untuk survei Kawasan Tanpa Rokok serta iklan, promosi, dan sponsor rokok di Agam, Lima Puluh Kota, dan Pasaman Barat.
+    Hubungan polutan udara dan faktor iklim dengan pneumonia balita, dianalisis dengan Distributed Lag Non-Linear Model (DLNM) di R.
   </div>
 </div>
 
@@ -350,7 +351,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Penulis</div>
     <div class="quarto-title-meta-contents">
-             <p>Muhammad Ilham Basgoro </p>
+             <p>Aldy Yusra </p>
           </div>
   </div>
     
@@ -372,42 +373,41 @@ ul.task-list li input[type="checkbox"] {
 <div class="project-meta">
 <div>
 <p><span class="label">Tahun</span></p>
-<p><span class="value">2026</span></p>
+<p><span class="value">2025 – 2026</span></p>
 </div>
 <div>
 <p><span class="label">Peran</span></p>
-<p><span class="value">Spesialis pemetaan SIG</span></p>
+<p><span class="value">Peneliti utama</span></p>
 </div>
 <div>
-<p><span class="label">Wilayah</span></p>
-<p><span class="value">3 kabupaten</span></p>
+<p><span class="label">Data</span></p>
+<p><span class="value">Kota Padang, 2023–2025</span></p>
 </div>
 <div>
-<p><span class="label">Luaran</span></p>
-<p><span class="value">9 peta tematik</span></p>
+<p><span class="label">Metode</span></p>
+<p><span class="value">DLNM di R</span></p>
 </div>
 </div>
 <section id="latar-belakang" class="level2">
 <h2 class="anchored" data-anchor-id="latar-belakang">Latar belakang</h2>
-<p>Paparan iklan rokok di sekitar sekolah berkaitan dengan risiko anak dan remaja mulai merokok. Survei ini memetakan keberadaan iklan, promosi, dan sponsor rokok serta penerapan Kawasan Tanpa Rokok (KTR) di tiga kabupaten di Sumatera Barat.</p>
+<p>Pneumonia masih menjadi salah satu penyebab utama kesakitan pada balita. Paparan polusi udara dan kondisi iklim dapat memengaruhi risiko penyakit pernapasan, tetapi dampaknya sering <strong>tidak langsung terjadi</strong> dan <strong>tidak selalu linear</strong> — sehingga perlu metode analisis yang bisa menangkap efek tertunda.</p>
 </section>
 <section id="peran-tim" class="level2">
 <h2 class="anchored" data-anchor-id="peran-tim">Peran tim</h2>
-<p>Muhammad Ilham Basgoro bertugas sebagai <strong>spesialis pemetaan SIG</strong> dalam survei yang dipimpin dosen FKM Universitas Andalas.</p>
+<p>Aldy Yusra meneliti topik ini dalam dua tahap: studi hubungan polutan udara dan faktor iklim dengan pneumonia balita (periode studi 2023–2024, Juni 2025), lalu dilanjutkan sebagai tesis Magister Epidemiologi peminatan Epidemiologi Lingkungan di Universitas Andalas (2026).</p>
 </section>
 <section id="data-metode" class="level2">
 <h2 class="anchored" data-anchor-id="data-metode">Data &amp; metode</h2>
-<p>Hasil survei lapangan di Kabupaten <strong>Agam</strong>, <strong>Lima Puluh Kota</strong>, dan <strong>Pasaman Barat</strong> diolah dengan <strong>QGIS</strong> menjadi:</p>
 <ul>
-<li>Peta <strong>kepadatan iklan rokok</strong> di sepanjang jalan utama.</li>
-<li>Peta sebaran iklan menurut jenisnya dalam <strong>buffer 500 meter</strong> di sekitar sekolah (baliho, spanduk, poster, stiker).</li>
-<li>Peta sebaran iklan terhadap lokasi fasilitas pendidikan.</li>
+<li>Data pneumonia balita, polutan udara, dan faktor iklim di <strong>Kota Padang</strong>, <strong>2023–2025</strong>.</li>
+<li><strong>Distributed Lag Non-Linear Model (DLNM)</strong> di R untuk menilai pola hubungan paparan–dampak yang tertunda (<em>lag</em>) dan non-linear.</li>
 </ul>
 </section>
 <section id="luaran" class="level2">
 <h2 class="anchored" data-anchor-id="luaran">Luaran</h2>
 <ul>
-<li><strong>Sembilan peta tematik</strong> untuk mendukung laporan survei.</li>
+<li>Penelitian <em>polusi udara, iklim, dan pneumonia balita di Kota Padang</em> (periode studi 2023–2024) — 2025.</li>
+<li>Tesis Magister Epidemiologi: <em>Polusi Udara dan Pneumonia Balita di Kota Padang</em> (data 2023–2025) — 2026.</li>
 </ul>
 
 

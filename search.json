@@ -1,94 +1,101 @@
 [
   {
-    "objectID": "proyek/filariasis-ski2023/index.html",
-    "href": "proyek/filariasis-ski2023/index.html",
-    "title": "Konsumsi Obat Pencegahan Filariasis saat POPM: Analisis Data SKI 2023",
+    "objectID": "proyek/respons-bencana-agam/index.html",
+    "href": "proyek/respons-bencana-agam/index.html",
+    "title": "Manajemen Informasi Epidemiologi saat Respons Bencana di Kabupaten Agam",
     "section": "",
-    "text": "Tahun\n2025 – 2026\n\n\nPeran\nPeneliti utama\n\n\nData\nSKI 2023\n\n\nLuaran\nTesis · skripsi · artikel"
+    "text": "Tahun\n2025 – 2026\n\n\nPeran\nEpidemiologi / MDS Manager\n\n\nLokasi\nKabupaten Agam, Sumbar\n\n\nKerangka\nWHO MDS"
   },
   {
-    "objectID": "proyek/filariasis-ski2023/index.html#latar-belakang",
-    "href": "proyek/filariasis-ski2023/index.html#latar-belakang",
-    "title": "Konsumsi Obat Pencegahan Filariasis saat POPM: Analisis Data SKI 2023",
+    "objectID": "proyek/respons-bencana-agam/index.html#latar-belakang",
+    "href": "proyek/respons-bencana-agam/index.html#latar-belakang",
+    "title": "Manajemen Informasi Epidemiologi saat Respons Bencana di Kabupaten Agam",
     "section": "Latar belakang",
-    "text": "Latar belakang\nEliminasi filariasis limfatik bergantung pada cakupan Pemberian Obat Pencegahan secara Massal (POPM) — obat yang dibagikan baru berdampak bila benar-benar diminum. Memahami faktor yang berhubungan dengan konsumsi obat membantu program menjangkau kelompok yang belum patuh."
+    "text": "Latar belakang\nSaat bencana, data kesehatan dari berbagai tim lapangan harus dikumpulkan dengan format yang seragam agar kebutuhan layanan dan potensi wabah bisa dipantau cepat. Minimum Data Set (MDS) dari WHO dipakai untuk menstandarkan pelaporan tersebut."
   },
   {
-    "objectID": "proyek/filariasis-ski2023/index.html#peran-tim",
-    "href": "proyek/filariasis-ski2023/index.html#peran-tim",
-    "title": "Konsumsi Obat Pencegahan Filariasis saat POPM: Analisis Data SKI 2023",
+    "objectID": "proyek/respons-bencana-agam/index.html#peran-tim",
+    "href": "proyek/respons-bencana-agam/index.html#peran-tim",
+    "title": "Manajemen Informasi Epidemiologi saat Respons Bencana di Kabupaten Agam",
     "section": "Peran tim",
-    "text": "Peran tim\nMuhammad Ilham Basgoro melakukan penelitian ini sebagai tesis Magister Epidemiologi di FKM Universitas Andalas dan meraih predikat Lulusan Terbaik program tersebut (2026). Skripsinya juga menganalisis filariasis dari data survei yang sama."
+    "text": "Peran tim\nPada Desember 2025, Aldy Yusra bertugas sebagai relawan respons bencana di bidang epidemiologi dan MDS Manager di Kabupaten Agam, mendukung manajemen informasi epidemiologi selama kegiatan respons."
   },
   {
-    "objectID": "proyek/filariasis-ski2023/index.html#data-metode",
-    "href": "proyek/filariasis-ski2023/index.html#data-metode",
-    "title": "Konsumsi Obat Pencegahan Filariasis saat POPM: Analisis Data SKI 2023",
-    "section": "Data & metode",
-    "text": "Data & metode\n\nData sekunder Survei Kesehatan Indonesia (SKI) 2023 berskala nasional.\nAnalisis faktor yang berhubungan dengan konsumsi obat pencegahan saat POPM."
+    "objectID": "proyek/respons-bencana-agam/index.html#kegiatan-terkait",
+    "href": "proyek/respons-bencana-agam/index.html#kegiatan-terkait",
+    "title": "Manajemen Informasi Epidemiologi saat Respons Bencana di Kabupaten Agam",
+    "section": "Kegiatan terkait",
+    "text": "Kegiatan terkait\n\nPengabdian masyarakat Pemberdayaan Nagari Tangguh Bencana di Palembayan, Kabupaten Agam (Juli 2026) — program mitigasi berbasis masyarakat untuk memperkuat kesiapsiagaan bencana di tingkat nagari.\nPenelitian integrasi kearifan lokal dalam kurikulum mitigasi bencana di sekolah-sekolah Kecamatan Sipora Selatan, Kabupaten Kepulauan Mentawai (2025)."
   },
   {
-    "objectID": "proyek/filariasis-ski2023/index.html#luaran",
-    "href": "proyek/filariasis-ski2023/index.html#luaran",
-    "title": "Konsumsi Obat Pencegahan Filariasis saat POPM: Analisis Data SKI 2023",
-    "section": "Luaran",
-    "text": "Luaran\n\nTesis: Factors Associated with Preventive Drug Consumption during Mass Drug Administration for Lymphatic Filariasis in Indonesia: Analysis of the 2023 Indonesian Health Survey (SKI 2023) (2026).\nSkripsi: Factors Associated with the Incidence of Lymphatic Filariasis in West Sumatra Province: Analysis of the 2023 Indonesian Health Survey (SKI 2023) (2025).\nArtikel: Basgoro, M.I., Masrizal, M., Novirsa, R. Gambaran Konsumsi Obat Pencegahan Filariasis Limfatik di Indonesia: Analisis Data SKI 2023. JITKT 6(1):63–73 (2026). doi:10.53579/jitkt.v6i1.324\n\nLihat juga demo alur analisis survei kompleks dengan R yang menggunakan pendekatan serupa pada data terbuka."
-  },
-  {
-    "objectID": "proyek/demo-survei-kompleks/index.html",
-    "href": "proyek/demo-survei-kompleks/index.html",
-    "title": "Demo: Estimasi Prevalensi dengan Desain Survei Kompleks di R",
+    "objectID": "proyek/imunisasi-idl-ski2023/index.html",
+    "href": "proyek/imunisasi-idl-ski2023/index.html",
+    "title": "Determinan Imunisasi Dasar Lengkap: Analisis Data SKI 2023",
     "section": "",
-    "text": "Jenis\nDemo metode\n\n\nData\nNHANES 2009–2010 (terbuka)\n\n\nTools\nR · survey · ggplot2\n\n\nRelevan untuk\nSKI, SDKI, Riskesdas"
+    "text": "Tahun\n2024 – 2025\n\n\nPeran\nPeneliti utama\n\n\nData\nSKI 2023\n\n\nLuaran\nTesis · artikel SINTA 4"
   },
   {
-    "objectID": "proyek/demo-survei-kompleks/index.html#mengapa-desain-survei-penting",
-    "href": "proyek/demo-survei-kompleks/index.html#mengapa-desain-survei-penting",
-    "title": "Demo: Estimasi Prevalensi dengan Desain Survei Kompleks di R",
-    "section": "Mengapa desain survei penting?",
-    "text": "Mengapa desain survei penting?\nSurvei kesehatan berskala besar tidak memilih responden secara acak sederhana. Sampel diambil bertahap (klaster), dibagi per wilayah (strata), dan tiap responden mewakili jumlah penduduk yang berbeda (bobot). Jika ketiganya diabaikan, estimasi prevalensi bisa bias dan interval kepercayaannya terlalu sempit."
+    "objectID": "proyek/imunisasi-idl-ski2023/index.html#latar-belakang",
+    "href": "proyek/imunisasi-idl-ski2023/index.html#latar-belakang",
+    "title": "Determinan Imunisasi Dasar Lengkap: Analisis Data SKI 2023",
+    "section": "Latar belakang",
+    "text": "Latar belakang\nCakupan imunisasi dasar lengkap (IDL) masih berbeda cukup jauh antarprovinsi di Indonesia. Membandingkan provinsi dengan karakteristik berbeda membantu mengidentifikasi determinan yang bisa menjadi sasaran program."
   },
   {
-    "objectID": "proyek/demo-survei-kompleks/index.html#data-dan-desain-survei",
-    "href": "proyek/demo-survei-kompleks/index.html#data-dan-desain-survei",
-    "title": "Demo: Estimasi Prevalensi dengan Desain Survei Kompleks di R",
-    "section": "Data dan desain survei",
-    "text": "Data dan desain survei\n\n\nTampilkan kode\nlibrary(survey)\nlibrary(dplyr)\nlibrary(ggplot2)\nlibrary(scales)\n\nknitr::opts_chunk$set(dev = \"png\", dev.args = list(bg = \"transparent\"), dpi = 150)\nINK &lt;- \"#64748B\"\ntheme_set(\n  theme_minimal(base_size = 13) +\n    theme(\n      text = element_text(colour = INK), axis.text = element_text(colour = INK),\n      panel.grid.major = element_line(colour = alpha(INK, .18), linewidth = .4),\n      panel.grid.minor = element_blank(),\n      plot.background = element_rect(fill = \"transparent\", colour = NA),\n      panel.background = element_rect(fill = \"transparent\", colour = NA),\n      legend.position = \"top\", legend.justification = \"left\",\n      legend.background = element_rect(fill = \"transparent\", colour = NA)\n    )\n)\npct &lt;- function(x, d = 1) percent(x, accuracy = 10^-d, decimal.mark = \",\")\nnum &lt;- function(x, d = 2) number(x, accuracy = 10^-d, decimal.mark = \",\", big.mark = \".\")\n\ndata(nhanes)  # NHANES 2009–2010: kolesterol total &gt; 240 mg/dL (HI_CHOL)\ndat &lt;- nhanes |&gt;\n  mutate(\n    usia = factor(agecat, labels = c(\"0–19\", \"20–39\", \"40–59\", \"60+\")),\n    jenis_kelamin = factor(RIAGENDR, labels = c(\"Laki-laki\", \"Perempuan\")),\n    ras = factor(race, labels = c(\"Hispanik\", \"Kulit putih non-Hispanik\",\n                                  \"Kulit hitam non-Hispanik\", \"Lainnya\"))\n  )\n\n# Deklarasi desain: klaster (PSU), strata, dan bobot pemeriksaan\ndesain &lt;- svydesign(id = ~SDMVPSU, strata = ~SDMVSTRA, weights = ~WTMEC2YR,\n                    nest = TRUE, data = dat)\ndesain\n\n\nStratified 1 - level Cluster Sampling design (with replacement)\nWith (31) clusters.\nsvydesign(id = ~SDMVPSU, strata = ~SDMVSTRA, weights = ~WTMEC2YR, \n    nest = TRUE, data = dat)\n\n\nData berisi 8.591 responden; 7.846 di antaranya memiliki hasil pemeriksaan kolesterol."
+    "objectID": "proyek/imunisasi-idl-ski2023/index.html#peran-tim",
+    "href": "proyek/imunisasi-idl-ski2023/index.html#peran-tim",
+    "title": "Determinan Imunisasi Dasar Lengkap: Analisis Data SKI 2023",
+    "section": "Peran tim",
+    "text": "Peran tim\nFalah Fauzi melakukan penelitian ini sebagai tesis Magister Epidemiologi di Fakultas Kesehatan Masyarakat Universitas Andalas, sekaligus menulis artikel ilmiah dari analisis data yang sama untuk Provinsi Sumatera Barat."
   },
   {
-    "objectID": "proyek/demo-survei-kompleks/index.html#langkah-1-bandingkan-estimasi-tanpa-dan-dengan-bobot",
-    "href": "proyek/demo-survei-kompleks/index.html#langkah-1-bandingkan-estimasi-tanpa-dan-dengan-bobot",
-    "title": "Demo: Estimasi Prevalensi dengan Desain Survei Kompleks di R",
-    "section": "Langkah 1 — Bandingkan estimasi tanpa dan dengan bobot",
-    "text": "Langkah 1 — Bandingkan estimasi tanpa dan dengan bobot\n\n\nTampilkan kode\nnaif &lt;- mean(dat$HI_CHOL, na.rm = TRUE)\nnaif_se &lt;- sqrt(naif * (1 - naif) / sum(!is.na(dat$HI_CHOL)))\nterbobot &lt;- svymean(~HI_CHOL, desain, na.rm = TRUE)\nik &lt;- confint(terbobot)\n\ntibble(\n  Metode = c(\"Tanpa bobot (acak sederhana)\", \"Desain survei kompleks\"),\n  Prevalensi = c(pct(naif), pct(coef(terbobot))),\n  `IK 95%` = c(paste(pct(naif - 1.96 * naif_se), \"–\", pct(naif + 1.96 * naif_se)),\n               paste(pct(ik[1]), \"–\", pct(ik[2]))),\n  `Galat baku (poin %)` = c(num(naif_se * 100), num(SE(terbobot) * 100))\n) |&gt;\n  knitr::kable(align = \"lrrr\")\n\n\n\n\nTabel 1: Prevalensi kolesterol tinggi: estimasi naif vs estimasi yang memperhitungkan desain survei.\n\n\n\n\n\n\n\n\n\n\n\n\nMetode\nPrevalensi\nIK 95%\nGalat baku (poin %)\n\n\n\n\nTanpa bobot (acak sederhana)\n10,0%\n9,4% – 10,7%\n0,34\n\n\nDesain survei kompleks\n11,2%\n10,1% – 12,3%\n0,54\n\n\n\n\n\n\n\n\nMengabaikan desain survei menghasilkan prevalensi 10,0%, sedangkan estimasi yang benar adalah 11,2%. Galat baku yang benar juga 1,6 kali lebih besar daripada galat baku naif — tanpa desain survei, kita akan terlalu yakin terhadap angka yang keliru."
+    "objectID": "proyek/imunisasi-idl-ski2023/index.html#data-metode",
+    "href": "proyek/imunisasi-idl-ski2023/index.html#data-metode",
+    "title": "Determinan Imunisasi Dasar Lengkap: Analisis Data SKI 2023",
+    "section": "Data & metode",
+    "text": "Data & metode\n\nData sekunder Survei Kesehatan Indonesia (SKI) 2023.\nStudi komparatif determinan cakupan IDL di Provinsi Aceh dan Provinsi Bali.\nAnalisis determinan capaian IDL di Provinsi Sumatera Barat."
   },
   {
-    "objectID": "proyek/demo-survei-kompleks/index.html#langkah-2-prevalensi-per-kelompok-dengan-interval-kepercayaan",
-    "href": "proyek/demo-survei-kompleks/index.html#langkah-2-prevalensi-per-kelompok-dengan-interval-kepercayaan",
-    "title": "Demo: Estimasi Prevalensi dengan Desain Survei Kompleks di R",
-    "section": "Langkah 2 — Prevalensi per kelompok dengan interval kepercayaan",
-    "text": "Langkah 2 — Prevalensi per kelompok dengan interval kepercayaan\n\n\nTampilkan kode\nper_kel &lt;- svyby(~HI_CHOL, ~usia + jenis_kelamin, desain, svymean, na.rm = TRUE)\nper_kel &lt;- per_kel |&gt;\n  as_tibble() |&gt;\n  mutate(bawah = pmax(HI_CHOL - 1.96 * se, 0), atas = HI_CHOL + 1.96 * se)\n\nWARNA &lt;- c(\"Laki-laki\" = \"#2A78D6\", \"Perempuan\" = \"#EB6834\")\ngeser &lt;- position_dodge(width = .45)\n\nggplot(per_kel, aes(usia, HI_CHOL, colour = jenis_kelamin)) +\n  geom_errorbar(aes(ymin = bawah, ymax = atas), width = 0, linewidth = .9, position = geser) +\n  geom_point(size = 3.2, position = geser) +\n  scale_colour_manual(values = WARNA, name = NULL) +\n  scale_y_continuous(labels = \\(x) pct(x, 0), limits = c(0, NA),\n                     expand = expansion(mult = c(0, .08))) +\n  labs(x = \"Kelompok usia (tahun)\", y = \"Prevalensi terbobot\")\n\n\n\n\n\n\n\n\nGambar 1: Prevalensi kolesterol tinggi terbobot menurut kelompok usia dan jenis kelamin. Garis menunjukkan IK 95%.\n\n\n\n\n\nPrevalensi naik tajam setelah usia 20 tahun. Pada kelompok 60 tahun ke atas, pola kedua jenis kelamin berpisah: 20,2% pada perempuan dibanding 9,9% pada laki-laki, dan interval kepercayaannya tidak bertumpang tindih."
+    "objectID": "proyek/imunisasi-idl-ski2023/index.html#luaran",
+    "href": "proyek/imunisasi-idl-ski2023/index.html#luaran",
+    "title": "Determinan Imunisasi Dasar Lengkap: Analisis Data SKI 2023",
+    "section": "Luaran",
+    "text": "Luaran\n\nTesis: Studi Komparatif Determinan Cakupan Imunisasi Dasar Lengkap di Provinsi Aceh dan Provinsi Bali (Analisis Data SKI Tahun 2023) — Magister Epidemiologi, Universitas Andalas (2025).\nArtikel: Determinants of Complete Basic Immunization Achievement in West Sumatra Province (Analysis of SKI 2023) — jurnal terakreditasi SINTA 4.\nPenelitian terkait di tingkat layanan: Analisis Pelaksanaan Imunisasi Dasar Lengkap di Puskesmas Anak Air Kota Padang Tahun 2024 (skripsi, 2024)."
   },
   {
-    "objectID": "proyek/demo-survei-kompleks/index.html#langkah-3-regresi-logistik-dengan-desain-survei",
-    "href": "proyek/demo-survei-kompleks/index.html#langkah-3-regresi-logistik-dengan-desain-survei",
-    "title": "Demo: Estimasi Prevalensi dengan Desain Survei Kompleks di R",
-    "section": "Langkah 3 — Regresi logistik dengan desain survei",
-    "text": "Langkah 3 — Regresi logistik dengan desain survei\n\n\nTampilkan kode\nmodel &lt;- svyglm(HI_CHOL ~ usia + jenis_kelamin + ras, design = desain,\n                family = quasibinomial())\n\nhasil &lt;- cbind(OR = exp(coef(model)), exp(confint(model)),\n               p = summary(model)$coefficients[, 4])[-1, ]\n\ntibble(\n  Variabel = sub(\"^(usia|jenis_kelamin|ras)\", \"\", rownames(hasil)),\n  Kelompok = c(rep(\"Usia (ref: 0–19)\", 3), \"Jenis kelamin (ref: laki-laki)\",\n               rep(\"Ras/etnis (ref: Hispanik)\", 3)),\n  OR = num(hasil[, \"OR\"]),\n  `IK 95%` = paste(num(hasil[, 2]), \"–\", num(hasil[, 3])),\n  p = ifelse(hasil[, \"p\"] &lt; .001, \"&lt;0,001\", num(hasil[, \"p\"], 3))\n) |&gt;\n  knitr::kable(align = \"llrrr\")\n\n\n\n\nTabel 2: Odds ratio kolesterol tinggi dari regresi logistik terbobot (svyglm).\n\n\n\n\n\n\n\n\n\n\n\n\n\nVariabel\nKelompok\nOR\nIK 95%\np\n\n\n\n\n20–39\nUsia (ref: 0–19)\n9,77\n4,66 – 20,48\n&lt;0,001\n\n\n40–59\nUsia (ref: 0–19)\n24,84\n11,10 – 55,56\n&lt;0,001\n\n\n60+\nUsia (ref: 0–19)\n20,70\n9,36 – 45,74\n&lt;0,001\n\n\nPerempuan\nJenis kelamin (ref: laki-laki)\n1,24\n1,02 – 1,50\n0,033\n\n\nKulit putih non-Hispanik\nRas/etnis (ref: Hispanik)\n0,92\n0,77 – 1,10\n0,316\n\n\nKulit hitam non-Hispanik\nRas/etnis (ref: Hispanik)\n0,65\n0,46 – 0,91\n0,019\n\n\nLainnya\nRas/etnis (ref: Hispanik)\n0,86\n0,40 – 1,85\n0,674\n\n\n\n\n\n\n\n\nSetelah dikontrol usia dan ras/etnis, perempuan memiliki odds kolesterol tinggi 1,24 kali dibanding laki-laki (IK 95%: 1,02–1,50)."
+    "objectID": "proyek/malaria-pasaman-barat/index.html",
+    "href": "proyek/malaria-pasaman-barat/index.html",
+    "title": "Ekologi dan Iklim Malaria di Kabupaten Pasaman Barat, 2020–2024",
+    "section": "",
+    "text": "Tahun\n2024 – 2025\n\n\nPeran\nAsisten penelitian\n\n\nData\nKasus malaria 2020–2024\n\n\nLuaran\n3 studi terkait"
   },
   {
-    "objectID": "proyek/demo-survei-kompleks/index.html#keterbatasan",
-    "href": "proyek/demo-survei-kompleks/index.html#keterbatasan",
-    "title": "Demo: Estimasi Prevalensi dengan Desain Survei Kompleks di R",
-    "section": "Keterbatasan",
-    "text": "Keterbatasan\n\nDemo ini deskriptif dan tidak menggambarkan kondisi Indonesia — tujuannya memperagakan metode.\nModel sengaja dibuat sederhana; analisis nyata memerlukan kerangka konseptual, pemilihan variabel, dan pemeriksaan asumsi yang lebih lengkap.\nKelompok usia 0–19 tahun jarang mengalami kolesterol tinggi, sehingga odds ratio kelompok usia lain terhadapnya memiliki interval yang lebar."
+    "objectID": "proyek/malaria-pasaman-barat/index.html#latar-belakang",
+    "href": "proyek/malaria-pasaman-barat/index.html#latar-belakang",
+    "title": "Ekologi dan Iklim Malaria di Kabupaten Pasaman Barat, 2020–2024",
+    "section": "Latar belakang",
+    "text": "Latar belakang\nWilayah yang telah mencapai eliminasi malaria tetap berisiko mengalami peningkatan kasus, misalnya akibat perubahan iklim dan mobilitas penduduk. Kabupaten Pasaman Barat menjadi lokasi kajian untuk memahami pola tersebut."
   },
   {
-    "objectID": "proyek/demo-survei-kompleks/index.html#bagaimana-kami-menerapkannya",
-    "href": "proyek/demo-survei-kompleks/index.html#bagaimana-kami-menerapkannya",
-    "title": "Demo: Estimasi Prevalensi dengan Desain Survei Kompleks di R",
-    "section": "Bagaimana kami menerapkannya",
-    "text": "Bagaimana kami menerapkannya\nUntuk data seperti SKI 2023, alurnya sama: deklarasi desain survei sesuai dokumentasi survei, estimasi prevalensi dengan IK 95%, lalu analisis multivariabel dengan svyglm. Hasilnya bisa disajikan sebagai tabel siap publikasi (misalnya dengan gtsummary) atau laporan Quarto seperti halaman ini."
+    "objectID": "proyek/malaria-pasaman-barat/index.html#peran-tim",
+    "href": "proyek/malaria-pasaman-barat/index.html#peran-tim",
+    "title": "Ekologi dan Iklim Malaria di Kabupaten Pasaman Barat, 2020–2024",
+    "section": "Peran tim",
+    "text": "Peran tim\nFalah Fauzi terlibat sebagai asisten dosen dan asisten penelitian di FKM Universitas Andalas, dengan kontribusi pada pengolahan dan analisis data."
+  },
+  {
+    "objectID": "proyek/malaria-pasaman-barat/index.html#data-metode",
+    "href": "proyek/malaria-pasaman-barat/index.html#data-metode",
+    "title": "Ekologi dan Iklim Malaria di Kabupaten Pasaman Barat, 2020–2024",
+    "section": "Data & metode",
+    "text": "Data & metode\n\nData kasus malaria Kabupaten Pasaman Barat tahun 2020–2024.\nStudi ekologi berbasis Sistem Informasi Geografis (SIG).\nAnalisis determinan ekologis dan faktor iklim selama lima tahun."
+  },
+  {
+    "objectID": "proyek/malaria-pasaman-barat/index.html#luaran",
+    "href": "proyek/malaria-pasaman-barat/index.html#luaran",
+    "title": "Ekologi dan Iklim Malaria di Kabupaten Pasaman Barat, 2020–2024",
+    "section": "Luaran",
+    "text": "Luaran\n\nStudi Ekologi Peningkatan Kasus Malaria di Kabupaten Pasaman Barat Tahun 2020–2024 Berbasis Sistem Informasi Geografis (SIG)\nEcological Determinants of Malaria in a Post-Elimination Setting: A Five-Year Climatic Analysis in West Pasaman Regency, Indonesia\nValuation of Malaria Migration Surveillance System in a Post-Elimination Setting: A Study in West Pasaman District, Indonesia"
   },
   {
     "objectID": "proyek/tb-anak-padang/index.html",
@@ -165,7 +172,49 @@
     "href": "tim/aldy.html",
     "title": "Aldy Yusra, S.K.M., M.Epid.",
     "section": "",
-    "text": "Aldy adalah anggota tim Numera Data dengan latar belakang Sarjana Kesehatan Masyarakat dan Magister Epidemiologi.\n\nProfil lengkap — keahlian, pengalaman, pendidikan, publikasi, dan proyek — sedang disiapkan dan akan segera diperbarui.\n\n\n\n\n Kembali ke atas"
+    "text": "Aldy menekuni epidemiologi lingkungan di Program Magister Epidemiologi Universitas Andalas, dengan latar belakang Kesehatan dan Keselamatan Kerja (K3) serta Kesehatan Lingkungan. Ia meneliti hubungan polusi udara dan iklim dengan pneumonia pada balita, menggunakan R/RStudio — termasuk Distributed Lag Non-Linear Model (DLNM) — untuk analisis data epidemiologi dan QGIS untuk pemetaan. Pengalamannya mencakup penelitian lapangan, kolaborasi riset lintas institusi, respons bencana, dan asisten laboratorium.\nMinat riset: epidemiologi lingkungan, polusi udara dan iklim, epidemiologi spasial, epidemiologi bencana, dan riset paparan lingkungan."
+  },
+  {
+    "objectID": "tim/aldy.html#keahlian",
+    "href": "tim/aldy.html#keahlian",
+    "title": "Aldy Yusra, S.K.M., M.Epid.",
+    "section": "Keahlian",
+    "text": "Keahlian\nR / RStudio DLNM Pemodelan statistik QGIS Epidemiologi Lingkungan Epidemiologi Bencana Manajemen data\nMetode: penelitian data sekunder dan lapangan, desain studi epidemiologi, analisis hubungan paparan–dampak dengan efek tunda (lag), serta pemetaan dan analisis geospasial."
+  },
+  {
+    "objectID": "tim/aldy.html#pengalaman-riset-akademik",
+    "href": "tim/aldy.html#pengalaman-riset-akademik",
+    "title": "Aldy Yusra, S.K.M., M.Epid.",
+    "section": "Pengalaman riset & akademik",
+    "text": "Pengalaman riset & akademik\n\nTesis Magister — Polusi Udara dan Pneumonia Balita di Kota Padang · 2026\nHubungan polutan udara dengan pneumonia balita memakai data 2023–2025 dan pendekatan DLNM di R untuk menilai pola paparan–dampak yang tertunda dan non-linear.\nKolaborator Riset Mahasiswa — Mikroplastik · 2026\nAnggota mahasiswa dalam kolaborasi riset mikroplastik dan paparan kesehatan lingkungan bersama Universitas Indonesia, Universitas Airlangga, dan universitas mitra di Jepang.\nAsisten Peneliti — Faktor Genetik, Obesitas, dan Hipertensi pada Mahasiswa · Kota Padang · Februari – Mei 2026\nAsisten Penelitian dan Pengabdian Masyarakat Dosen · FKM Universitas Andalas · 2026\nPenelitian Polusi Udara, Iklim, dan Pneumonia Balita · Kota Padang (periode studi 2023–2024) · Juni 2025\nPenelitian Integrasi Kearifan Lokal dalam Kurikulum Mitigasi Bencana · Kecamatan Sipora Selatan, Kepulauan Mentawai · 2025"
+  },
+  {
+    "objectID": "tim/aldy.html#pengalaman-lapangan-kebencanaan",
+    "href": "tim/aldy.html#pengalaman-lapangan-kebencanaan",
+    "title": "Aldy Yusra, S.K.M., M.Epid.",
+    "section": "Pengalaman lapangan & kebencanaan",
+    "text": "Pengalaman lapangan & kebencanaan\n\nRelawan Respons Bencana — Epidemiologi / MDS Manager · Kabupaten Agam · Desember 2025\nMendukung manajemen informasi epidemiologi selama respons bencana (peran terkait WHO MDS).\nPengabdian Masyarakat — Pemberdayaan Nagari Tangguh Bencana · Palembayan, Kabupaten Agam · Juli 2026\nStudi Lapangan Kekarantinaan Kesehatan · Kota Padang · September 2025\nAsisten Laboratorium Praktikum K3KL · FKM Universitas Andalas · 2 tahun akademik\nMagang — Kajian Manajerial Kualitas Udara Ambien · PT Semen Padang · Oktober 2024\nMBKM Membangun Desa — Ketua Kelompok · peminatan K3 & Kesehatan Lingkungan · Agustus – Desember 2023"
+  },
+  {
+    "objectID": "tim/aldy.html#pendidikan",
+    "href": "tim/aldy.html#pendidikan",
+    "title": "Aldy Yusra, S.K.M., M.Epid.",
+    "section": "Pendidikan",
+    "text": "Pendidikan\n\nMagister Epidemiologi (M.Epid.) · Universitas Andalas · 2026\nPeminatan Epidemiologi Lingkungan\nSarjana Kesehatan Masyarakat (S.K.M.) · Universitas Andalas\nPeminatan Kesehatan dan Keselamatan Kerja serta Kesehatan Lingkungan"
+  },
+  {
+    "objectID": "tim/aldy.html#organisasi-penghargaan",
+    "href": "tim/aldy.html#organisasi-penghargaan",
+    "title": "Aldy Yusra, S.K.M., M.Epid.",
+    "section": "Organisasi & penghargaan",
+    "text": "Organisasi & penghargaan\n\nWakil Gubernur BEM KM FKM Universitas Andalas · 2023\nMahasiswa Berprestasi, FKM Universitas Andalas · 2024\nDuta Anti Rokok Sumatera Barat · 2024\nPemenang Insentif Artikel Ilmiah Program Kreativitas Mahasiswa (PKM) · 2024\nBest Human Resources and Development — Andalas Global Awards · 2022\n\nSerta 9 penghargaan lain pada kompetisi poster ilmiah, poster publik, dan video edukasi (2023–2024)."
+  },
+  {
+    "objectID": "tim/aldy.html#proyek-yang-melibatkan-aldy",
+    "href": "tim/aldy.html#proyek-yang-melibatkan-aldy",
+    "title": "Aldy Yusra, S.K.M., M.Epid.",
+    "section": "Proyek yang melibatkan Aldy",
+    "text": "Proyek yang melibatkan Aldy\n\n\n\n\n\nTahun\n\n\nProyek\n\n\nKategori\n\n\n\n\n\n\n2026\n\n\nPolusi Udara, Iklim, dan Pneumonia Balita di Kota Padang\n\n\nEpidemiologi Lingkungan, Polusi Udara, DLNM, R\n\n\n\n\n2025\n\n\nManajemen Informasi Epidemiologi saat Respons Bencana di Kabupaten Agam\n\n\nEpidemiologi Bencana, Surveilans, Respons Darurat\n\n\n\n\nTidak ada yang cocok"
   },
   {
     "objectID": "tim/falah.html",
@@ -186,7 +235,14 @@
     "href": "tim/falah.html#pengalaman",
     "title": "Falah Fauzi, S.K.M., M.Epid.",
     "section": "Pengalaman",
-    "text": "Pengalaman\n\nAsisten Dosen · Fakultas Kesehatan Masyarakat, Universitas Andalas · 2024 – 2025\nMendukung penelitian dosen, antara lain studi ekologi malaria di Pasaman Barat berbasis SIG, pemodelan spasial TB anak di Kota Padang, dan determinan kualitas hidup pasien TB di Dharmasraya.\nAsisten Penelitian · berbagai studi klinis dan epidemiologi · analisis data untuk 16 penelitian di bidang kesehatan reproduksi, pediatri, neurologi, penyakit infeksi, dan kesehatan lingkungan.\nSurveyor Tracer Study · Universitas Andalas · 2024\nStudi Lapangan Sistem Kekarantinaan Kesehatan · KKP Kelas I Padang · Agustus – September 2024\nMagang Bidang Pencegahan dan Kesiapsiagaan · BPBD Provinsi Sumatera Barat · November 2023\nPraktik Belajar Lapangan · Puskesmas Sialang, Kabupaten Lima Puluh Kota · September 2023"
+    "text": "Pengalaman\n\nAsisten Dosen · Fakultas Kesehatan Masyarakat, Universitas Andalas · 2024 – 2025\nMendukung penelitian dosen, antara lain studi ekologi malaria di Pasaman Barat berbasis SIG, pemodelan spasial TB anak di Kota Padang, dan determinan kualitas hidup pasien TB di Dharmasraya.\nAsisten Penelitian · berbagai studi klinis dan epidemiologi · analisis data untuk 16 penelitian (lihat daftar lengkap).\nSurveyor Tracer Study · Universitas Andalas · 2024\nStudi Lapangan Sistem Kekarantinaan Kesehatan · KKP Kelas I Padang · Agustus – September 2024\nMagang Bidang Pencegahan dan Kesiapsiagaan · BPBD Provinsi Sumatera Barat · November 2023\nPraktik Belajar Lapangan · Puskesmas Sialang, Kabupaten Lima Puluh Kota · September 2023"
+  },
+  {
+    "objectID": "tim/falah.html#asisten-penelitian",
+    "href": "tim/falah.html#asisten-penelitian",
+    "title": "Falah Fauzi, S.K.M., M.Epid.",
+    "section": "Asisten penelitian",
+    "text": "Asisten penelitian\nTerlibat sebagai asisten penelitian dalam analisis data berbagai studi klinis dan epidemiologi lintas disiplin — kesehatan reproduksi, pediatri, neurologi, penyakit infeksi, dan kesehatan lingkungan:\n\n\nDeterminan Perilaku Remaja Putri untuk Konsumsi Tablet Fe di Wilayah Kerja Puskesmas Nan Balimo Kota Solok\nPerbedaan Kadar 4-Hydroxyindole (4HI) pada Feses dan Cairan Peritoneum antara Pasien Endometriosis dan Kontrol\nModel Edukasi Upaya Pencegahan Hearing Loss Akibat Gadget pada Remaja\nPerbedaan Kadar Kalsidiol (25(OH)D) dan Ekspresi mikroRNA-1323 Darah Maternal antara Persalinan Aterm dengan Early Preterm (28–34 Minggu)\nPerbedaan Nilai ROX, P-ROX, mP-ROX, ROX-HR, Rasio SF, dan Nilai CRS pada Kesuksesan dan Kegagalan High-Flow Nasal Cannula (HFNC) pada Pasien Pediatrik di PICU\nAnalisis Ekspresi mikroRNA-141, Kadar Cell-Free Fetal DNA, dan Apoptotic Bodies pada Ibu Hamil dengan Janin Intrauterine Growth Restriction (IUGR)\nEcological Determinants of Malaria in a Post-Elimination Setting: A Five-Year Climatic Analysis in West Pasaman Regency, Indonesia\nValuation of Malaria Migration Surveillance System in a Post-Elimination Setting: A Study in West Pasaman District, Indonesia\nHubungan Kadar Glial Fibrillary Acidic Protein (GFAP) Serum dengan Skor NIHSS dan ICH Skor pada Pasien Perdarahan Intraserebral\nAnalisis Polimorfisme BDNF rs6265 Val66Met, Kadar BDNF Maternal dan Tali Pusat dengan Neurobehavioral Neonatal pada Ibu Hamil Obesitas Etnik Minangkabau\nHubungan Polimorfisme Gen TaqI pada VDR dengan Kadar Vitamin D Maternal dan Tali Pusar pada Ibu Hamil dengan Obesitas\nPengaruh Pemberian New Balanced Solutions (Ringer Asetat Malat) Dibandingkan Ringer Laktat sebagai Cairan Resusitasi pada Anak terhadap Parameter Keseimbangan Asam Basa, Komposisi Elektrolit, dan Bersihan Laktat\nNilai CT-Value PCR dalam Memprediksi CMV dan Rubella pada Ibu Hamil Trimester I–II\nHubungan Mikroalbuminuria pada Trimester Pertama dengan Kejadian Preeklamsia pada Wanita Hamil di Kota Padang\nEfektivitas Inovasi BIDADARI NAUN PISAN terhadap Deteksi Dini Kehamilan Risiko Tinggi Berdasarkan Skor Poedji Rochjati di Puskesmas Sungai Rumbai, Kabupaten Dharmasraya\nPerbedaan Pelvic Floor Distress Inventory dan Urogenital Distress Inventory 6 Sebelum dan Sesudah Persalinan Pervaginam pada Pasien Primigravida di Kota Padang"
   },
   {
     "objectID": "tim/falah.html#pendidikan",
@@ -200,7 +256,14 @@
     "href": "tim/falah.html#publikasi-pilihan",
     "title": "Falah Fauzi, S.K.M., M.Epid.",
     "section": "Publikasi pilihan",
-    "text": "Publikasi pilihan\n\n\nDeterminants of Complete Basic Immunization Achievement in West Sumatra Province (Analysis of SKI 2023). Jurnal terakreditasi SINTA 4.\nPeningkatan Kapasitas Kader Posyandu melalui Edukasi Deteksi Dini Kasus Kelumpuhan Layuh Mendadak (AFP) di Wilayah Kerja Puskesmas Ophir, Kabupaten Pasaman Barat. Jurnal Bina. doi:10.25077/bina.v8i3.795\nPencegahan Penyakit Menular melalui Edukasi dan Tindakan Preventif Berbasis Permainan Flash Card bagi Siswa SDN 04 Gaung Padang. Jurnal Bina. doi:10.25077/bina.v7i4.719\n\n\nEditor 12 buku kesehatan (Mitra Ilmu Makassar & Penerbit Mafy), antara lain Iklim dan COVID-19, Campak, Aspek Iklim, dan Migrasi Penduduk, Pencegahan dan Pengendalian Tuberkulosis, dan Imunisasi Polio: Mengenal Polio dan Penanggulangannya."
+    "text": "Publikasi pilihan\n\n\nDeterminants of Complete Basic Immunization Achievement in West Sumatra Province (Analysis of SKI 2023). Jurnal terakreditasi SINTA 4.\nPeningkatan Kapasitas Kader Posyandu melalui Edukasi Deteksi Dini Kasus Kelumpuhan Layuh Mendadak (AFP) di Wilayah Kerja Puskesmas Ophir, Kabupaten Pasaman Barat. Jurnal Bina. doi:10.25077/bina.v8i3.795\nPencegahan Penyakit Menular melalui Edukasi dan Tindakan Preventif Berbasis Permainan Flash Card bagi Siswa SDN 04 Gaung Padang. Jurnal Bina. doi:10.25077/bina.v7i4.719"
+  },
+  {
+    "objectID": "tim/falah.html#editor-buku",
+    "href": "tim/falah.html#editor-buku",
+    "title": "Falah Fauzi, S.K.M., M.Epid.",
+    "section": "Editor buku",
+    "text": "Editor buku\nEditor 12 buku kesehatan yang diterbitkan Mitra Ilmu Makassar dan Penerbit Mafy:\n\n\nIklim dan COVID-19 · Mitra Ilmu Makassar (2023)\nCampak, Aspek Iklim, dan Migrasi Penduduk · Penerbit Mafy · penulis: Masrizal, Adji Fauzan Rifky, Yudi Pradipta\nKualitas Air Minum · Penerbit Mafy · penulis: Masrizal, Icha Putri\nKerentanan Wilayah Filariasis · Penerbit Mafy · penulis: Masrizal, Dion Andhika Dwi Putra\nSurvival Pasien HIV/AIDS · Penerbit Mafy · penulis: Masrizal, Reza Annisa\nPelaporan di Rumah Sakit · Penerbit Mafy · penulis: Masrizal, Fina Rahma Aulia\nPencegahan dan Pengendalian Tuberkulosis · Penerbit Mafy · penulis: Masrizal, Diva Maharani\nKepadatan Jentik Aedes aegypti · Penerbit Mafy · penulis: Masrizal\nStatus Gizi terhadap Tuberkulosis Anak · Penerbit Mafy · penulis: Masrizal\nDerajat Klinis Penyakit Demam Berdarah Dengue · Penerbit Mafy · penulis: Masrizal, Rifka Febrina\nImunisasi Polio: Mengenal Polio dan Penanggulangannya · Penerbit Mafy · penulis: Masrizal, Imalatul Mardhiyah\nEpidemiologi Penyakit Kardiovaskular: Penyakit Umum Terjadi · Penerbit Mafy · penulis: Masrizal"
   },
   {
     "objectID": "tim/falah.html#organisasi-penghargaan",
@@ -221,21 +284,21 @@
     "href": "tim.html",
     "title": "Tim Kami",
     "section": "",
-    "text": "Falah Fauzi, S.K.M., M.Epid.\n      Data Analyst\n      Epidemiolog dengan fokus surveilans penyakit menular, program imunisasi, dan epidemiologi spasial berbasis SIG.\n      \n        SPSSREpi InfoSIG & Analisis SpasialPenulisan Ilmiah\n      \n    \n  \n\n  \n    \n    \n      Aldy Yusra, S.K.M., M.Epid.\n      Data Analyst\n      Epidemiolog dengan latar belakang kesehatan masyarakat. Profil lengkap segera diperbarui.\n      \n        \n      \n    \n  \n\n  \n    \n    \n      Muhammad Ilham Basgoro, S.K.M., M.Epid.\n      Data Analyst\n      Analisis survei kesehatan kompleks dengan R, pemetaan SIG dengan QGIS, dan dashboard surveilans interaktif.\n      \n        RAnalisis Survei KompleksQGISShiny & QuartoStataSPSS\n      \n    \n  \n\n\nTidak ada yang cocok\n Kembali ke atas"
+    "text": "Falah Fauzi, S.K.M., M.Epid.\n      Data Analyst\n      Epidemiolog dengan fokus surveilans penyakit menular, program imunisasi, dan epidemiologi spasial berbasis SIG.\n      \n        SPSSREpi InfoSIG & Analisis SpasialPenulisan Ilmiah\n      \n    \n  \n\n  \n    \n    \n      Aldy Yusra, S.K.M., M.Epid.\n      Data Analyst\n      Epidemiologi lingkungan: polusi udara, iklim, dan kesehatan anak, dengan analisis DLNM di R dan pemetaan QGIS.\n      \n        RDLNMQGISEpidemiologi LingkunganEpidemiologi Bencana\n      \n    \n  \n\n  \n    \n    \n      Muhammad Ilham Basgoro, S.K.M., M.Epid.\n      Data Analyst\n      Analisis survei kesehatan kompleks dengan R, pemetaan SIG dengan QGIS, dan dashboard surveilans interaktif.\n      \n        RAnalisis Survei KompleksQGISShiny & QuartoStataSPSS\n      \n    \n  \n\n\nTidak ada yang cocok\n Kembali ke atas"
   },
   {
     "objectID": "proyek.html",
     "href": "proyek.html",
     "title": "Proyek",
     "section": "",
-    "text": "Urut berdasar\n      Default\n      \n        Tanggal - Paling lama\n      \n      \n        Tanggal - Paling baru\n      \n      \n        Judul\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nDemo: Estimasi Prevalensi dengan Desain Survei Kompleks di R\n\n\n\nR\n\nAnalisis Survei Kompleks\n\nDemo Metode\n\n\n\nContoh alur analisis yang kami pakai untuk data survei kesehatan seperti SKI — diperagakan dengan data terbuka NHANES dan paket R survey.\n\n\n\n2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nPemetaan Iklan Rokok di Sekitar Sekolah di Tiga Kabupaten\n\n\n\nPengendalian Tembakau\n\nQGIS\n\nPemetaan\n\n\n\nSembilan peta tematik QGIS untuk survei Kawasan Tanpa Rokok serta iklan, promosi, dan sponsor rokok di Agam, Lima Puluh Kota, dan Pasaman Barat.\n\n\n\n2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nKonsumsi Obat Pencegahan Filariasis saat POPM: Analisis Data SKI 2023\n\n\n\nFilariasis\n\nAnalisis Survei Kompleks\n\nSKI 2023\n\n\n\nFaktor yang berhubungan dengan konsumsi obat pencegahan pada Pemberian Obat Pencegahan Massal (POPM) filariasis limfatik di Indonesia.\n\n\n\n2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nDeterminan Imunisasi Dasar Lengkap: Analisis Data SKI 2023\n\n\n\nImunisasi\n\nAnalisis Survei\n\nSKI 2023\n\n\n\nStudi komparatif determinan cakupan imunisasi dasar lengkap di Provinsi Aceh dan Bali, dilengkapi analisis determinan di Sumatera Barat.\n\n\n\n2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nDashboard Surveilans DBD Dinas Kesehatan Kota Padang\n\n\n\nDBD\n\nDashboard\n\nR\n\nSurveilans\n\n\n\nDashboard surveilans demam berdarah dengue dengan R, dibangun selama studi lapangan di Bidang Surveilans Epidemiologi.\n\n\n\n2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nEkologi dan Iklim Malaria di Kabupaten Pasaman Barat, 2020–2024\n\n\n\nMalaria\n\nSIG\n\nStudi Ekologi\n\n\n\nStudi ekologi berbasis SIG tentang peningkatan kasus malaria di wilayah pasca-eliminasi, termasuk analisis faktor iklim lima tahun.\n\n\n\n2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nPemodelan Spasial TB Anak di Kota Padang, 2018–2023\n\n\n\nTuberkulosis\n\nAnalisis Spasial\n\nKesehatan Anak\n\n\n\nPemodelan spasial distribusi TB anak berdasarkan determinan host, dilengkapi studi determinan dan upaya pencegahan di tingkat puskesmas.\n\n\n\n2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nAnalisis Spasial KLB Chikungunya di Sumatera Barat, 2024\n\n\n\nChikungunya\n\nAnalisis Spasial\n\nInvestigasi KLB\n\n\n\nAnalisis epidemiologi dan spasial berbasis SIG terhadap penyebaran KLB chikungunya di Kabupaten Solok, Sumatera Barat.\n\n\n\n2025\n\n\n\n\n\n\nTidak ada yang cocok\n Kembali ke atas"
+    "text": "Urut berdasar\n      Default\n      \n        Tanggal - Paling lama\n      \n      \n        Tanggal - Paling baru\n      \n      \n        Judul\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nDemo: Estimasi Prevalensi dengan Desain Survei Kompleks di R\n\n\n\nR\n\nAnalisis Survei Kompleks\n\nDemo Metode\n\n\n\nContoh alur analisis yang kami pakai untuk data survei kesehatan seperti SKI — diperagakan dengan data terbuka NHANES dan paket R survey.\n\n\n\n2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nPemetaan Iklan Rokok di Sekitar Sekolah di Tiga Kabupaten\n\n\n\nPengendalian Tembakau\n\nQGIS\n\nPemetaan\n\n\n\nSembilan peta tematik QGIS untuk survei Kawasan Tanpa Rokok serta iklan, promosi, dan sponsor rokok di Agam, Lima Puluh Kota, dan Pasaman Barat.\n\n\n\n2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nPolusi Udara, Iklim, dan Pneumonia Balita di Kota Padang\n\n\n\nEpidemiologi Lingkungan\n\nPolusi Udara\n\nDLNM\n\nR\n\n\n\nHubungan polutan udara dan faktor iklim dengan pneumonia balita, dianalisis dengan Distributed Lag Non-Linear Model (DLNM) di R.\n\n\n\n2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nKonsumsi Obat Pencegahan Filariasis saat POPM: Analisis Data SKI 2023\n\n\n\nFilariasis\n\nAnalisis Survei Kompleks\n\nSKI 2023\n\n\n\nFaktor yang berhubungan dengan konsumsi obat pencegahan pada Pemberian Obat Pencegahan Massal (POPM) filariasis limfatik di Indonesia.\n\n\n\n2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nDeterminan Imunisasi Dasar Lengkap: Analisis Data SKI 2023\n\n\n\nImunisasi\n\nAnalisis Survei\n\nSKI 2023\n\n\n\nStudi komparatif determinan cakupan imunisasi dasar lengkap di Provinsi Aceh dan Bali, dilengkapi analisis determinan di Sumatera Barat.\n\n\n\n2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nManajemen Informasi Epidemiologi saat Respons Bencana di Kabupaten Agam\n\n\n\nEpidemiologi Bencana\n\nSurveilans\n\nRespons Darurat\n\n\n\nRelawan epidemiologi dan MDS Manager yang mendukung pengelolaan informasi epidemiologi selama respons bencana di Kabupaten Agam.\n\n\n\n2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nDashboard Surveilans DBD Kota Padang, 2023–2024\n\n\n\nDBD\n\nDashboard\n\nR\n\nShiny\n\nSurveilans\n\n\n\nDashboard interaktif surveilans demam berdarah dengue dengan R Shiny, dibangun selama studi lapangan di Bidang Surveilans Epidemiologi. Bisa dicoba langsung secara daring.\n\n\n\n2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nEkologi dan Iklim Malaria di Kabupaten Pasaman Barat, 2020–2024\n\n\n\nMalaria\n\nSIG\n\nStudi Ekologi\n\n\n\nStudi ekologi berbasis SIG tentang peningkatan kasus malaria di wilayah pasca-eliminasi, termasuk analisis faktor iklim lima tahun.\n\n\n\n2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nPemodelan Spasial TB Anak di Kota Padang, 2018–2023\n\n\n\nTuberkulosis\n\nAnalisis Spasial\n\nKesehatan Anak\n\n\n\nPemodelan spasial distribusi TB anak berdasarkan determinan host, dilengkapi studi determinan dan upaya pencegahan di tingkat puskesmas.\n\n\n\n2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nAnalisis Spasial KLB Chikungunya di Sumatera Barat, 2024\n\n\n\nChikungunya\n\nAnalisis Spasial\n\nInvestigasi KLB\n\n\n\nAnalisis epidemiologi dan spasial berbasis SIG terhadap penyebaran KLB chikungunya di Kabupaten Solok, Sumatera Barat.\n\n\n\n2025\n\n\n\n\n\n\nTidak ada yang cocok\n Kembali ke atas"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Data kesehatan yang dianalisis dengan benar, disajikan dengan jelas.",
     "section": "",
-    "text": "Health Data Research & Analysis Consultant\n\n\n\nNumera Data adalah tim epidemiolog yang membantu peneliti, dinas kesehatan, dan organisasi kesehatan mengolah data survei, memetakan penyakit, dan menyusun luaran ilmiah — dari desain analisis sampai manuskrip siap submit.\n\n\nLihat Proyek Kenali Tim\n\n\n\n\nEstimasi prevalensi terbobot per kelompok · ilustrasi\n\n  Kelompok A\n  Kelompok B\n  Kelompok C\n  Kelompok D\n\nTitik = estimasi · garis = IK 95%"
+    "text": "Health Data Research & Analysis Consultant\n\n\n\nNumera Data adalah tim epidemiolog yang membantu peneliti, dinas kesehatan, dan organisasi kesehatan mengolah data survei, memetakan penyakit, dan menyusun luaran ilmiah — dari desain analisis sampai manuskrip siap submit.\n\n\nLihat Proyek Kenali Tim\n\n\n\n\nContoh luaran · peta tematik\n\n\n  \n    \n    Insiden per wilayah · draf\n  \n  \n    \n    Sebaran titik kasus · draf\n  \n  \n    \n    Buffer 500 m sekitar sekolah · draf"
   },
   {
     "objectID": "index.html#layanan",
@@ -277,7 +340,7 @@
     "href": "tim/ilham.html#pengalaman",
     "title": "Muhammad Ilham Basgoro, S.K.M., M.Epid.",
     "section": "Pengalaman",
-    "text": "Pengalaman\n\nAsisten Akademik · Departemen Kesehatan Masyarakat, FKM Universitas Andalas · Maret 2026 – sekarang\nMenelaah dan menyunting proposal hibah penelitian, serta mendampingi pengolahan dan analisis data skripsi mahasiswa.\nAsisten Peneliti · Departemen Kesehatan Masyarakat, FKM Universitas Andalas · 2024 – 2026\nEnumerator, pengolah data, analis data, dan penulis manuskrip di 10 penelitian, termasuk spesialis pemetaan SIG untuk survei Kawasan Tanpa Rokok dan iklan rokok (2026), serta proyek hibah STRIPE bersama Pusat Kedokteran Tropis UGM (2025).\nStudi Lapangan Surveilans Epidemiologi · Dinas Kesehatan Kota Padang · September – Oktober 2025\nInvestigasi KLB campak dan pertusis, analisis data DBD dan SKDR, peta kasus dan cakupan imunisasi dengan QGIS, serta dashboard surveilans DBD dengan RStudio.\nMagang Surveilans Kekarantinaan Kesehatan · Kantor Kekarantinaan Kesehatan Kelas I Dumai · Juli – Agustus 2024"
+    "text": "Pengalaman\n\nAsisten Akademik · Departemen Kesehatan Masyarakat, FKM Universitas Andalas · Maret 2026 – sekarang\nMenelaah dan menyunting proposal hibah penelitian, serta mendampingi pengolahan dan analisis data skripsi mahasiswa.\nAsisten Peneliti · Departemen Kesehatan Masyarakat, FKM Universitas Andalas · 2024 – 2026\nEnumerator, pengolah data, analis data, dan penulis manuskrip di 10 penelitian, termasuk spesialis pemetaan SIG untuk survei Kawasan Tanpa Rokok dan iklan rokok (2026), serta proyek hibah STRIPE bersama Pusat Kedokteran Tropis UGM (2025).\nStudi Lapangan Surveilans Epidemiologi · Dinas Kesehatan Kota Padang · September – Oktober 2025\nInvestigasi KLB campak dan pertusis, analisis data DBD dan SKDR, peta kasus dan cakupan imunisasi dengan QGIS, serta dashboard surveilans DBD dengan R Shiny.\nMagang Surveilans Kekarantinaan Kesehatan · Kantor Kekarantinaan Kesehatan Kelas I Dumai · Juli – Agustus 2024"
   },
   {
     "objectID": "tim/ilham.html#pendidikan",
@@ -305,7 +368,7 @@
     "href": "tim/ilham.html#proyek-yang-melibatkan-ilham",
     "title": "Muhammad Ilham Basgoro, S.K.M., M.Epid.",
     "section": "Proyek yang melibatkan Ilham",
-    "text": "Proyek yang melibatkan Ilham\n\n\n\n\n\nTahun\n\n\nProyek\n\n\nKategori\n\n\n\n\n\n\n2026\n\n\nPemetaan Iklan Rokok di Sekitar Sekolah di Tiga Kabupaten\n\n\nPengendalian Tembakau, QGIS, Pemetaan\n\n\n\n\n2026\n\n\nKonsumsi Obat Pencegahan Filariasis saat POPM: Analisis Data SKI 2023\n\n\nFilariasis, Analisis Survei Kompleks, SKI 2023\n\n\n\n\n2025\n\n\nDashboard Surveilans DBD Dinas Kesehatan Kota Padang\n\n\nDBD, Dashboard, R, Surveilans\n\n\n\n\n2025\n\n\nAnalisis Spasial KLB Chikungunya di Sumatera Barat, 2024\n\n\nChikungunya, Analisis Spasial, Investigasi KLB\n\n\n\n\nTidak ada yang cocok"
+    "text": "Proyek yang melibatkan Ilham\n\n\n\n\n\nTahun\n\n\nProyek\n\n\nKategori\n\n\n\n\n\n\n2026\n\n\nPemetaan Iklan Rokok di Sekitar Sekolah di Tiga Kabupaten\n\n\nPengendalian Tembakau, QGIS, Pemetaan\n\n\n\n\n2026\n\n\nKonsumsi Obat Pencegahan Filariasis saat POPM: Analisis Data SKI 2023\n\n\nFilariasis, Analisis Survei Kompleks, SKI 2023\n\n\n\n\n2025\n\n\nDashboard Surveilans DBD Kota Padang, 2023–2024\n\n\nDBD, Dashboard, R, Shiny, Surveilans\n\n\n\n\n2025\n\n\nAnalisis Spasial KLB Chikungunya di Sumatera Barat, 2024\n\n\nChikungunya, Analisis Spasial, Investigasi KLB\n\n\n\n\nTidak ada yang cocok"
   },
   {
     "objectID": "proyek/pemetaan-iklan-rokok/index.html",
@@ -345,106 +408,169 @@
   {
     "objectID": "proyek/dashboard-dbd-padang/index.html",
     "href": "proyek/dashboard-dbd-padang/index.html",
-    "title": "Dashboard Surveilans DBD Dinas Kesehatan Kota Padang",
+    "title": "Dashboard Surveilans DBD Kota Padang, 2023–2024",
     "section": "",
-    "text": "Tahun\n2025\n\n\nPeran\nAnalis data\n\n\nMitra\nDinkes Kota Padang\n\n\nLuaran\nDashboard & peta kasus"
+    "text": "Tahun\n2025\n\n\nPeran\nAnalis data\n\n\nMitra\nDinkes Kota Padang\n\n\nData\nKasus & vektor DBD 2023–2024"
   },
   {
     "objectID": "proyek/dashboard-dbd-padang/index.html#latar-belakang",
     "href": "proyek/dashboard-dbd-padang/index.html#latar-belakang",
-    "title": "Dashboard Surveilans DBD Dinas Kesehatan Kota Padang",
+    "title": "Dashboard Surveilans DBD Kota Padang, 2023–2024",
     "section": "Latar belakang",
     "text": "Latar belakang\nData surveilans demam berdarah dengue (DBD) dilaporkan secara rutin, tetapi sering hanya tersimpan dalam tabel. Dashboard membantu petugas melihat tren dan sebaran kasus dengan cepat."
   },
   {
+    "objectID": "proyek/dashboard-dbd-padang/index.html#isi-dashboard",
+    "href": "proyek/dashboard-dbd-padang/index.html#isi-dashboard",
+    "title": "Dashboard Surveilans DBD Kota Padang, 2023–2024",
+    "section": "Isi dashboard",
+    "text": "Isi dashboard\nPengguna memilih tahun (2023, 2024) dan wilayah, lalu melihat dua menu:\n\nVisualisasi — tren kasus DBD per bulan, distribusi kasus menurut jenis kelamin, dan peta sebaran kasus.\nIndikator — total kasus dan insiden rate; intervensi vektor (penyelidikan epidemiologi, fogging, larvasida, rumah yang diperiksa); serta indikator vektor (jumlah positif jentik dan angka bebas jentik) beserta status risikonya.\n\n\n\n\nMenu Visualisasi — tren kasus DBD bulanan di Kota Padang, 2023."
+  },
+  {
     "objectID": "proyek/dashboard-dbd-padang/index.html#peran-tim",
     "href": "proyek/dashboard-dbd-padang/index.html#peran-tim",
-    "title": "Dashboard Surveilans DBD Dinas Kesehatan Kota Padang",
+    "title": "Dashboard Surveilans DBD Kota Padang, 2023–2024",
     "section": "Peran tim",
-    "text": "Peran tim\nSelama studi lapangan di Bidang Surveilans Epidemiologi Dinas Kesehatan Kota Padang (September – Oktober 2025), Muhammad Ilham Basgoro menganalisis data rutin DBD dan SKDR serta membangun dashboard surveilans DBD dengan RStudio."
+    "text": "Peran tim\nSelama studi lapangan di Bidang Surveilans Epidemiologi Dinas Kesehatan Kota Padang (September – Oktober 2025), Muhammad Ilham Basgoro menganalisis data rutin DBD dan SKDR serta membangun dashboard surveilans DBD dengan R Shiny."
   },
   {
     "objectID": "proyek/dashboard-dbd-padang/index.html#kegiatan-terkait",
     "href": "proyek/dashboard-dbd-padang/index.html#kegiatan-terkait",
-    "title": "Dashboard Surveilans DBD Dinas Kesehatan Kota Padang",
+    "title": "Dashboard Surveilans DBD Kota Padang, 2023–2024",
     "section": "Kegiatan terkait",
     "text": "Kegiatan terkait\n\nInvestigasi dan respons KLB campak dan pertusis.\nPeta kasus campak, difteri, rabies, dan pertusis serta peta cakupan imunisasi dengan QGIS.\nPelaksanaan Transmission Assessment Survey (TAS) filariasis."
   },
   {
     "objectID": "proyek/dashboard-dbd-padang/index.html#luaran",
     "href": "proyek/dashboard-dbd-padang/index.html#luaran",
-    "title": "Dashboard Surveilans DBD Dinas Kesehatan Kota Padang",
+    "title": "Dashboard Surveilans DBD Kota Padang, 2023–2024",
     "section": "Luaran",
-    "text": "Luaran\n\nDashboard surveilans DBD berbasis R.\nPeta kasus penyakit dan cakupan imunisasi untuk Bidang Surveilans Epidemiologi."
+    "text": "Luaran\n\nDashboard surveilans DBD berbasis R Shiny (daring), data 2023–2024.\nPeta kasus penyakit dan cakupan imunisasi untuk Bidang Surveilans Epidemiologi."
   },
   {
-    "objectID": "proyek/malaria-pasaman-barat/index.html",
-    "href": "proyek/malaria-pasaman-barat/index.html",
-    "title": "Ekologi dan Iklim Malaria di Kabupaten Pasaman Barat, 2020–2024",
+    "objectID": "proyek/polusi-udara-pneumonia-balita/index.html",
+    "href": "proyek/polusi-udara-pneumonia-balita/index.html",
+    "title": "Polusi Udara, Iklim, dan Pneumonia Balita di Kota Padang",
     "section": "",
-    "text": "Tahun\n2024 – 2025\n\n\nPeran\nAsisten penelitian\n\n\nData\nKasus malaria 2020–2024\n\n\nLuaran\n3 studi terkait"
+    "text": "Tahun\n2025 – 2026\n\n\nPeran\nPeneliti utama\n\n\nData\nKota Padang, 2023–2025\n\n\nMetode\nDLNM di R"
   },
   {
-    "objectID": "proyek/malaria-pasaman-barat/index.html#latar-belakang",
-    "href": "proyek/malaria-pasaman-barat/index.html#latar-belakang",
-    "title": "Ekologi dan Iklim Malaria di Kabupaten Pasaman Barat, 2020–2024",
+    "objectID": "proyek/polusi-udara-pneumonia-balita/index.html#latar-belakang",
+    "href": "proyek/polusi-udara-pneumonia-balita/index.html#latar-belakang",
+    "title": "Polusi Udara, Iklim, dan Pneumonia Balita di Kota Padang",
     "section": "Latar belakang",
-    "text": "Latar belakang\nWilayah yang telah mencapai eliminasi malaria tetap berisiko mengalami peningkatan kasus, misalnya akibat perubahan iklim dan mobilitas penduduk. Kabupaten Pasaman Barat menjadi lokasi kajian untuk memahami pola tersebut."
+    "text": "Latar belakang\nPneumonia masih menjadi salah satu penyebab utama kesakitan pada balita. Paparan polusi udara dan kondisi iklim dapat memengaruhi risiko penyakit pernapasan, tetapi dampaknya sering tidak langsung terjadi dan tidak selalu linear — sehingga perlu metode analisis yang bisa menangkap efek tertunda."
   },
   {
-    "objectID": "proyek/malaria-pasaman-barat/index.html#peran-tim",
-    "href": "proyek/malaria-pasaman-barat/index.html#peran-tim",
-    "title": "Ekologi dan Iklim Malaria di Kabupaten Pasaman Barat, 2020–2024",
+    "objectID": "proyek/polusi-udara-pneumonia-balita/index.html#peran-tim",
+    "href": "proyek/polusi-udara-pneumonia-balita/index.html#peran-tim",
+    "title": "Polusi Udara, Iklim, dan Pneumonia Balita di Kota Padang",
     "section": "Peran tim",
-    "text": "Peran tim\nFalah Fauzi terlibat sebagai asisten dosen dan asisten penelitian di FKM Universitas Andalas, dengan kontribusi pada pengolahan dan analisis data."
+    "text": "Peran tim\nAldy Yusra meneliti topik ini dalam dua tahap: studi hubungan polutan udara dan faktor iklim dengan pneumonia balita (periode studi 2023–2024, Juni 2025), lalu dilanjutkan sebagai tesis Magister Epidemiologi peminatan Epidemiologi Lingkungan di Universitas Andalas (2026)."
   },
   {
-    "objectID": "proyek/malaria-pasaman-barat/index.html#data-metode",
-    "href": "proyek/malaria-pasaman-barat/index.html#data-metode",
-    "title": "Ekologi dan Iklim Malaria di Kabupaten Pasaman Barat, 2020–2024",
+    "objectID": "proyek/polusi-udara-pneumonia-balita/index.html#data-metode",
+    "href": "proyek/polusi-udara-pneumonia-balita/index.html#data-metode",
+    "title": "Polusi Udara, Iklim, dan Pneumonia Balita di Kota Padang",
     "section": "Data & metode",
-    "text": "Data & metode\n\nData kasus malaria Kabupaten Pasaman Barat tahun 2020–2024.\nStudi ekologi berbasis Sistem Informasi Geografis (SIG).\nAnalisis determinan ekologis dan faktor iklim selama lima tahun."
+    "text": "Data & metode\n\nData pneumonia balita, polutan udara, dan faktor iklim di Kota Padang, 2023–2025.\nDistributed Lag Non-Linear Model (DLNM) di R untuk menilai pola hubungan paparan–dampak yang tertunda (lag) dan non-linear."
   },
   {
-    "objectID": "proyek/malaria-pasaman-barat/index.html#luaran",
-    "href": "proyek/malaria-pasaman-barat/index.html#luaran",
-    "title": "Ekologi dan Iklim Malaria di Kabupaten Pasaman Barat, 2020–2024",
+    "objectID": "proyek/polusi-udara-pneumonia-balita/index.html#luaran",
+    "href": "proyek/polusi-udara-pneumonia-balita/index.html#luaran",
+    "title": "Polusi Udara, Iklim, dan Pneumonia Balita di Kota Padang",
     "section": "Luaran",
-    "text": "Luaran\n\nStudi Ekologi Peningkatan Kasus Malaria di Kabupaten Pasaman Barat Tahun 2020–2024 Berbasis Sistem Informasi Geografis (SIG)\nEcological Determinants of Malaria in a Post-Elimination Setting: A Five-Year Climatic Analysis in West Pasaman Regency, Indonesia\nValuation of Malaria Migration Surveillance System in a Post-Elimination Setting: A Study in West Pasaman District, Indonesia"
+    "text": "Luaran\n\nPenelitian polusi udara, iklim, dan pneumonia balita di Kota Padang (periode studi 2023–2024) — 2025.\nTesis Magister Epidemiologi: Polusi Udara dan Pneumonia Balita di Kota Padang (data 2023–2025) — 2026."
   },
   {
-    "objectID": "proyek/imunisasi-idl-ski2023/index.html",
-    "href": "proyek/imunisasi-idl-ski2023/index.html",
-    "title": "Determinan Imunisasi Dasar Lengkap: Analisis Data SKI 2023",
+    "objectID": "proyek/demo-survei-kompleks/index.html",
+    "href": "proyek/demo-survei-kompleks/index.html",
+    "title": "Demo: Estimasi Prevalensi dengan Desain Survei Kompleks di R",
     "section": "",
-    "text": "Tahun\n2024 – 2025\n\n\nPeran\nPeneliti utama\n\n\nData\nSKI 2023\n\n\nLuaran\nTesis · artikel SINTA 4"
+    "text": "Jenis\nDemo metode\n\n\nData\nNHANES 2009–2010 (terbuka)\n\n\nTools\nR · survey · ggplot2\n\n\nRelevan untuk\nSKI, SDKI, Riskesdas"
   },
   {
-    "objectID": "proyek/imunisasi-idl-ski2023/index.html#latar-belakang",
-    "href": "proyek/imunisasi-idl-ski2023/index.html#latar-belakang",
-    "title": "Determinan Imunisasi Dasar Lengkap: Analisis Data SKI 2023",
+    "objectID": "proyek/demo-survei-kompleks/index.html#mengapa-desain-survei-penting",
+    "href": "proyek/demo-survei-kompleks/index.html#mengapa-desain-survei-penting",
+    "title": "Demo: Estimasi Prevalensi dengan Desain Survei Kompleks di R",
+    "section": "Mengapa desain survei penting?",
+    "text": "Mengapa desain survei penting?\nSurvei kesehatan berskala besar tidak memilih responden secara acak sederhana. Sampel diambil bertahap (klaster), dibagi per wilayah (strata), dan tiap responden mewakili jumlah penduduk yang berbeda (bobot). Jika ketiganya diabaikan, estimasi prevalensi bisa bias dan interval kepercayaannya terlalu sempit."
+  },
+  {
+    "objectID": "proyek/demo-survei-kompleks/index.html#data-dan-desain-survei",
+    "href": "proyek/demo-survei-kompleks/index.html#data-dan-desain-survei",
+    "title": "Demo: Estimasi Prevalensi dengan Desain Survei Kompleks di R",
+    "section": "Data dan desain survei",
+    "text": "Data dan desain survei\n\n\nTampilkan kode\nlibrary(survey)\nlibrary(dplyr)\nlibrary(ggplot2)\nlibrary(scales)\n\nknitr::opts_chunk$set(dev = \"png\", dev.args = list(bg = \"transparent\"), dpi = 150)\nINK &lt;- \"#64748B\"\ntheme_set(\n  theme_minimal(base_size = 13) +\n    theme(\n      text = element_text(colour = INK), axis.text = element_text(colour = INK),\n      panel.grid.major = element_line(colour = alpha(INK, .18), linewidth = .4),\n      panel.grid.minor = element_blank(),\n      plot.background = element_rect(fill = \"transparent\", colour = NA),\n      panel.background = element_rect(fill = \"transparent\", colour = NA),\n      legend.position = \"top\", legend.justification = \"left\",\n      legend.background = element_rect(fill = \"transparent\", colour = NA)\n    )\n)\npct &lt;- function(x, d = 1) percent(x, accuracy = 10^-d, decimal.mark = \",\")\nnum &lt;- function(x, d = 2) number(x, accuracy = 10^-d, decimal.mark = \",\", big.mark = \".\")\n\ndata(nhanes)  # NHANES 2009–2010: kolesterol total &gt; 240 mg/dL (HI_CHOL)\ndat &lt;- nhanes |&gt;\n  mutate(\n    usia = factor(agecat, labels = c(\"0–19\", \"20–39\", \"40–59\", \"60+\")),\n    jenis_kelamin = factor(RIAGENDR, labels = c(\"Laki-laki\", \"Perempuan\")),\n    ras = factor(race, labels = c(\"Hispanik\", \"Kulit putih non-Hispanik\",\n                                  \"Kulit hitam non-Hispanik\", \"Lainnya\"))\n  )\n\n# Deklarasi desain: klaster (PSU), strata, dan bobot pemeriksaan\ndesain &lt;- svydesign(id = ~SDMVPSU, strata = ~SDMVSTRA, weights = ~WTMEC2YR,\n                    nest = TRUE, data = dat)\ndesain\n\n\nStratified 1 - level Cluster Sampling design (with replacement)\nWith (31) clusters.\nsvydesign(id = ~SDMVPSU, strata = ~SDMVSTRA, weights = ~WTMEC2YR, \n    nest = TRUE, data = dat)\n\n\nData berisi 8.591 responden; 7.846 di antaranya memiliki hasil pemeriksaan kolesterol."
+  },
+  {
+    "objectID": "proyek/demo-survei-kompleks/index.html#langkah-1-bandingkan-estimasi-tanpa-dan-dengan-bobot",
+    "href": "proyek/demo-survei-kompleks/index.html#langkah-1-bandingkan-estimasi-tanpa-dan-dengan-bobot",
+    "title": "Demo: Estimasi Prevalensi dengan Desain Survei Kompleks di R",
+    "section": "Langkah 1 — Bandingkan estimasi tanpa dan dengan bobot",
+    "text": "Langkah 1 — Bandingkan estimasi tanpa dan dengan bobot\n\n\nTampilkan kode\nnaif &lt;- mean(dat$HI_CHOL, na.rm = TRUE)\nnaif_se &lt;- sqrt(naif * (1 - naif) / sum(!is.na(dat$HI_CHOL)))\nterbobot &lt;- svymean(~HI_CHOL, desain, na.rm = TRUE)\nik &lt;- confint(terbobot)\n\ntibble(\n  Metode = c(\"Tanpa bobot (acak sederhana)\", \"Desain survei kompleks\"),\n  Prevalensi = c(pct(naif), pct(coef(terbobot))),\n  `IK 95%` = c(paste(pct(naif - 1.96 * naif_se), \"–\", pct(naif + 1.96 * naif_se)),\n               paste(pct(ik[1]), \"–\", pct(ik[2]))),\n  `Galat baku (poin %)` = c(num(naif_se * 100), num(SE(terbobot) * 100))\n) |&gt;\n  knitr::kable(align = \"lrrr\")\n\n\n\n\nTabel 1: Prevalensi kolesterol tinggi: estimasi naif vs estimasi yang memperhitungkan desain survei.\n\n\n\n\n\n\n\n\n\n\n\n\nMetode\nPrevalensi\nIK 95%\nGalat baku (poin %)\n\n\n\n\nTanpa bobot (acak sederhana)\n10,0%\n9,4% – 10,7%\n0,34\n\n\nDesain survei kompleks\n11,2%\n10,1% – 12,3%\n0,54\n\n\n\n\n\n\n\n\nMengabaikan desain survei menghasilkan prevalensi 10,0%, sedangkan estimasi yang benar adalah 11,2%. Galat baku yang benar juga 1,6 kali lebih besar daripada galat baku naif — tanpa desain survei, kita akan terlalu yakin terhadap angka yang keliru."
+  },
+  {
+    "objectID": "proyek/demo-survei-kompleks/index.html#langkah-2-prevalensi-per-kelompok-dengan-interval-kepercayaan",
+    "href": "proyek/demo-survei-kompleks/index.html#langkah-2-prevalensi-per-kelompok-dengan-interval-kepercayaan",
+    "title": "Demo: Estimasi Prevalensi dengan Desain Survei Kompleks di R",
+    "section": "Langkah 2 — Prevalensi per kelompok dengan interval kepercayaan",
+    "text": "Langkah 2 — Prevalensi per kelompok dengan interval kepercayaan\n\n\nTampilkan kode\nper_kel &lt;- svyby(~HI_CHOL, ~usia + jenis_kelamin, desain, svymean, na.rm = TRUE)\nper_kel &lt;- per_kel |&gt;\n  as_tibble() |&gt;\n  mutate(bawah = pmax(HI_CHOL - 1.96 * se, 0), atas = HI_CHOL + 1.96 * se)\n\nWARNA &lt;- c(\"Laki-laki\" = \"#2A78D6\", \"Perempuan\" = \"#EB6834\")\ngeser &lt;- position_dodge(width = .45)\n\nggplot(per_kel, aes(usia, HI_CHOL, colour = jenis_kelamin)) +\n  geom_errorbar(aes(ymin = bawah, ymax = atas), width = 0, linewidth = .9, position = geser) +\n  geom_point(size = 3.2, position = geser) +\n  scale_colour_manual(values = WARNA, name = NULL) +\n  scale_y_continuous(labels = \\(x) pct(x, 0), limits = c(0, NA),\n                     expand = expansion(mult = c(0, .08))) +\n  labs(x = \"Kelompok usia (tahun)\", y = \"Prevalensi terbobot\")\n\n\n\n\n\n\n\n\nGambar 1: Prevalensi kolesterol tinggi terbobot menurut kelompok usia dan jenis kelamin. Garis menunjukkan IK 95%.\n\n\n\n\n\nPrevalensi naik tajam setelah usia 20 tahun. Pada kelompok 60 tahun ke atas, pola kedua jenis kelamin berpisah: 20,2% pada perempuan dibanding 9,9% pada laki-laki, dan interval kepercayaannya tidak bertumpang tindih."
+  },
+  {
+    "objectID": "proyek/demo-survei-kompleks/index.html#langkah-3-regresi-logistik-dengan-desain-survei",
+    "href": "proyek/demo-survei-kompleks/index.html#langkah-3-regresi-logistik-dengan-desain-survei",
+    "title": "Demo: Estimasi Prevalensi dengan Desain Survei Kompleks di R",
+    "section": "Langkah 3 — Regresi logistik dengan desain survei",
+    "text": "Langkah 3 — Regresi logistik dengan desain survei\n\n\nTampilkan kode\nmodel &lt;- svyglm(HI_CHOL ~ usia + jenis_kelamin + ras, design = desain,\n                family = quasibinomial())\n\nhasil &lt;- cbind(OR = exp(coef(model)), exp(confint(model)),\n               p = summary(model)$coefficients[, 4])[-1, ]\n\ntibble(\n  Variabel = sub(\"^(usia|jenis_kelamin|ras)\", \"\", rownames(hasil)),\n  Kelompok = c(rep(\"Usia (ref: 0–19)\", 3), \"Jenis kelamin (ref: laki-laki)\",\n               rep(\"Ras/etnis (ref: Hispanik)\", 3)),\n  OR = num(hasil[, \"OR\"]),\n  `IK 95%` = paste(num(hasil[, 2]), \"–\", num(hasil[, 3])),\n  p = ifelse(hasil[, \"p\"] &lt; .001, \"&lt;0,001\", num(hasil[, \"p\"], 3))\n) |&gt;\n  knitr::kable(align = \"llrrr\")\n\n\n\n\nTabel 2: Odds ratio kolesterol tinggi dari regresi logistik terbobot (svyglm).\n\n\n\n\n\n\n\n\n\n\n\n\n\nVariabel\nKelompok\nOR\nIK 95%\np\n\n\n\n\n20–39\nUsia (ref: 0–19)\n9,77\n4,66 – 20,48\n&lt;0,001\n\n\n40–59\nUsia (ref: 0–19)\n24,84\n11,10 – 55,56\n&lt;0,001\n\n\n60+\nUsia (ref: 0–19)\n20,70\n9,36 – 45,74\n&lt;0,001\n\n\nPerempuan\nJenis kelamin (ref: laki-laki)\n1,24\n1,02 – 1,50\n0,033\n\n\nKulit putih non-Hispanik\nRas/etnis (ref: Hispanik)\n0,92\n0,77 – 1,10\n0,316\n\n\nKulit hitam non-Hispanik\nRas/etnis (ref: Hispanik)\n0,65\n0,46 – 0,91\n0,019\n\n\nLainnya\nRas/etnis (ref: Hispanik)\n0,86\n0,40 – 1,85\n0,674\n\n\n\n\n\n\n\n\nSetelah dikontrol usia dan ras/etnis, perempuan memiliki odds kolesterol tinggi 1,24 kali dibanding laki-laki (IK 95%: 1,02–1,50)."
+  },
+  {
+    "objectID": "proyek/demo-survei-kompleks/index.html#keterbatasan",
+    "href": "proyek/demo-survei-kompleks/index.html#keterbatasan",
+    "title": "Demo: Estimasi Prevalensi dengan Desain Survei Kompleks di R",
+    "section": "Keterbatasan",
+    "text": "Keterbatasan\n\nDemo ini deskriptif dan tidak menggambarkan kondisi Indonesia — tujuannya memperagakan metode.\nModel sengaja dibuat sederhana; analisis nyata memerlukan kerangka konseptual, pemilihan variabel, dan pemeriksaan asumsi yang lebih lengkap.\nKelompok usia 0–19 tahun jarang mengalami kolesterol tinggi, sehingga odds ratio kelompok usia lain terhadapnya memiliki interval yang lebar."
+  },
+  {
+    "objectID": "proyek/demo-survei-kompleks/index.html#bagaimana-kami-menerapkannya",
+    "href": "proyek/demo-survei-kompleks/index.html#bagaimana-kami-menerapkannya",
+    "title": "Demo: Estimasi Prevalensi dengan Desain Survei Kompleks di R",
+    "section": "Bagaimana kami menerapkannya",
+    "text": "Bagaimana kami menerapkannya\nUntuk data seperti SKI 2023, alurnya sama: deklarasi desain survei sesuai dokumentasi survei, estimasi prevalensi dengan IK 95%, lalu analisis multivariabel dengan svyglm. Hasilnya bisa disajikan sebagai tabel siap publikasi (misalnya dengan gtsummary) atau laporan Quarto seperti halaman ini."
+  },
+  {
+    "objectID": "proyek/filariasis-ski2023/index.html",
+    "href": "proyek/filariasis-ski2023/index.html",
+    "title": "Konsumsi Obat Pencegahan Filariasis saat POPM: Analisis Data SKI 2023",
+    "section": "",
+    "text": "Tahun\n2025 – 2026\n\n\nPeran\nPeneliti utama\n\n\nData\nSKI 2023\n\n\nLuaran\nTesis · skripsi · artikel"
+  },
+  {
+    "objectID": "proyek/filariasis-ski2023/index.html#latar-belakang",
+    "href": "proyek/filariasis-ski2023/index.html#latar-belakang",
+    "title": "Konsumsi Obat Pencegahan Filariasis saat POPM: Analisis Data SKI 2023",
     "section": "Latar belakang",
-    "text": "Latar belakang\nCakupan imunisasi dasar lengkap (IDL) masih berbeda cukup jauh antarprovinsi di Indonesia. Membandingkan provinsi dengan karakteristik berbeda membantu mengidentifikasi determinan yang bisa menjadi sasaran program."
+    "text": "Latar belakang\nEliminasi filariasis limfatik bergantung pada cakupan Pemberian Obat Pencegahan secara Massal (POPM) — obat yang dibagikan baru berdampak bila benar-benar diminum. Memahami faktor yang berhubungan dengan konsumsi obat membantu program menjangkau kelompok yang belum patuh."
   },
   {
-    "objectID": "proyek/imunisasi-idl-ski2023/index.html#peran-tim",
-    "href": "proyek/imunisasi-idl-ski2023/index.html#peran-tim",
-    "title": "Determinan Imunisasi Dasar Lengkap: Analisis Data SKI 2023",
+    "objectID": "proyek/filariasis-ski2023/index.html#peran-tim",
+    "href": "proyek/filariasis-ski2023/index.html#peran-tim",
+    "title": "Konsumsi Obat Pencegahan Filariasis saat POPM: Analisis Data SKI 2023",
     "section": "Peran tim",
-    "text": "Peran tim\nFalah Fauzi melakukan penelitian ini sebagai tesis Magister Epidemiologi di Fakultas Kesehatan Masyarakat Universitas Andalas, sekaligus menulis artikel ilmiah dari analisis data yang sama untuk Provinsi Sumatera Barat."
+    "text": "Peran tim\nMuhammad Ilham Basgoro melakukan penelitian ini sebagai tesis Magister Epidemiologi di FKM Universitas Andalas dan meraih predikat Lulusan Terbaik program tersebut (2026). Skripsinya juga menganalisis filariasis dari data survei yang sama."
   },
   {
-    "objectID": "proyek/imunisasi-idl-ski2023/index.html#data-metode",
-    "href": "proyek/imunisasi-idl-ski2023/index.html#data-metode",
-    "title": "Determinan Imunisasi Dasar Lengkap: Analisis Data SKI 2023",
+    "objectID": "proyek/filariasis-ski2023/index.html#data-metode",
+    "href": "proyek/filariasis-ski2023/index.html#data-metode",
+    "title": "Konsumsi Obat Pencegahan Filariasis saat POPM: Analisis Data SKI 2023",
     "section": "Data & metode",
-    "text": "Data & metode\n\nData sekunder Survei Kesehatan Indonesia (SKI) 2023.\nStudi komparatif determinan cakupan IDL di Provinsi Aceh dan Provinsi Bali.\nAnalisis determinan capaian IDL di Provinsi Sumatera Barat."
+    "text": "Data & metode\n\nData sekunder Survei Kesehatan Indonesia (SKI) 2023 berskala nasional.\nAnalisis faktor yang berhubungan dengan konsumsi obat pencegahan saat POPM."
   },
   {
-    "objectID": "proyek/imunisasi-idl-ski2023/index.html#luaran",
-    "href": "proyek/imunisasi-idl-ski2023/index.html#luaran",
-    "title": "Determinan Imunisasi Dasar Lengkap: Analisis Data SKI 2023",
+    "objectID": "proyek/filariasis-ski2023/index.html#luaran",
+    "href": "proyek/filariasis-ski2023/index.html#luaran",
+    "title": "Konsumsi Obat Pencegahan Filariasis saat POPM: Analisis Data SKI 2023",
     "section": "Luaran",
-    "text": "Luaran\n\nTesis: Studi Komparatif Determinan Cakupan Imunisasi Dasar Lengkap di Provinsi Aceh dan Provinsi Bali (Analisis Data SKI Tahun 2023) — Magister Epidemiologi, Universitas Andalas (2025).\nArtikel: Determinants of Complete Basic Immunization Achievement in West Sumatra Province (Analysis of SKI 2023) — jurnal terakreditasi SINTA 4.\nPenelitian terkait di tingkat layanan: Analisis Pelaksanaan Imunisasi Dasar Lengkap di Puskesmas Anak Air Kota Padang Tahun 2024 (skripsi, 2024)."
+    "text": "Luaran\n\nTesis: Factors Associated with Preventive Drug Consumption during Mass Drug Administration for Lymphatic Filariasis in Indonesia: Analysis of the 2023 Indonesian Health Survey (SKI 2023) (2026).\nSkripsi: Factors Associated with the Incidence of Lymphatic Filariasis in West Sumatra Province: Analysis of the 2023 Indonesian Health Survey (SKI 2023) (2025).\nArtikel: Basgoro, M.I., Masrizal, M., Novirsa, R. Gambaran Konsumsi Obat Pencegahan Filariasis Limfatik di Indonesia: Analisis Data SKI 2023. JITKT 6(1):63–73 (2026). doi:10.53579/jitkt.v6i1.324\n\nLihat juga demo alur analisis survei kompleks dengan R yang menggunakan pendekatan serupa pada data terbuka."
   }
 ]

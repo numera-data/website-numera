@@ -51,9 +51,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-73b0ff3878a4e6fc3716dc69a6aaefa3.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-3ce9735a01569d2e428204e3ec943505.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-88115dc584e0ade50b9bbc8bb0e412f7.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-3ce9735a01569d2e428204e3ec943505.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-9f374dc55637e6ddab6db311ac4a44a9.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-ca1b0c91d3c09deb6357affb950f2e13.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-9f374dc55637e6ddab6db311ac4a44a9.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -391,15 +391,57 @@ window.Quarto = {
 </div>
 </section>
 </div>
-<div class="hero-visual" aria-hidden="true">
-<p><span class="kpi-label">Estimasi prevalensi terbobot per kelompok · ilustrasi</span></p>
-<div class="ci-plot">
-  <div class="ci-row"><span class="ci-lab">Kelompok A</span><span class="ci-track"><i style="left:12%;width:16%"></i><b style="left:20%"></b></span></div>
-  <div class="ci-row"><span class="ci-lab">Kelompok B</span><span class="ci-track"><i style="left:30%;width:20%"></i><b style="left:40%"></b></span></div>
-  <div class="ci-row"><span class="ci-lab">Kelompok C</span><span class="ci-track"><i style="left:48%;width:14%"></i><b style="left:55%"></b></span></div>
-  <div class="ci-row"><span class="ci-lab">Kelompok D</span><span class="ci-track"><i style="left:58%;width:24%"></i><b style="left:70%"></b></span></div>
+<div class="hero-visual">
+<p><span class="kpi-label">Contoh luaran · peta tematik</span></p>
+<!--
+SLIDESHOW PETA
+- Ganti gambar di folder assets/peta/ (boleh .png/.jpg/.svg; rasio ideal 4:3).
+- Tambah/kurangi peta dengan menyalin atau menghapus satu blok <figure> di bawah.
+- Tulis keterangan singkat di <figcaption> dan teks alternatif di alt="".
+-->
+<div class="map-slider" data-interval="5000" aria-roledescription="carousel" aria-label="Contoh peta tematik">
+  <figure class="map-slide is-active figure">
+    <img src="assets/peta/peta-1.svg" alt="Draf peta choropleth insiden per wilayah" class="figure-img">
+    <figcaption>Insiden per wilayah · <em>draf</em></figcaption>
+  </figure>
+  <figure class="map-slide figure">
+    <img src="assets/peta/peta-2.svg" alt="Draf peta sebaran titik kasus" class="figure-img">
+    <figcaption>Sebaran titik kasus · <em>draf</em></figcaption>
+  </figure>
+  <figure class="map-slide figure">
+    <img src="assets/peta/peta-3.svg" alt="Draf peta buffer 500 meter sekitar sekolah" class="figure-img">
+    <figcaption>Buffer 500 m sekitar sekolah · <em>draf</em></figcaption>
+  </figure>
+  <div class="map-dots" role="tablist"></div>
 </div>
-<p class="ci-note">Titik = estimasi · garis = IK 95%</p>
+<script>
+(function () {
+  document.querySelectorAll(".map-slider").forEach(function (el) {
+    var slides = el.querySelectorAll(".map-slide");
+    var dotsBox = el.querySelector(".map-dots");
+    var i = 0, timer = null, ms = +el.dataset.interval || 5000;
+    var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    var dots = Array.prototype.map.call(slides, function (s, k) {
+      var b = document.createElement("button");
+      b.type = "button"; b.setAttribute("aria-label", "Tampilkan peta " + (k + 1));
+      b.addEventListener("click", function () { show(k); restart(); });
+      dotsBox.appendChild(b); return b;
+    });
+    function show(k) {
+      slides[i].classList.remove("is-active"); dots[i].classList.remove("is-active");
+      i = (k + slides.length) % slides.length;
+      slides[i].classList.add("is-active"); dots[i].classList.add("is-active");
+    }
+    function start() { if (!reduce && slides.length > 1) timer = setInterval(function () { show(i + 1); }, ms); }
+    function stop() { clearInterval(timer); timer = null; }
+    function restart() { stop(); start(); }
+    dots[0] && dots[0].classList.add("is-active");
+    el.addEventListener("mouseenter", stop); el.addEventListener("mouseleave", start);
+    el.addEventListener("focusin", stop); el.addEventListener("focusout", start);
+    start();
+  });
+})();
+</script>
 </div>
 </div>
 <!-- Angka dirangkum dari CV anggota (per September 2026). Perbarui bila ada tambahan. -->
@@ -430,9 +472,9 @@ window.Quarto = {
 </div>
 <div class="service">
 <p><span class="icon"><i class="bi bi-geo-alt"></i></span></p>
-<section id="epidemiologi-spasial-pemetaan" class="level3">
-<h3 class="anchored" data-anchor-id="epidemiologi-spasial-pemetaan">Epidemiologi spasial &amp; pemetaan</h3>
-<p>Peta tematik, kernel density, dan analisis buffer dengan QGIS untuk memetakan kasus dan faktor risiko penyakit.</p>
+<section id="epidemiologi-spasial-lingkungan" class="level3">
+<h3 class="anchored" data-anchor-id="epidemiologi-spasial-lingkungan">Epidemiologi spasial &amp; lingkungan</h3>
+<p>Peta tematik, kernel density, dan analisis buffer dengan QGIS, serta analisis hubungan paparan lingkungan (mis. polusi udara dan iklim) dengan penyakit menggunakan DLNM.</p>
 </section>
 </div>
 <div class="service">
@@ -456,7 +498,7 @@ window.Quarto = {
 </section>
 <div id="listing-proyek-unggulan" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="UGVuZ2VuZGFsaWFuJTIwVGVtYmFrYXUlMkNRR0lTJTJDUGVtZXRhYW4=" data-listing-date-sort="1780246800000" data-listing-file-modified-sort="1790663437509" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="115">
+<div class="g-col-1" data-index="0" data-categories="UGVuZ2VuZGFsaWFuJTIwVGVtYmFrYXUlMkNRR0lTJTJDUGVtZXRhYW4=" data-listing-date-sort="1780246800000" data-listing-file-modified-sort="1790665090000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="115">
 <a href="./proyek/pemetaan-iklan-rokok/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -481,7 +523,34 @@ Pemetaan Iklan Rokok di Sekitar Sekolah di Tiga Kabupaten
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="RmlsYXJpYXNpcyUyQ0FuYWxpc2lzJTIwU3VydmVpJTIwS29tcGxla3MlMkNTS0klMjAyMDIz" data-listing-date-sort="1772298000000" data-listing-file-modified-sort="1790663437509" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="185">
+<div class="g-col-1" data-index="1" data-categories="RXBpZGVtaW9sb2dpJTIwTGluZ2t1bmdhbiUyQ1BvbHVzaSUyMFVkYXJhJTJDRExOTSUyQ1I=" data-listing-date-sort="1777568400000" data-listing-file-modified-sort="1790665090000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="149">
+<a href="./proyek/polusi-udara-pneumonia-balita/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./proyek/polusi-udara-pneumonia-balita/thumbnail.svg" class="thumbnail-image card-img" style="height: 180px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Polusi Udara, Iklim, dan Pneumonia Balita di Kota Padang
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('RXBpZGVtaW9sb2dpJTIwTGluZ2t1bmdhbg=='); return false;">Epidemiologi Lingkungan</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('UG9sdXNpJTIwVWRhcmE='); return false;">Polusi Udara</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('RExOTQ=='); return false;">DLNM</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('Ug=='); return false;">R</div>
+
+</div>
+<div class="card-text listing-description delink">
+<p>Hubungan polutan udara dan faktor iklim dengan pneumonia balita, dianalisis dengan Distributed Lag Non-Linear Model (DLNM) di R.</p>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="2" data-categories="RmlsYXJpYXNpcyUyQ0FuYWxpc2lzJTIwU3VydmVpJTIwS29tcGxla3MlMkNTS0klMjAyMDIz" data-listing-date-sort="1772298000000" data-listing-file-modified-sort="1790665090000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="185">
 <a href="./proyek/filariasis-ski2023/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -502,31 +571,6 @@ Konsumsi Obat Pencegahan Filariasis saat POPM: Analisis Data SKI 2023
 </div>
 <div class="card-text listing-description delink">
 <p>Faktor yang berhubungan dengan konsumsi obat pencegahan pada Pemberian Obat Pencegahan Massal (POPM) filariasis limfatik di Indonesia.</p>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="2" data-categories="SW11bmlzYXNpJTJDQW5hbGlzaXMlMjBTdXJ2ZWklMkNTS0klMjAyMDIz" data-listing-date-sort="1764522000000" data-listing-file-modified-sort="1790663437509" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="158">
-<a href="./proyek/imunisasi-idl-ski2023/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./proyek/imunisasi-idl-ski2023/thumbnail.svg" class="thumbnail-image card-img" style="height: 180px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Determinan Imunisasi Dasar Lengkap: Analisis Data SKI 2023
-</h5>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('SW11bmlzYXNp'); return false;">Imunisasi</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('QW5hbGlzaXMlMjBTdXJ2ZWk='); return false;">Analisis Survei</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('U0tJJTIwMjAyMw=='); return false;">SKI 2023</div>
-
-</div>
-<div class="card-text listing-description delink">
-<p>Studi komparatif determinan cakupan imunisasi dasar lengkap di Provinsi Aceh dan Bali, dilengkapi analisis determinan di Sumatera Barat.</p>
 </div>
 </div>
 </div></a>

@@ -1,5 +1,12 @@
 [
   {
+    "listing": "/tim/aldy.html",
+    "items": [
+      "/proyek/polusi-udara-pneumonia-balita/index.html",
+      "/proyek/respons-bencana-agam/index.html"
+    ]
+  },
+  {
     "listing": "/tim/falah.html",
     "items": [
       "/proyek/imunisasi-idl-ski2023/index.html",
@@ -20,8 +27,10 @@
     "items": [
       "/proyek/demo-survei-kompleks/index.html",
       "/proyek/pemetaan-iklan-rokok/index.html",
+      "/proyek/polusi-udara-pneumonia-balita/index.html",
       "/proyek/filariasis-ski2023/index.html",
       "/proyek/imunisasi-idl-ski2023/index.html",
+      "/proyek/respons-bencana-agam/index.html",
       "/proyek/dashboard-dbd-padang/index.html",
       "/proyek/malaria-pasaman-barat/index.html",
       "/proyek/tb-anak-padang/index.html",
@@ -32,8 +41,10 @@
     "listing": "/index.html",
     "items": [
       "/proyek/pemetaan-iklan-rokok/index.html",
+      "/proyek/polusi-udara-pneumonia-balita/index.html",
       "/proyek/filariasis-ski2023/index.html",
       "/proyek/imunisasi-idl-ski2023/index.html",
+      "/proyek/respons-bencana-agam/index.html",
       "/proyek/dashboard-dbd-padang/index.html",
       "/proyek/malaria-pasaman-barat/index.html",
       "/proyek/tb-anak-padang/index.html",
