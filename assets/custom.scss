@@ -161,3 +161,26 @@ h1, h2, h3, .navbar-brand { letter-spacing: -0.02em; }
   .navbar-brand .navbar-title { font-size: 1.05rem; }
   .navbar-logo { max-height: 24px; }
 }
+
+// Tangkapan layar aplikasi di halaman proyek
+.dash-shot, figure img.dash-shot { border: 1px solid $border; border-radius: .6rem; box-shadow: 0 10px 28px -18px rgba(15, 23, 42, .45); }
+
+// ---------- SLIDESHOW PETA (beranda) ----------
+// Semua slide ditumpuk di sel grid yang sama, jadi tinggi slider = slide tertinggi.
+.map-slider { position: relative; display: grid; margin-top: .9rem; }
+.map-slide {
+  grid-area: 1 / 1; margin: 0; opacity: 0; visibility: hidden;
+  transition: opacity .9s ease, visibility 0s linear .9s;
+  img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: contain;
+        background: #fff; border: 1px solid $border; border-radius: .7rem; }
+  figcaption { font-size: .8rem; color: $muted; margin-top: .55rem; padding-right: 5rem; line-height: 1.3; }
+  &.is-active { opacity: 1; visibility: visible; transition: opacity .9s ease; }
+}
+.map-dots { position: absolute; right: 0; bottom: .15rem; display: flex; gap: .4rem; z-index: 2; }
+.map-dots button {
+  width: 9px; height: 9px; padding: 0; border: 0; border-radius: 50%;
+  background: rgba($muted, .35); cursor: pointer;
+  &.is-active { background: $primary; width: 22px; border-radius: 5px; }
+  &:focus-visible { outline: 2px solid $primary; outline-offset: 2px; }
+}
+@media (prefers-reduced-motion: reduce) { .map-slide, .map-slide.is-active { transition: none; } }

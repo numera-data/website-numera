@@ -1,0 +1,56 @@
+---
+title: "Polusi Udara, Iklim, dan Pneumonia Balita di Kota Padang"
+description: "Hubungan polutan udara dan faktor iklim dengan pneumonia balita, dianalisis dengan Distributed Lag Non-Linear Model (DLNM) di R."
+date: 2026-05-01
+image: thumbnail.svg
+categories: ["Epidemiologi Lingkungan", "Polusi Udara", "DLNM", "R"]
+author:
+  - Aldy Yusra
+---
+
+::: {.project-meta}
+::: {}
+[Tahun]{.label}
+
+[2025 – 2026]{.value}
+:::
+::: {}
+[Peran]{.label}
+
+[Peneliti utama]{.value}
+:::
+::: {}
+[Data]{.label}
+
+[Kota Padang, 2023–2025]{.value}
+:::
+::: {}
+[Metode]{.label}
+
+[DLNM di R]{.value}
+:::
+:::
+
+## Latar belakang
+
+Pneumonia masih menjadi salah satu penyebab utama kesakitan pada balita. Paparan polusi udara
+dan kondisi iklim dapat memengaruhi risiko penyakit pernapasan, tetapi dampaknya sering **tidak
+langsung terjadi** dan **tidak selalu linear** — sehingga perlu metode analisis yang bisa
+menangkap efek tertunda.
+
+## Peran tim
+
+Aldy Yusra meneliti topik ini dalam dua tahap: studi hubungan polutan udara dan faktor iklim dengan
+pneumonia balita (periode studi 2023–2024, Juni 2025), lalu dilanjutkan sebagai tesis Magister
+Epidemiologi peminatan Epidemiologi Lingkungan di Universitas Andalas (2026).
+
+## Data & metode
+
+- Data pneumonia balita, polutan udara, dan faktor iklim di **Kota Padang**, **2023–2025**.
+- **Distributed Lag Non-Linear Model (DLNM)** di R untuk menilai pola hubungan paparan–dampak yang
+  tertunda (*lag*) dan non-linear.
+
+## Luaran
+
+- Penelitian *polusi udara, iklim, dan pneumonia balita di Kota Padang* (periode studi 2023–2024) — 2025.
+- Tesis Magister Epidemiologi: *Polusi Udara dan Pneumonia Balita di Kota Padang* (data 2023–2025) — 2026.

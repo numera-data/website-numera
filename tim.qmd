@@ -1,6 +1,6 @@
 ---
 title: "Tim Kami"
-subtitle: "Epidemiolog dengan pengalaman di surveilans penyakit, analisis data survei kesehatan, dan pemetaan SIG."
+subtitle: "Epidemiolog dengan pengalaman di surveilans penyakit, analisis data survei kesehatan, epidemiologi lingkungan, dan pemetaan SIG."
 page-layout: full
 toc: false
 listing:

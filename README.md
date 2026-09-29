@@ -38,6 +38,7 @@ DESCRIPTION                  ← daftar paket R yang dibutuhkan (dibaca GitHub A
 | Proyek baru | salin satu folder di `proyek/`, ubah front matter; isi `author:` dengan nama anggota persis agar proyek muncul di profil mereka |
 | Paket R baru untuk halaman berkode | tambahkan di bagian `Imports:` pada `DESCRIPTION` |
 | Warna brand | `$primary` di `assets/light.scss` dan `assets/dark.scss` (diambil dari logo: #006FE4, #002C65, #009CF9) |
+| Peta di beranda (slideshow) | ganti file di `assets/peta/` (PNG/JPG/SVG, rasio 4:3), lalu sesuaikan `src`, `alt`, dan `<figcaption>` di blok `map-slider` pada `index.qmd`. Tambah/kurangi peta dengan menyalin/menghapus satu blok `<figure>`. |
 | Logo | `assets/logo.png` (mode terang), `assets/logo-dark.png` (mode gelap), `assets/favicon.png` |
 
 ## Deploy ke GitHub Pages
@@ -54,7 +55,8 @@ DESCRIPTION                  ← daftar paket R yang dibutuhkan (dibaca GitHub A
 
 ## Yang masih perlu dilengkapi
 
-- [ ] Profil lengkap **Aldy Yusra** (lihat komentar TODO di `tim/aldy.qmd`).
+- [ ] Ganti 3 peta **draf** di `assets/peta/` dengan peta asli tim (hapus kata *draf* di keterangan).
+
 - [ ] Link LinkedIn/GitHub pribadi tiap anggota (saat ini memakai email & GitHub tim).
 - [ ] Temuan utama tiap proyek dan screenshot (mis. dashboard DBD, peta iklan rokok) bila boleh dipublikasikan.
 - [ ] Pastikan domain `numera.org` dan alamat `falah@numera.org` benar-benar aktif.

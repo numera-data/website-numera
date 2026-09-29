@@ -52,11 +52,36 @@ serta aktif sebagai editor buku kesehatan.
   Mendukung penelitian dosen, antara lain studi ekologi malaria di Pasaman Barat berbasis SIG,
   pemodelan spasial TB anak di Kota Padang, dan determinan kualitas hidup pasien TB di Dharmasraya.
 - **Asisten Penelitian** · berbagai studi klinis dan epidemiologi · analisis data untuk 16 penelitian
-  di bidang kesehatan reproduksi, pediatri, neurologi, penyakit infeksi, dan kesehatan lingkungan.
+  ([lihat daftar lengkap](#asisten-penelitian)).
 - **Surveyor Tracer Study** · Universitas Andalas · _2024_
 - **Studi Lapangan Sistem Kekarantinaan Kesehatan** · KKP Kelas I Padang · _Agustus – September 2024_
 - **Magang Bidang Pencegahan dan Kesiapsiagaan** · BPBD Provinsi Sumatera Barat · _November 2023_
 - **Praktik Belajar Lapangan** · Puskesmas Sialang, Kabupaten Lima Puluh Kota · _September 2023_
+
+## Asisten penelitian {#asisten-penelitian}
+
+Terlibat sebagai asisten penelitian dalam analisis data berbagai studi klinis dan epidemiologi
+lintas disiplin — kesehatan reproduksi, pediatri, neurologi, penyakit infeksi, dan kesehatan
+lingkungan:
+
+::: {.pub-list}
+1. Determinan Perilaku Remaja Putri untuk Konsumsi Tablet Fe di Wilayah Kerja Puskesmas Nan Balimo Kota Solok
+2. Perbedaan Kadar 4-Hydroxyindole (4HI) pada Feses dan Cairan Peritoneum antara Pasien Endometriosis dan Kontrol
+3. Model Edukasi Upaya Pencegahan *Hearing Loss* Akibat Gadget pada Remaja
+4. Perbedaan Kadar Kalsidiol (25(OH)D) dan Ekspresi mikroRNA-1323 Darah Maternal antara Persalinan Aterm dengan *Early Preterm* (28–34 Minggu)
+5. Perbedaan Nilai ROX, P-ROX, mP-ROX, ROX-HR, Rasio SF, dan Nilai CRS pada Kesuksesan dan Kegagalan *High-Flow Nasal Cannula* (HFNC) pada Pasien Pediatrik di PICU
+6. Analisis Ekspresi mikroRNA-141, Kadar *Cell-Free Fetal DNA*, dan *Apoptotic Bodies* pada Ibu Hamil dengan Janin *Intrauterine Growth Restriction* (IUGR)
+7. *Ecological Determinants of Malaria in a Post-Elimination Setting: A Five-Year Climatic Analysis in West Pasaman Regency, Indonesia*
+8. *Valuation of Malaria Migration Surveillance System in a Post-Elimination Setting: A Study in West Pasaman District, Indonesia*
+9. Hubungan Kadar *Glial Fibrillary Acidic Protein* (GFAP) Serum dengan Skor NIHSS dan ICH Skor pada Pasien Perdarahan Intraserebral
+10. Analisis Polimorfisme BDNF rs6265 Val66Met, Kadar BDNF Maternal dan Tali Pusat dengan *Neurobehavioral* Neonatal pada Ibu Hamil Obesitas Etnik Minangkabau
+11. Hubungan Polimorfisme Gen TaqI pada VDR dengan Kadar Vitamin D Maternal dan Tali Pusar pada Ibu Hamil dengan Obesitas
+12. Pengaruh Pemberian *New Balanced Solutions* (Ringer Asetat Malat) Dibandingkan Ringer Laktat sebagai Cairan Resusitasi pada Anak terhadap Parameter Keseimbangan Asam Basa, Komposisi Elektrolit, dan Bersihan Laktat
+13. Nilai CT-Value PCR dalam Memprediksi CMV dan Rubella pada Ibu Hamil Trimester I–II
+14. Hubungan Mikroalbuminuria pada Trimester Pertama dengan Kejadian Preeklamsia pada Wanita Hamil di Kota Padang
+15. Efektivitas Inovasi BIDADARI NAUN PISAN terhadap Deteksi Dini Kehamilan Risiko Tinggi Berdasarkan Skor Poedji Rochjati di Puskesmas Sungai Rumbai, Kabupaten Dharmasraya
+16. Perbedaan *Pelvic Floor Distress Inventory* dan *Urogenital Distress Inventory 6* Sebelum dan Sesudah Persalinan Pervaginam pada Pasien Primigravida di Kota Padang
+:::
 
 ## Pendidikan
 
@@ -73,9 +98,24 @@ serta aktif sebagai editor buku kesehatan.
 - Pencegahan Penyakit Menular melalui Edukasi dan Tindakan Preventif Berbasis Permainan Flash Card bagi Siswa SDN 04 Gaung Padang. *Jurnal Bina.* [doi:10.25077/bina.v7i4.719](https://doi.org/10.25077/bina.v7i4.719)
 :::
 
-**Editor 12 buku kesehatan** (Mitra Ilmu Makassar & Penerbit Mafy), antara lain *Iklim dan COVID-19*,
-*Campak, Aspek Iklim, dan Migrasi Penduduk*, *Pencegahan dan Pengendalian Tuberkulosis*, dan
-*Imunisasi Polio: Mengenal Polio dan Penanggulangannya*.
+## Editor buku
+
+Editor 12 buku kesehatan yang diterbitkan Mitra Ilmu Makassar dan Penerbit Mafy:
+
+::: {.pub-list}
+1. [*Iklim dan COVID-19*](https://www.mitrailmumakassar.com/2023/09/iklim-dan-covid-19.html) · Mitra Ilmu Makassar (2023)
+2. [*Campak, Aspek Iklim, dan Migrasi Penduduk*](https://penerbitmafy.com/produk/campak-aspek-iklim-dan-migrasi-penduduk/) · Penerbit Mafy · penulis: Masrizal, Adji Fauzan Rifky, Yudi Pradipta
+3. [*Kualitas Air Minum*](https://penerbitmafy.com/produk/kualitas-air-minum/) · Penerbit Mafy · penulis: Masrizal, Icha Putri
+4. [*Kerentanan Wilayah Filariasis*](https://penerbitmafy.com/produk/kerentanan-wilayah-filariasis/) · Penerbit Mafy · penulis: Masrizal, Dion Andhika Dwi Putra
+5. [*Survival Pasien HIV/AIDS*](https://penerbitmafy.com/produk/survival-pasien-hiv-aids/) · Penerbit Mafy · penulis: Masrizal, Reza Annisa
+6. [*Pelaporan di Rumah Sakit*](https://penerbitmafy.com/produk/pelaporan-di-rumah-sakit/) · Penerbit Mafy · penulis: Masrizal, Fina Rahma Aulia
+7. [*Pencegahan dan Pengendalian Tuberkulosis*](https://penerbitmafy.com/produk/pencegahan-dan-pengendalian-tuberkulosis/) · Penerbit Mafy · penulis: Masrizal, Diva Maharani
+8. [*Kepadatan Jentik Aedes aegypti*](https://penerbitmafy.com/produk/kepadatan-jentik-aedes-aegypti/) · Penerbit Mafy · penulis: Masrizal
+9. [*Status Gizi terhadap Tuberkulosis Anak*](https://penerbitmafy.com/produk/status-gizi-terhadap-tuberkulosis-anak/) · Penerbit Mafy · penulis: Masrizal
+10. [*Derajat Klinis Penyakit Demam Berdarah Dengue*](https://penerbitmafy.com/produk/derajat-klinis-penyakit-demam-berdarah-dengue/) · Penerbit Mafy · penulis: Masrizal, Rifka Febrina
+11. [*Imunisasi Polio: Mengenal Polio dan Penanggulangannya*](https://penerbitmafy.com/produk/imunisasi-polio-mengenal-polio-dan-penanggulangannya/) · Penerbit Mafy · penulis: Masrizal, Imalatul Mardhiyah
+12. [*Epidemiologi Penyakit Kardiovaskular: Penyakit Umum Terjadi*](https://penerbitmafy.com/produk/epidemiologi-penyakit-kardiovaskular-penyakit-umum-terjadi/) · Penerbit Mafy · penulis: Masrizal
+:::
 
 ## Organisasi & penghargaan
 

@@ -1,10 +1,26 @@
 ---
 title: "Aldy Yusra, S.K.M., M.Epid."
 subtitle: "Data Analyst"
-description: "Epidemiolog dengan latar belakang kesehatan masyarakat. Profil lengkap segera diperbarui."
+description: "Epidemiologi lingkungan: polusi udara, iklim, dan kesehatan anak, dengan analisis DLNM di R dan pemetaan QGIS."
 image: aldy.jpg
 order: 2
+categories: ["R", "DLNM", "QGIS", "Epidemiologi Lingkungan", "Epidemiologi Bencana"]
 toc: false
+listing:
+  id: proyek-anggota
+  contents: ../proyek/*/index.qmd
+  type: table
+  fields: [date, title, categories]
+  field-display-names:
+    date: Tahun
+    title: Proyek
+    categories: Kategori
+  date-format: "YYYY"
+  sort: "date desc"
+  sort-ui: false
+  filter-ui: false
+  include:
+    author: "*Aldy Yusra*"
 about:
   template: trestles
   image-shape: rounded
@@ -18,18 +34,65 @@ about:
       href: https://github.com/numera-data
 ---
 
-Aldy adalah anggota tim Numera Data dengan latar belakang Sarjana Kesehatan Masyarakat dan
-Magister Epidemiologi.
+Aldy menekuni **epidemiologi lingkungan** di Program Magister Epidemiologi Universitas Andalas,
+dengan latar belakang Kesehatan dan Keselamatan Kerja (K3) serta Kesehatan Lingkungan. Ia meneliti
+hubungan polusi udara dan iklim dengan pneumonia pada balita, menggunakan R/RStudio — termasuk
+*Distributed Lag Non-Linear Model* (DLNM) — untuk analisis data epidemiologi dan QGIS untuk
+pemetaan. Pengalamannya mencakup penelitian lapangan, kolaborasi riset lintas institusi, respons
+bencana, dan asisten laboratorium.
 
-::: {.notice-soft}
-Profil lengkap — keahlian, pengalaman, pendidikan, publikasi, dan proyek — sedang disiapkan dan
-akan segera diperbarui.
+**Minat riset:** epidemiologi lingkungan, polusi udara dan iklim, epidemiologi spasial,
+epidemiologi bencana, dan riset paparan lingkungan.
+
+## Keahlian
+
+[R / RStudio]{.skill} [DLNM]{.skill} [Pemodelan statistik]{.skill} [QGIS]{.skill}
+[Epidemiologi Lingkungan]{.skill} [Epidemiologi Bencana]{.skill} [Manajemen data]{.skill}
+
+**Metode:** penelitian data sekunder dan lapangan, desain studi epidemiologi, analisis hubungan
+paparan–dampak dengan efek tunda (*lag*), serta pemetaan dan analisis geospasial.
+
+## Pengalaman riset & akademik
+
+- **Tesis Magister — Polusi Udara dan Pneumonia Balita di Kota Padang** · _2026_ \
+  Hubungan polutan udara dengan pneumonia balita memakai data 2023–2025 dan pendekatan DLNM di R
+  untuk menilai pola paparan–dampak yang tertunda dan non-linear.
+- **Kolaborator Riset Mahasiswa — Mikroplastik** · _2026_ \
+  Anggota mahasiswa dalam kolaborasi riset mikroplastik dan paparan kesehatan lingkungan bersama
+  Universitas Indonesia, Universitas Airlangga, dan universitas mitra di Jepang.
+- **Asisten Peneliti — Faktor Genetik, Obesitas, dan Hipertensi pada Mahasiswa** · Kota Padang · _Februari – Mei 2026_
+- **Asisten Penelitian dan Pengabdian Masyarakat Dosen** · FKM Universitas Andalas · _2026_
+- **Penelitian Polusi Udara, Iklim, dan Pneumonia Balita** · Kota Padang (periode studi 2023–2024) · _Juni 2025_
+- **Penelitian Integrasi Kearifan Lokal dalam Kurikulum Mitigasi Bencana** · Kecamatan Sipora Selatan, Kepulauan Mentawai · _2025_
+
+## Pengalaman lapangan & kebencanaan
+
+- **Relawan Respons Bencana — Epidemiologi / MDS Manager** · Kabupaten Agam · _Desember 2025_ \
+  Mendukung manajemen informasi epidemiologi selama respons bencana (peran terkait WHO MDS).
+- **Pengabdian Masyarakat — Pemberdayaan Nagari Tangguh Bencana** · Palembayan, Kabupaten Agam · _Juli 2026_
+- **Studi Lapangan Kekarantinaan Kesehatan** · Kota Padang · _September 2025_
+- **Asisten Laboratorium Praktikum K3KL** · FKM Universitas Andalas · _2 tahun akademik_
+- **Magang — Kajian Manajerial Kualitas Udara Ambien** · PT Semen Padang · _Oktober 2024_
+- **MBKM Membangun Desa — Ketua Kelompok** · peminatan K3 & Kesehatan Lingkungan · _Agustus – Desember 2023_
+
+## Pendidikan
+
+- **Magister Epidemiologi (M.Epid.)** · Universitas Andalas · _2026_ \
+  Peminatan Epidemiologi Lingkungan
+- **Sarjana Kesehatan Masyarakat (S.K.M.)** · Universitas Andalas \
+  Peminatan Kesehatan dan Keselamatan Kerja serta Kesehatan Lingkungan
+
+## Organisasi & penghargaan
+
+- Wakil Gubernur BEM KM FKM Universitas Andalas · _2023_
+- Mahasiswa Berprestasi, FKM Universitas Andalas · _2024_
+- Duta Anti Rokok Sumatera Barat · _2024_
+- Pemenang Insentif Artikel Ilmiah Program Kreativitas Mahasiswa (PKM) · _2024_
+- Best Human Resources and Development — Andalas Global Awards · _2022_
+
+[Serta 9 penghargaan lain pada kompetisi poster ilmiah, poster publik, dan video edukasi (2023–2024).]{.muted}
+
+## Proyek yang melibatkan Aldy
+
+:::{#proyek-anggota}
 :::
-
-<!--
-TODO (setelah CV Aldy siap):
-- categories: [...]   ← 4–6 skill utama (di front matter)
-- description         ← bio singkat 1–2 kalimat
-- bagian Keahlian, Pengalaman, Pendidikan, Publikasi
-- salin blok `listing:` dari tim/falah.qmd dan ganti author menjadi "*Aldy Yusra*"
--->

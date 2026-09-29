@@ -61,7 +61,7 @@ multivariabel, analisis epidemiologi spasial.
   proyek hibah STRIPE bersama Pusat Kedokteran Tropis UGM (2025).
 - **Studi Lapangan Surveilans Epidemiologi** · Dinas Kesehatan Kota Padang · _September – Oktober 2025_ \
   Investigasi KLB campak dan pertusis, analisis data DBD dan SKDR, peta kasus dan cakupan imunisasi
-  dengan QGIS, serta dashboard surveilans DBD dengan RStudio.
+  dengan QGIS, serta [dashboard surveilans DBD](https://ibasgo.shinyapps.io/Dashboard-DBD-2024/) dengan R Shiny.
 - **Magang Surveilans Kekarantinaan Kesehatan** · Kantor Kekarantinaan Kesehatan Kelas I Dumai · _Juli – Agustus 2024_
 
 ## Pendidikan

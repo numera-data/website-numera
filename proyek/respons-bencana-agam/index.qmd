@@ -1,0 +1,51 @@
+---
+title: "Manajemen Informasi Epidemiologi saat Respons Bencana di Kabupaten Agam"
+description: "Relawan epidemiologi dan MDS Manager yang mendukung pengelolaan informasi epidemiologi selama respons bencana di Kabupaten Agam."
+date: 2025-12-01
+image: thumbnail.svg
+categories: ["Epidemiologi Bencana", "Surveilans", "Respons Darurat"]
+author:
+  - Aldy Yusra
+---
+
+::: {.project-meta}
+::: {}
+[Tahun]{.label}
+
+[2025 – 2026]{.value}
+:::
+::: {}
+[Peran]{.label}
+
+[Epidemiologi / MDS Manager]{.value}
+:::
+::: {}
+[Lokasi]{.label}
+
+[Kabupaten Agam, Sumbar]{.value}
+:::
+::: {}
+[Kerangka]{.label}
+
+[WHO MDS]{.value}
+:::
+:::
+
+## Latar belakang
+
+Saat bencana, data kesehatan dari berbagai tim lapangan harus dikumpulkan dengan format yang
+seragam agar kebutuhan layanan dan potensi wabah bisa dipantau cepat. *Minimum Data Set* (MDS)
+dari WHO dipakai untuk menstandarkan pelaporan tersebut.
+
+## Peran tim
+
+Pada **Desember 2025**, Aldy Yusra bertugas sebagai **relawan respons bencana di bidang
+epidemiologi dan MDS Manager** di Kabupaten Agam, mendukung manajemen informasi epidemiologi
+selama kegiatan respons.
+
+## Kegiatan terkait
+
+- **Pengabdian masyarakat Pemberdayaan Nagari Tangguh Bencana** di Palembayan, Kabupaten Agam
+  (Juli 2026) — program mitigasi berbasis masyarakat untuk memperkuat kesiapsiagaan bencana di tingkat nagari.
+- **Penelitian integrasi kearifan lokal dalam kurikulum mitigasi bencana** di sekolah-sekolah
+  Kecamatan Sipora Selatan, Kabupaten Kepulauan Mentawai (2025).

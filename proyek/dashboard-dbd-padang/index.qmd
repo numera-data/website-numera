@@ -1,9 +1,10 @@
 ---
-title: "Dashboard Surveilans DBD Dinas Kesehatan Kota Padang"
-description: "Dashboard surveilans demam berdarah dengue dengan R, dibangun selama studi lapangan di Bidang Surveilans Epidemiologi."
+title: "Dashboard Surveilans DBD Kota Padang, 2023–2024"
+description: "Dashboard interaktif surveilans demam berdarah dengue dengan R Shiny, dibangun selama studi lapangan di Bidang Surveilans Epidemiologi. Bisa dicoba langsung secara daring."
 date: 2025-10-01
-image: thumbnail.svg
-categories: ["DBD", "Dashboard", "R", "Surveilans"]
+image: thumbnail.jpg
+lightbox: true
+categories: ["DBD", "Dashboard", "R", "Shiny", "Surveilans"]
 author:
   - Muhammad Ilham Basgoro
 ---
@@ -25,10 +26,19 @@ author:
 [Dinkes Kota Padang]{.value}
 :::
 ::: {}
-[Luaran]{.label}
+[Data]{.label}
 
-[Dashboard & peta kasus]{.value}
+[Kasus & vektor DBD 2023–2024]{.value}
 :::
+:::
+
+::: {.callout-tip}
+## Coba dashboard-nya
+Dashboard ini sudah dipublikasikan dan bisa dibuka langsung:
+
+[Buka Dashboard DBD ↗](https://ibasgo.shinyapps.io/Dashboard-DBD-2024/){.btn-brand}
+
+[Dihosting di shinyapps.io. Jika aplikasi sedang "tertidur", tunggu beberapa detik hingga termuat.]{.muted}
 :::
 
 ## Latar belakang
@@ -36,11 +46,29 @@ author:
 Data surveilans demam berdarah dengue (DBD) dilaporkan secara rutin, tetapi sering hanya
 tersimpan dalam tabel. Dashboard membantu petugas melihat tren dan sebaran kasus dengan cepat.
 
+## Isi dashboard
+
+Pengguna memilih **tahun** (2023, 2024) dan **wilayah**, lalu melihat dua menu:
+
+- **Visualisasi** — tren kasus DBD per bulan, distribusi kasus menurut jenis kelamin, dan peta sebaran kasus.
+- **Indikator** — total kasus dan insiden rate; **intervensi vektor** (penyelidikan epidemiologi,
+  fogging, larvasida, rumah yang diperiksa); serta **indikator vektor** (jumlah positif jentik dan
+  angka bebas jentik) beserta status risikonya.
+
+![Menu Visualisasi — tren kasus DBD bulanan di Kota Padang, 2023.](dash-tren.jpg){.dash-shot group="dashboard"}
+
+<!--
+Tangkapan layar lain sudah tersedia di folder ini. Aktifkan setelah perbaikan di dashboard:
+![Menu Visualisasi — kasus menurut jenis kelamin.](dash-jk.jpg){.dash-shot group="dashboard"}
+![Menu Indikator — intervensi vektor.](dash-intervensi.jpg){.dash-shot group="dashboard"}
+![Menu Indikator — indikator vektor.](dash-vektor.jpg){.dash-shot group="dashboard"}
+-->
+
 ## Peran tim
 
 Selama studi lapangan di **Bidang Surveilans Epidemiologi Dinas Kesehatan Kota Padang**
 (September – Oktober 2025), Muhammad Ilham Basgoro menganalisis data rutin DBD dan SKDR serta
-membangun dashboard surveilans DBD dengan **RStudio**.
+membangun dashboard surveilans DBD dengan **R Shiny**.
 
 ## Kegiatan terkait
 
@@ -50,5 +78,5 @@ membangun dashboard surveilans DBD dengan **RStudio**.
 
 ## Luaran
 
-- Dashboard surveilans DBD berbasis R.
+- [Dashboard surveilans DBD](https://ibasgo.shinyapps.io/Dashboard-DBD-2024/) berbasis R Shiny (daring), data 2023–2024.
 - Peta kasus penyakit dan cakupan imunisasi untuk Bidang Surveilans Epidemiologi.
