@@ -47,7 +47,7 @@ data kesehatan.
 [QGIS]{.skill} [Stata]{.skill} [SPSS]{.skill} [Epi Info]{.skill} [KoboToolbox]{.skill}
 [Datawrapper]{.skill}
 
-**Metode:** desain potong lintang, analisis data sekunder survei kompleks, regresi logistik
+**Metode:** desain studi _cross-sectional_, analisis data sekunder survei kompleks, regresi logistik
 multivariabel, analisis epidemiologi spasial.
 
 ## Pengalaman

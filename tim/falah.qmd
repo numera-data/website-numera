@@ -1,6 +1,6 @@
 ---
 title: "Falah Fauzi, S.K.M., M.Epid."
-subtitle: "Data Analyst"
+subtitle: "Turning Data into Public Health Impact, Epidemiologist & Researcher, Studies Analyzed, Educator"
 description: "Epidemiolog dengan fokus surveilans penyakit menular, program imunisasi, dan epidemiologi spasial berbasis SIG."
 image: falah.jpg
 order: 1
