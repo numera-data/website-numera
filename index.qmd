@@ -19,14 +19,12 @@ listing:
 ::: {.hero}
 
 ::: {.hero-text}
-[Health Data Research & Analysis Consultant]{.eyebrow}
+[EPIDEMIOLOGY & HEALTH DATA CONSULTING]{.eyebrow}
 
-# Data kesehatan yang dianalisis dengan [benar]{.hl}, disajikan dengan jelas.
+# [Evidence]{.hl} Starts With Better Data.
 
 ::: {.lead}
-Numera Data adalah tim epidemiolog yang membantu peneliti, dinas kesehatan, dan organisasi
-kesehatan mengolah data survei, memetakan penyakit, dan menyusun luaran ilmiah — dari desain
-analisis sampai manuskrip siap submit.
+NUMERA membantu mengolah, menganalisis, dan memvisualisasikan data kesehatan menjadi insight yang mendukung penelitian dan keputusan berbasis bukti.
 :::
 
 ::: {.hero-cta}
