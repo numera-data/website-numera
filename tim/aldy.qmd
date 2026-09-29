@@ -1,10 +1,10 @@
 ---
 title: "Aldy Yusra, S.K.M., M.Epid."
-subtitle: "Environmental Epidemiology Specialist"
+subtitle: "Environmental Epidemiologist | Health Data Researcher"
 description: "Environmental epidemiologist specializing in air pollution, climate-related health risks, and child health outcomes through epidemiological modeling and spatial analytics."
 image: aldy.jpg
 order: 2
-categories: ["R", "DLNM", "QGIS", "Epidemiologi Lingkungan", "Epidemiologi Bencana"]
+categories: ['Environmental Epidemiology', 'Air Pollution & Climate Health', 'Epidemiological Modeling', 'Spatial Analysis', 'R Programming', 'QGIS']
 toc: false
 listing:
   id: proyek-anggota
