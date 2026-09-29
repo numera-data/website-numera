@@ -1,7 +1,7 @@
 ---
 title: "Aldy Yusra, S.K.M., M.Epid."
-subtitle: "Data Analyst"
-description: "Epidemiologi lingkungan: polusi udara, iklim, dan kesehatan anak, dengan analisis DLNM di R dan pemetaan QGIS."
+subtitle: "Environmental Epidemiology Specialist"
+description: "Environmental epidemiologist specializing in air pollution, climate-related health risks, and child health outcomes through epidemiological modeling and spatial analytics."
 image: aldy.jpg
 order: 2
 categories: ["R", "DLNM", "QGIS", "Epidemiologi Lingkungan", "Epidemiologi Bencana"]
